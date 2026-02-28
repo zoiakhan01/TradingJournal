@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://tradingjournalcom.netlify.app/</loc><priority>1.0</priority></url>
+  <url><loc>https://tradingjournalcom.netlify.app/blog.html</loc><priority>0.8</priority></url>
+  <url><loc>https://tradingjournalcom.netlify.app/blog-post.html</loc><priority>0.8</priority></url>
+  <url><loc>https://tradingjournalcom.netlify.app/blog-tradezella-vs-tradervue.html</loc><priority>0.7</priority></url>
+  <url><loc>https://tradingjournalcom.netlify.app/blog-tradezella-vs-tradersync.html</loc><priority>0.7</priority></url>
+  <url><loc>https://tradingjournalcom.netlify.app/blog-tradezella-vs-edgewonk.html</loc><priority>0.7</priority></url>
+  <url><loc>https://tradingjournalcom.netlify.app/review-tradezella.html</loc><priority>0.9</priority></url>
+  <url><loc>https://tradingjournalcom.netlify.app/review-tradervue.html</loc><priority>0.7</priority></url>
+  <url><loc>https://tradingjournalcom.netlify.app/review-tradersync.html</loc><priority>0.7</priority></url>
+  <url><loc>https://tradingjournalcom.netlify.app/review-edgewonk.html</loc><priority>0.7</priority></url>
+  <url><loc>https://tradingjournalcom.netlify.app/compare.html</loc><priority>0.8</priority></url>
+  <url><loc>https://tradingjournalcom.netlify.app/compare-tradezella-vs-tradervue.html</loc><priority>0.7</priority></url>
+  <url><loc>https://tradingjournalcom.netlify.app/compare-tradezella-vs-tradersync.html</loc><priority>0.7</priority></url>
+  <url><loc>https://tradingjournalcom.netlify.app/compare-tradezella-vs-edgewonk.html</loc><priority>0.7</priority></url>
+  <url><loc>https://tradingjournalcom.netlify.app/compare-tradervue-vs-tradersync.html</loc><priority>0.6</priority></url>
+</urlset>
