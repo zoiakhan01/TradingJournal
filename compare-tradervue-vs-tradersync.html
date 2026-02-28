@@ -88,6 +88,25 @@
   }
 
   .nav-menu a:hover { color: var(--ink); }
+
+  .nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .nav-toggle span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--ink);
+    border-radius: 2px;
+    transition: 0.2s;
+  }
   .nav-menu a.active { color: var(--ink); font-weight: 600; }
 
   /* ===== SHARED ===== */
@@ -387,12 +406,16 @@
     margin-bottom: 28px;
   }
 
+  .cmp-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border: 1px solid var(--line);
+    border-radius: 8px;
+  }
+
   .cmp-table {
     width: 100%;
     border-collapse: collapse;
-    border: 1px solid var(--line);
-    border-radius: 8px;
-    overflow: hidden;
     font-size: 13.5px;
   }
 
@@ -785,7 +808,22 @@
   }
 
   @media (max-width: 640px) {
-    .nav-menu { display: none; }
+    .nav-toggle { display: flex; }
+    .nav-menu {
+      display: none;
+      position: absolute;
+      top: 64px;
+      left: 0;
+      right: 0;
+      background: var(--paper-white);
+      border-bottom: 1px solid var(--line);
+      flex-direction: column;
+      padding: 16px clamp(24px, 4vw, 64px);
+      gap: 0;
+    }
+    .nav-menu.open { display: flex; }
+    .nav-menu li { padding: 12px 0; border-bottom: 1px solid var(--line-light); }
+    .nav-menu li:last-child { border-bottom: none; }
     .vs-hero-inner {
       grid-template-columns: 1fr;
       gap: 24px;
@@ -796,8 +834,19 @@
     .vs-hero-score-num { font-size: 36px; }
     .cat-scores { gap: 8px; }
     .cat-score-num { font-size: 18px; }
-    .cmp-table { font-size: 11px; }
-    .cmp-table thead th, .cmp-table tbody td { padding: 10px 8px; }
+    .cmp-table { font-size: 12px; min-width: 600px; }
+    .cmp-table thead th, .cmp-table tbody td { padding: 10px 12px; white-space: nowrap; }
+    .cmp-table thead th:first-child,
+    .cmp-table tbody td:first-child {
+      position: sticky;
+      left: 0;
+      z-index: 2;
+      white-space: normal;
+      min-width: 110px;
+      max-width: 130px;
+    }
+    .cmp-table thead th:first-child { background: var(--ink); }
+    .cmp-table .category-row td { position: sticky; left: 0; }
     .final-verdict-card { padding: 28px 20px; }
     .final-verdict-title { font-size: 22px; }
     .final-verdict-ctas { flex-direction: column; }
@@ -813,6 +862,7 @@
 <nav>
   <div class="nav-inner">
     <a href="index.html" class="logo">TradingJournal</a>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
     <ul class="nav-menu">
       <li><a href="compare.html" class="active">Compare</a></li>
       <li><a href="blog.html">Blog</a></li>
@@ -1028,7 +1078,7 @@
       <p class="section-desc" style="margin-bottom:0;">Every feature and data point, laid out side by side.</p>
     </div>
   </div>
-  <table class="cmp-table">
+  <div class="cmp-scroll"><table class="cmp-table">
     <thead>
       <tr>
         <th style="width:260px;">Feature</th>
@@ -1225,7 +1275,7 @@
         <td style="font-weight:600;color:#4a5abb;">Beginners</td>
       </tr>
     </tbody>
-  </table>
+  </table></div>
 </section>
 
 <!-- FINAL VERDICT -->
@@ -1339,5 +1389,10 @@
 </footer>
 
 <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
+<script>
+document.querySelector('.nav-toggle').addEventListener('click', function() {
+  document.querySelector('.nav-menu').classList.toggle('open');
+});
+</script>
 </body>
 </html>

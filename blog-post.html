@@ -89,6 +89,25 @@
   }
 
   .nav-menu a:hover { color: var(--ink); }
+
+  .nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .nav-toggle span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: var(--ink);
+    border-radius: 2px;
+    transition: 0.2s;
+  }
   .nav-menu a.active { color: var(--ink); font-weight: 600; }
 
   /* ===== ARTICLE HERO ===== */
@@ -471,7 +490,22 @@
   }
 
   @media (max-width: 640px) {
-    .nav-menu { display: none; }
+    .nav-toggle { display: flex; }
+    .nav-menu {
+      display: none;
+      position: absolute;
+      top: 64px;
+      left: 0;
+      right: 0;
+      background: var(--paper-white);
+      border-bottom: 1px solid var(--line);
+      flex-direction: column;
+      padding: 16px clamp(24px, 4vw, 64px);
+      gap: 0;
+    }
+    .nav-menu.open { display: flex; }
+    .nav-menu li { padding: 12px 0; border-bottom: 1px solid var(--line-light); }
+    .nav-menu li:last-child { border-bottom: none; }
     .article-title { font-size: 28px; }
     .article-hero { aspect-ratio: 2/1; }
     .related-grid { grid-template-columns: 1fr; }
@@ -486,6 +520,7 @@
 <nav>
   <div class="nav-inner">
     <a href="index.html" class="logo">TradingJournal</a>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
     <ul class="nav-menu">
       <li><a href="compare.html">Compare</a></li>
       <li><a href="blog.html">Blog</a></li>
@@ -641,5 +676,10 @@
 </footer>
 
 <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
+<script>
+document.querySelector('.nav-toggle').addEventListener('click', function() {
+  document.querySelector('.nav-menu').classList.toggle('open');
+});
+</script>
 </body>
 </html>
