@@ -2,18 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://tradingjournal.com/</loc><priority>1.0</priority></url>
   <url><loc>https://tradingjournal.com/blog</loc><priority>0.8</priority></url>
-  <url><loc>https://tradingjournal.com/blog-post</loc><priority>0.8</priority></url>
-  <url><loc>https://tradingjournal.com/blog-tradezella-vs-tradervue</loc><priority>0.7</priority></url>
-  <url><loc>https://tradingjournal.com/blog-tradezella-vs-tradersync</loc><priority>0.7</priority></url>
-  <url><loc>https://tradingjournal.com/blog-tradezella-vs-edgewonk</loc><priority>0.7</priority></url>
-  <url><loc>https://tradingjournal.com/review-tradezella</loc><priority>0.9</priority></url>
-  <url><loc>https://tradingjournal.com/review-tradervue</loc><priority>0.7</priority></url>
-  <url><loc>https://tradingjournal.com/review-tradersync</loc><priority>0.7</priority></url>
-  <url><loc>https://tradingjournal.com/review-edgewonk</loc><priority>0.7</priority></url>
+  <url><loc>https://tradingjournal.com/blog/best-trading-journals</loc><priority>0.8</priority></url>
+  <url><loc>https://tradingjournal.com/blog/tradezella-vs-tradervue</loc><priority>0.7</priority></url>
+  <url><loc>https://tradingjournal.com/blog/tradezella-vs-tradersync</loc><priority>0.7</priority></url>
+  <url><loc>https://tradingjournal.com/blog/tradezella-vs-edgewonk</loc><priority>0.7</priority></url>
+  <url><loc>https://tradingjournal.com/review/tradezella</loc><priority>0.9</priority></url>
+  <url><loc>https://tradingjournal.com/review/tradervue</loc><priority>0.7</priority></url>
+  <url><loc>https://tradingjournal.com/review/tradersync</loc><priority>0.7</priority></url>
+  <url><loc>https://tradingjournal.com/review/edgewonk</loc><priority>0.7</priority></url>
   <url><loc>https://tradingjournal.com/compare</loc><priority>0.8</priority></url>
-  <url><loc>https://tradingjournal.com/compare-tradezella-vs-tradervue</loc><priority>0.7</priority></url>
-  <url><loc>https://tradingjournal.com/compare-tradezella-vs-tradersync</loc><priority>0.7</priority></url>
-  <url><loc>https://tradingjournal.com/compare-tradezella-vs-edgewonk</loc><priority>0.7</priority></url>
-  <url><loc>https://tradingjournal.com/compare-tradervue-vs-tradersync</loc><priority>0.6</priority></url>
-  <url><loc>https://tradingjournal.com/compare-tradezella-vs-trademetria</loc><priority>0.7</priority></url>
+  <url><loc>https://tradingjournal.com/compare/tradezella-vs-tradervue</loc><priority>0.7</priority></url>
+  <url><loc>https://tradingjournal.com/compare/tradezella-vs-tradersync</loc><priority>0.7</priority></url>
+  <url><loc>https://tradingjournal.com/compare/tradezella-vs-edgewonk</loc><priority>0.7</priority></url>
+  <url><loc>https://tradingjournal.com/compare/tradezella-vs-trademetria</loc><priority>0.7</priority></url>
+  <url><loc>https://tradingjournal.com/compare/tradervue-vs-tradersync</loc><priority>0.6</priority></url>
 </urlset>
