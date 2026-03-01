@@ -71,6 +71,14 @@
     color: var(--ink);
     text-decoration: none;
     letter-spacing: -0.5px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .logo-icon {
+    width: 24px;
+    height: 24px;
   }
 
   .logo span { color: var(--accent); }
@@ -1101,7 +1109,7 @@
 <!-- NAV -->
 <nav>
   <div class="nav-inner">
-    <a href="index.html" class="logo">TradingJournal</a>
+    <a href="index.html" class="logo"><img src="favicon.svg" alt="" class="logo-icon">TradingJournal</a>
     <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
     <ul class="nav-menu">
       <li><a href="compare.html">Compare</a></li>

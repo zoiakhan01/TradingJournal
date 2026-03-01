@@ -31,7 +31,8 @@
   body { font-family: var(--sans); background: var(--paper); color: var(--ink); }
   nav { position: sticky; top: 0; z-index: 100; background: var(--paper-white); border-bottom: 1px solid var(--line); height: 64px; display: flex; align-items: center; padding: 0 clamp(24px, 4vw, 64px); }
   .nav-inner { max-width: 1200px; margin: 0 auto; width: 100%; display: flex; align-items: center; justify-content: space-between; }
-  .logo { font-family: var(--serif); font-size: 20px; font-weight: 700; color: var(--ink); text-decoration: none; letter-spacing: -0.5px; }
+  .logo { font-family: var(--serif); font-size: 20px; font-weight: 700; color: var(--ink); text-decoration: none; letter-spacing: -0.5px; display: flex; align-items: center; gap: 6px; }
+  .logo-icon { width: 24px; height: 24px; }
   .nav-menu { display: flex; gap: 32px; list-style: none; }
   .nav-menu a { font-size: 15px; font-weight: 500; color: var(--ink-muted); text-decoration: none; letter-spacing: 0.2px; transition: color 0.15s; }
   .nav-menu a:hover { color: var(--ink); }
@@ -100,7 +101,7 @@
 </style>
 </head>
 <body>
-<nav><div class="nav-inner"><a href="index.html" class="logo">TradingJournal</a><button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button><ul class="nav-menu"><li><a href="compare.html">Compare</a></li><li><a href="blog.html">Blog</a></li></ul></div></nav>
+<nav><div class="nav-inner"><a href="index.html" class="logo"><img src="favicon.svg" alt="" class="logo-icon">TradingJournal</a><button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button><ul class="nav-menu"><li><a href="compare.html">Compare</a></li><li><a href="blog.html">Blog</a></li></ul></div></nav>
 <div class="article-hero"><span class="article-hero-label">TradingJournal.com</span></div>
 <article class="article-wrapper">
   <div class="article-breadcrumb"><a href="blog.html">Blog</a><span>/</span><span>Comparison</span></div>
