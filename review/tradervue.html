@@ -312,6 +312,7 @@
   .related-img-inner {
     width: 100%;
     height: 100%;
+    position: relative;
     display: flex;
     align-items: flex-end;
     padding: 14px;
@@ -325,6 +326,55 @@
     padding: 3px 7px;
     border-radius: 3px;
     color: var(--paper-white);
+  }
+  .related-cover {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 1;
+  }
+  .related-cover img {
+    height: 28px;
+    width: auto;
+    filter: brightness(0) invert(1);
+    opacity: 0.85;
+    object-fit: contain;
+  }
+  .related-cover .cover-vs {
+    font-size: 10px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.5);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .related-cover .cover-single-logo {
+    height: 36px;
+    max-width: 120px;
+  }
+  .related-cover-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: rgba(255,255,255,0.85);
+    z-index: 1;
+  }
+  .related-cover-text .cover-year {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.6;
+  }
+  .related-cover-text .cover-title {
+    font-family: var(--serif);
+    font-size: 15px;
+    font-weight: 600;
   }
 
   .related-title {
@@ -715,27 +765,9 @@
 <section class="related">
   <div class="related-heading">Related Articles</div>
   <div class="related-grid">
-    <a href="/blog/tradezella-vs-tradervue" class="related-card">
-      <div class="related-img">
-        <div class="related-img-inner bg-5"><span class="related-tag tag-c">Comparison</span></div>
-      </div>
-      <div class="related-title">TradeZella vs Tradervue: Full Breakdown</div>
-      <div class="related-meta">Mar 2026 &middot; 10 min read</div>
-    </a>
-    <a href="/blog/tradervue-vs-tradersync" class="related-card">
-      <div class="related-img">
-        <div class="related-img-inner bg-5"><span class="related-tag tag-c">Comparison</span></div>
-      </div>
-      <div class="related-title">Tradervue vs TraderSync: Full Breakdown</div>
-      <div class="related-meta">Mar 2026 &middot; 10 min read</div>
-    </a>
-    <a href="/blog/best-trading-journals" class="related-card">
-      <div class="related-img">
-        <div class="related-img-inner bg-1"><span class="related-tag tag-g">Guide</span></div>
-      </div>
-      <div class="related-title">Best Trading Journals in 2026</div>
-      <div class="related-meta">Mar 2026 &middot; 12 min read</div>
-    </a>
+    <a href="/review/tradersync" class="related-card"><div class="related-img"><div class="related-img-inner bg-3"><div class="related-cover"><img src="/tradersync-logo.svg" alt="TraderSync" class="cover-single-logo"></div><span class="related-tag tag-r">Review</span></div></div><div class="related-title">TraderSync Review 2026</div><div class="related-meta">Mar 2026 &middot; 12 min read</div></a>
+    <a href="/blog/edgewonk-vs-tradersync" class="related-card"><div class="related-img"><div class="related-img-inner bg-4"><div class="related-cover"><img src="/edgewonk-logo.webp" alt="Edgewonk"><span class="cover-vs">vs</span><img src="/tradersync-logo.svg" alt="TraderSync"></div><span class="related-tag tag-c">Comparison</span></div></div><div class="related-title">Edgewonk vs TraderSync: Psychology vs AI</div><div class="related-meta">Mar 2026 &middot; 10 min read</div></a>
+    <a href="/blog/best-trading-journals" class="related-card"><div class="related-img"><div class="related-img-inner bg-1"><div class="related-cover-text"><div class="cover-year">2026</div><div class="cover-title">Best Trading Journals</div></div><span class="related-tag tag-g">Guide</span></div></div><div class="related-title">Best Trading Journals in 2026</div><div class="related-meta">Mar 2026 &middot; 15 min read</div></a>
   </div>
 </section>
 
@@ -763,11 +795,10 @@
         <div class="footer-col-title">Compare</div>
         <ul class="footer-list">
           <li><a href="/compare/tradezella-vs-tradervue">TradeZella vs Tradervue</a></li>
-          <li><a href="/compare/tradezella-vs-tradersync">TradeZella vs TraderSync</a></li>
-          <li><a href="/compare/tradezella-vs-edgewonk">TradeZella vs Edgewonk</a></li>
           <li><a href="/compare/tradervue-vs-tradersync">Tradervue vs TraderSync</a></li>
+          <li><a href="/compare/tradezella-vs-edgewonk">TradeZella vs Edgewonk</a></li>
           <li><a href="/compare/tradezella-vs-trademetria">TradeZella vs Trademetria</a></li>
-          <li><a href="/compare">Compare All Journals</a></li>
+          <li><a href="/compare/tradezella-vs-tradersync">TradeZella vs TraderSync</a></li>
         </ul>
       </div>
       <div>
