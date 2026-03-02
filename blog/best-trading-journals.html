@@ -130,13 +130,9 @@
     justify-content: center;
   }
 
-  .article-hero-label {
-    font-size: 14px;
-    font-weight: 600;
-    color: rgba(255,255,255,0.3);
-    letter-spacing: 2px;
-    text-transform: uppercase;
-  }
+  .hero-cover-text { text-align: center; color: rgba(255,255,255,0.85); font-family: var(--serif); }
+  .hero-cover-text .cover-year { font-size: 14px; font-weight: 600; letter-spacing: 4px; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 4px; }
+  .hero-cover-text .cover-title { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; }
 
   /* ===== ARTICLE ===== */
   .article-wrapper {
@@ -595,7 +591,10 @@
 
 <!-- ARTICLE HERO -->
 <div class="article-hero">
-  <span class="article-hero-label">TradingJournal.com</span>
+  <div class="hero-cover-text">
+    <div class="cover-year">2026</div>
+    <div class="cover-title">Best Trading Journals</div>
+  </div>
 </div>
 
 <!-- ARTICLE -->

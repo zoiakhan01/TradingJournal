@@ -73,7 +73,9 @@
   .article-body td { padding: 10px 14px; border: 1px solid var(--line); color: var(--ink-muted); }
   .article-body strong { color: var(--ink); font-weight: 600; }
   .article-hero { width: 100%; aspect-ratio: 3/1; max-height: 360px; background: linear-gradient(145deg, #3a2a1a 0%, #5a4a2a 100%); display: flex; align-items: center; justify-content: center; }
-  .article-hero-label { font-size: 14px; font-weight: 600; color: rgba(255,255,255,0.3); letter-spacing: 2px; text-transform: uppercase; }
+  .hero-cover { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+  .hero-cover img { height: 40px; width: auto; max-width: 160px; object-fit: contain; filter: brightness(0) invert(1); opacity: 0.85; }
+  .hero-cover .hero-vs { font-size: 12px; font-weight: 600; color: rgba(255,255,255,0.35); text-transform: uppercase; letter-spacing: 3px; }
   .article-wrapper { max-width: 760px; margin: 0 auto; padding: 48px clamp(24px, 4vw, 64px) 80px; }
   .article-breadcrumb { font-size: 12px; color: var(--ink-faint); margin-bottom: 24px; display: flex; gap: 6px; align-items: center; }
   .article-breadcrumb a { color: var(--ink-subtle); text-decoration: none; transition: color 0.15s; }
@@ -130,7 +132,7 @@
 </head>
 <body>
 <nav><div class="nav-inner"><a href="/" class="logo"><img src="/favicon.svg" alt="" class="logo-icon">TradingJournal</a><button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button><ul class="nav-menu"><li><a href="/compare">Compare</a></li><li><a href="/blog">Blog</a></li></ul></div></nav>
-<div class="article-hero"><span class="article-hero-label">TradingJournal.com</span></div>
+<div class="article-hero"><div class="hero-cover"><img src="/edgewonk-logo.webp" alt="Edgewonk"><span class="hero-vs">vs</span><img src="/tradersync-logo.svg" alt="TraderSync"></div></div>
 <article class="article-wrapper">
   <div class="article-breadcrumb"><a href="/blog">Blog</a><span>/</span><span>Comparison</span></div>
   <span class="article-tag">Comparison</span>

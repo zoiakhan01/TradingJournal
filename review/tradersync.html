@@ -130,19 +130,14 @@
     width: 100%;
     aspect-ratio: 3/1;
     max-height: 360px;
-    background: linear-gradient(145deg, #1a2a3a 0%, #2a4a5a 100%);
+    background: linear-gradient(145deg, #2a1a2e 0%, #4a2a5a 100%);
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  .article-hero-label {
-    font-size: 14px;
-    font-weight: 600;
-    color: rgba(255,255,255,0.3);
-    letter-spacing: 2px;
-    text-transform: uppercase;
-  }
+  .hero-cover { display: flex; align-items: center; justify-content: center; }
+  .hero-cover img { height: 48px; width: auto; max-width: 180px; object-fit: contain; filter: brightness(0) invert(1); opacity: 0.85; }
 
   /* ===== ARTICLE ===== */
   .article-wrapper {
@@ -556,9 +551,7 @@
 </nav>
 
 <!-- ARTICLE HERO -->
-<div class="article-hero">
-  <span class="article-hero-label">TradingJournal.com</span>
-</div>
+<div class="article-hero"><div class="hero-cover"><img src="/tradersync-logo.svg" alt="TraderSync"></div></div>
 
 <!-- ARTICLE -->
 <article class="article-wrapper">
