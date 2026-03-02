@@ -788,26 +788,6 @@
   }
 
   .footer-list a:hover { color: rgba(255,255,255,0.8); }
-
-  .footer-bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 12px;
-    color: rgba(255,255,255,0.2);
-  }
-
-  .footer-legal { display: flex; gap: 20px; }
-
-  .footer-legal a {
-    font-size: 12px;
-    color: rgba(255,255,255,0.2);
-    text-decoration: none;
-    transition: color 0.15s;
-  }
-
-  .footer-legal a:hover { color: rgba(255,255,255,0.5); }
-
   /* ===== RESPONSIVE ===== */
   @media (max-width: 1024px) {
     .vs-hero-grid { grid-template-columns: 1fr auto 1fr; }
@@ -952,7 +932,7 @@
     </div>
     <!-- Right: TraderSync -->
     <div class="vs-hero-side right">
-      <img class="vs-hero-logo" src="https://tradersync.com/wp-content/uploads/2025/09/favicon.png" alt="TraderSync">
+      <img class="vs-hero-logo" src="/tradersync-icon.png" alt="TraderSync">
       <div class="vs-hero-name">TraderSync</div>
       <div class="vs-hero-tagline">AI Coaching &middot; Mobile First</div>
       <div class="vs-hero-score-wrap">
@@ -1595,7 +1575,6 @@
   </div>
 </footer>
 
-<script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
 <script>
 document.querySelector('.nav-toggle').addEventListener('click', function() {
   document.querySelector('.nav-menu').classList.toggle('open');
