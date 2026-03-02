@@ -1,6 +1,6 @@
 ---
 title: Trading Journal & Analytics - TradeZella
-description: Automatically sync trades from 400+ brokers, analyze performance with 50+ reports, and track your edge with strategies, tags, and custom analytics. Supports forex, futures, stocks, options, and crypto.
+description: Automatically sync trades from 500+ brokers, analyze performance with 50+ reports, and track your edge with strategies, tags, and custom analytics. Supports forex, futures, stocks, options, and crypto.
 lastUpdated: 2026-02-22
 source_url:
   html: https://www.tradezella.com/trading-journal
@@ -11,7 +11,7 @@ This page covers TradeZella's trading journal and analytics platform, including 
 
 # TradeZella Trading Journal & Analytics
 
-Automatically sync your trades from 400+ brokers, analyze performance with powerful reports, and understand where your edge lives and where it's leaking.
+Automatically sync your trades from 500+ brokers, analyze performance with powerful reports, and understand where your edge lives and where it's leaking.
 
 ## Dashboard
 
@@ -26,7 +26,7 @@ A real-time snapshot of your trading performance the moment you log in.
 
 Connect your broker and every trade syncs instantly — no manual entry.
 
-- **Auto-Sync From Brokers** — 400+ broker integrations including MetaTrader 4/5, NinjaTrader, ThinkorSwim, Interactive Brokers, Tradovate, cTrader, DXtrade, TradeLocker, Robinhood, Bybit, and more
+- **Auto-Sync From Brokers** — 500+ broker integrations including MetaTrader 4/5, NinjaTrader, ThinkorSwim, Interactive Brokers, Tradovate, cTrader, DXtrade, TradeLocker, Robinhood, Bybit, and more
 - **TradingView Charts** — Review trades on professional-grade charts without leaving the platform
 - **Multiple TP/SL Tracking** — Log all profit targets and stop losses to compare planned vs. actual risk-reward
 - **Running P&L** — See the full story of each trade — drawdowns, early entries, late exits
@@ -86,7 +86,7 @@ Document observations, lessons, and market notes in one place.
 TradeZella automatically imports trades from your connected broker and analyzes performance across dozens of metrics. It includes a customizable dashboard, trade log, daily journal, notebook, and detailed reports.
 
 **Which brokers does TradeZella support?**
-400+ brokers including MetaTrader 4/5, NinjaTrader, ThinkorSwim, Interactive Brokers, Tradovate, cTrader, DXtrade, TradeLocker, Robinhood, Bybit, and more. Connect via auto-sync, file upload, or manual entry. See all at [Supported Brokers](https://www.tradezella.com/brokersupport).
+500+ brokers including MetaTrader 4/5, NinjaTrader, ThinkorSwim, Interactive Brokers, Tradovate, cTrader, DXtrade, TradeLocker, Robinhood, Bybit, and more. Connect via auto-sync, file upload, or manual entry. See all at [Supported Brokers](https://www.tradezella.com/brokersupport).
 
 **Does TradeZella support prop firms?**
 Yes. If TradeZella supports the broker or platform your prop firm uses (Tradovate, Rithmic, DXtrade, TradeLocker), you can sync and journal prop firm trades like any other account.
