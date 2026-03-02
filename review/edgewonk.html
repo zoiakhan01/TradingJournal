@@ -579,11 +579,13 @@
       "author": { "@type": "Organization", "name": "TradingJournal.com", "url": "https://tradingjournal.com/" },
       "publisher": { "@type": "Organization", "name": "TradingJournal.com", "url": "https://tradingjournal.com/", "logo": { "@type": "ImageObject", "url": "https://tradingjournal.com/favicon.svg" } },
       "itemReviewed": {
-        "@type": "SoftwareApplication",
+        "@type": ["SoftwareApplication", "Product"],
         "name": "Edgewonk",
         "applicationCategory": "FinanceApplication",
         "operatingSystem": "Web",
         "url": "https://edgewonk.com",
+        "image": "https://tradingjournal.com/edgewonk-dashboard.png",
+        "brand": { "@type": "Brand", "name": "Edgewonk" },
         "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.7", "bestRating": "5", "worstRating": "1", "ratingCount": "500" }
       },
       "reviewRating": { "@type": "Rating", "ratingValue": "4.7", "bestRating": "5", "worstRating": "1" }
@@ -715,7 +717,7 @@
   <div class="article-meta">
     <span>March 2026</span>
     <span class="article-meta-sep">&middot;</span>
-    <span>10 min read</span>
+    <span>18 min read</span>
     <span class="article-meta-sep">&middot;</span>
     <span>By the TradingJournal.com team</span>
   </div>
@@ -766,6 +768,12 @@
 
     <p>What this reveals is how your emotional state affects win rate and P&L, when tilt becomes costly (after losses, during news events, early mornings), and whether stress actually helps or hurts your trading -- some traders perform better under pressure.</p>
 
+    <p>In practice, the Tiltmeter workflow looks like this: before entering a trade, you rate your current emotional state on a scale. Edgewonk provides predefined categories -- calm, confident, anxious, frustrated, revenge-trading, FOMO -- as well as a numerical intensity rating. You can also add free-text notes describing what triggered the emotion. After the trade closes, the platform maps that emotional tag against the outcome -- win or loss, how far the trade moved in your favor before reversing, and whether you followed your plan or deviated.</p>
+
+    <p>Over weeks and months, the Tiltmeter builds a behavioral profile. You start seeing patterns that are invisible in the moment: maybe your win rate drops 15% on trades taken within an hour of a loss. Maybe your average P&L on "confident" trades is double your "anxious" ones. Maybe Friday afternoons consistently produce revenge trades. The Tiltmeter surfaces these correlations automatically and presents them as actionable data.</p>
+
+    <p>The most powerful aspect is the dollar-value attribution. The Tiltmeter does not just tell you that emotional trading is "bad" -- it tells you exactly how much money your emotional states have cost you over a given period. Seeing a concrete number like "$2,340 lost to revenge trades this quarter" hits differently than a vague sense that you should manage your emotions better.</p>
+
     <p>No other journal offers this level of emotion-to-performance correlation. If you suspect emotion is costing you money, the Tiltmeter quantifies it. This is the one area where Edgewonk genuinely leads the entire market, including more expensive platforms.</p>
 
     <h3>Edge Finder AI</h3>
@@ -773,6 +781,14 @@
     <p>Edge Finder scans your entire trade log and identifies which variables have the biggest statistical impact on your results. It might discover that your currency pair selection matters more than your entry timing, or that your win rate collapses when you trade above a certain position size.</p>
 
     <p>The AI ranks these variables by impact and gives you a clear picture of where your actual edge comes from -- not where you think it comes from. Built on over a decade of trader journal data, Edge Finder is one of the more sophisticated analytics engines in the space.</p>
+
+    <p>Here is how the pattern recognition works in practice. Edge Finder examines every variable you track -- asset class, time of day, day of week, position size, setup type, holding duration, market conditions, and any custom tags you have created. It then runs a statistical analysis across your full trade history, isolating which combinations of variables produce statistically significant results, both positive and negative.</p>
+
+    <p>The output is a ranked list of "edge factors." Each factor shows its impact on your overall performance, expressed as both a percentage and a dollar value. A typical Edge Finder report might reveal that your EUR/USD trades taken between 8-10 AM using your breakout setup have a 72% win rate and account for 60% of your total profits -- while your afternoon scalps on GBP/JPY are net negative after commissions. These are insights most traders never discover on their own because they require correlating multiple variables across hundreds of trades.</p>
+
+    <p>The system also flags "negative edges" -- combinations that are actively destroying your profitability. Knowing where your edge does not exist is just as valuable as knowing where it does. Many traders are surprised to find that an entire category of trades they assumed was profitable has actually been a slow leak on their account.</p>
+
+    <p>One limitation worth noting: Edge Finder's accuracy depends on sample size. With fewer than 50-100 trades logged, the statistical significance of its findings is questionable. The tool becomes genuinely useful after several months of consistent journaling, which means new users need patience before they see meaningful insights.</p>
 
     <h3>Coin Flip Distribution</h3>
 
@@ -790,15 +806,84 @@
 
     <p>For more comprehensive backtesting with 11+ years of historical data, multi-chart layouts, ICT indicators, and strategy template integration, platforms like TradeZella (with 500+ broker integrations) offer significantly more depth.</p>
 
+    <h2>Trade Management Analytics</h2>
+
+    <p>Beyond the psychology features, Edgewonk provides solid trade management analytics that cover the fundamentals of performance tracking. Every logged trade captures entry price, exit price, stop loss, take profit, position size, commissions, and swap/rollover fees. The platform then calculates key metrics automatically: risk-reward ratio (both planned and actual), maximum adverse excursion (MAE), maximum favorable excursion (MFE), and holding time analysis.</p>
+
+    <p>The MAE and MFE reports are particularly useful. Maximum adverse excursion shows how far a trade moved against you before hitting your stop or reversing -- helping you determine whether your stop losses are too tight or too loose. Maximum favorable excursion shows how far a trade moved in your favor before you exited, revealing whether you are leaving money on the table by closing winners too early. These metrics are standard in institutional trading analysis but surprisingly rare in consumer-facing journals.</p>
+
+    <p>Edgewonk also tracks entry quality and exit quality as separate metrics. Entry quality measures how close your entry was to the optimal price point within the trade's range. Exit quality does the same for your close. Over a large sample, these scores reveal whether your trade management needs more work than your trade selection -- a distinction most traders never make because their journal does not separate the two.</p>
+
+    <p>Risk-reward tracking goes beyond the basic ratio. Edgewonk shows your planned risk-reward versus your actual risk-reward on every trade, and the aggregate difference between the two. If your planned R:R averages 2:1 but your actual R:R averages 1.3:1, you know your execution is the bottleneck -- not your setups. This kind of granular breakdown is where Edgewonk's analytics shine even against more expensive competitors.</p>
+
+    <h2>User Experience and Interface</h2>
+
+    <p>Edgewonk runs primarily as a web application accessed through your browser. The interface is functional and data-dense, prioritizing information over visual polish. If you are coming from a platform like TradeZella or TraderSync, which invest heavily in modern UI design, Edgewonk will feel more utilitarian. The layout is straightforward: a sidebar navigation panel on the left, trade log in the center, and analytics dashboards accessible through top-level tabs.</p>
+
+    <p>The learning curve is moderate. Edgewonk does not hold your hand through onboarding the way some competitors do. There is no interactive tutorial, no strategy template library to get you started, and no education hub. You are expected to arrive with a trading strategy in hand and know what you want to track. The platform provides a knowledge base and video tutorials, but the initial setup -- configuring custom tags, importing your first batch of trades, and understanding the analytics dashboards -- takes most users an hour or two of dedicated time.</p>
+
+    <p>Once configured, daily workflow is reasonably efficient. You import trades (manually or via broker sync), tag them with your setup type and emotional state, add notes, and review your analytics. The journaling process takes roughly 5-10 minutes per session for most traders. Power users who add detailed notes and review multiple analytics dashboards may spend 15-20 minutes.</p>
+
+    <p>The biggest UX limitation is the lack of a mobile app. In 2026, most traders expect to log trades from their phone immediately after closing a position. Edgewonk's web interface is technically accessible on mobile browsers, but it is not optimized for smaller screens. If you trade from your desk and journal at the end of each session, this is a non-issue. If you want to log trades on the go, it becomes a genuine friction point.</p>
+
+    <h2>Broker Integration and Trade Import</h2>
+
+    <p>Edgewonk supports 200+ broker integrations, covering most major forex brokers (MetaTrader 4, MetaTrader 5, cTrader), futures platforms (NinjaTrader, Sierra Chart, Tradovate), stock brokers (Interactive Brokers, TD Ameritrade, Webull), and crypto exchanges (Binance, Bybit, Coinbase). The coverage is adequate for most traders, though it falls short of TradeZella's 500+ and TraderSync's 900+ integrations.</p>
+
+    <p>The import process works through CSV file uploads. You export your trade history from your broker, upload the CSV to Edgewonk, and the platform parses and maps the fields automatically. For supported brokers, this process is straightforward -- Edgewonk recognizes the file format and handles the mapping without manual intervention. For brokers not on the supported list, you can use a generic CSV template, though this requires manual column mapping.</p>
+
+    <p>Edgewonk does not offer real-time auto-sync with brokers via API connections. This is a meaningful difference from competitors like TradeZella and TraderSync, which can automatically pull trades from your broker account without any manual steps. With Edgewonk, you need to periodically export and upload your trade data. Most users develop a routine -- uploading at the end of each trading day or at the end of the week.</p>
+
+    <p>For traders who use multiple brokers or trade multiple asset classes, Edgewonk handles multi-account tracking within a single journal. You can tag trades by account and filter analytics accordingly. The platform supports all major asset classes -- stocks, forex, futures, CFDs, options, and crypto -- within the same journal instance.</p>
+
+    <h2>Who Edgewonk Is Best For</h2>
+
+    <p>Edgewonk is a specialist tool, and it rewards traders who align with its philosophy. Understanding who benefits most -- and who should look elsewhere -- helps set the right expectations.</p>
+
+    <h3>Ideal Users</h3>
+
+    <p><strong>Psychology-focused traders.</strong> If you have already identified emotional discipline as your primary weakness, Edgewonk's Tiltmeter is the single best tool available for turning that awareness into measurable improvement. No other journal comes close to the depth of emotion-to-performance tracking Edgewonk offers.</p>
+
+    <p><strong>Forex and futures traders.</strong> Edgewonk's roots are in the forex community, and its analytics -- particularly around session timing, currency pair performance, and swap cost tracking -- are well-tuned for forex workflows. Futures traders benefit similarly from the platform's focus on session-based analysis and position-sizing metrics.</p>
+
+    <p><strong>Experienced traders refining execution.</strong> If you already have a profitable strategy and want to optimize your execution -- tighter stops, better entries, fewer emotional deviations -- Edgewonk's MAE/MFE analysis, entry/exit quality scores, and Edge Finder AI are built precisely for this type of refinement.</p>
+
+    <p><strong>Budget-conscious traders.</strong> At $169/year, Edgewonk is the clear choice for traders who want a legitimate analytics platform without spending $250-$500/year. The value proposition is strong for anyone who primarily needs journaling and analytics without the extras.</p>
+
+    <h3>Who Should Look Elsewhere</h3>
+
+    <p><strong>Beginners without a strategy.</strong> Edgewonk assumes you know what you are trading and why. It does not provide strategy templates, educational content, or structured learning paths. Traders still developing their approach will find platforms like TradeZella -- with Zella University and 25+ strategy templates -- better suited to their stage.</p>
+
+    <p><strong>Traders who need backtesting.</strong> Edgewonk's trade simulator is rudimentary. If backtesting is a core part of your workflow, you need a platform that offers it natively. TradeZella provides unlimited backtesting sessions with 11+ years of historical data and multi-chart layouts.</p>
+
+    <p><strong>Mobile-first traders.</strong> If you trade from your phone or want to log trades immediately after closing positions, Edgewonk's desktop-first design will be a constant frustration. TraderSync offers full iOS and Android apps with on-the-go journaling.</p>
+
+    <p><strong>Teams and mentors.</strong> Edgewonk is a single-user tool with no sharing, coaching, or team features. Prop firms, trading groups, and mentors who need to review student journals should look at platforms with built-in collaboration tools.</p>
+
     <h2>Pricing</h2>
 
     <p>Edgewonk has one plan: $169/year (~$14/month). One price, everything included.</p>
 
     <p>This makes it the cheapest premium trading journal on the market by a significant margin. TradeZella starts at $288/year, TraderSync at ~$216/year -- Edgewonk costs 41-58% less.</p>
 
-    <p>A 14-day free trial is available, which is generous compared to journals with no trial period.</p>
+    <p>For $169/year you get: the full Tiltmeter emotional tracking suite, Edge Finder AI analytics, Coin Flip Distribution, 50+ pre-built statistics, 20 custom stat slots, the trade simulator, 200+ broker import templates, MAE/MFE analysis, entry and exit quality scoring, and all future updates for the duration of your subscription. There is no feature gating -- every subscriber gets the complete platform.</p>
 
-    <p>The simplicity is refreshing -- no tier confusion, no feature gating. You pay once per year and get everything.</p>
+    <p>A 14-day free trial is available with full feature access, which is generous compared to journals with no trial period. The trial does not require a credit card upfront, reducing the friction of testing the platform.</p>
+
+    <p>The value equation depends on what you need. If your requirements are journaling, analytics, and psychology tracking, Edgewonk delivers substantial capability for $14/month. If you also need backtesting, trade replay, education, strategy templates, and mentorship tools, the $169 price point reflects the narrower feature set -- and paying more for a comprehensive platform like TradeZella may actually be the more cost-effective choice when you factor in the tools you would otherwise need to purchase separately.</p>
+
+    <table>
+      <thead>
+        <tr><th>Platform</th><th>Annual Price</th><th>Monthly Equiv.</th><th>Includes Backtesting</th><th>Mobile App</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Edgewonk</strong></td><td>$169</td><td>~$14</td><td>No (simulator only)</td><td>No</td></tr>
+        <tr><td>TraderSync</td><td>~$216+</td><td>~$18+</td><td>No</td><td>Yes</td></tr>
+        <tr><td>TradeZella</td><td>$288+</td><td>~$24+</td><td>Yes (unlimited)</td><td>Yes</td></tr>
+      </tbody>
+    </table>
+
+    <p>The simplicity is refreshing -- no tier confusion, no upsells, no premium add-ons. You pay once per year and get everything Edgewonk offers.</p>
 
     <h2>Pros and Cons</h2>
 
@@ -830,7 +915,42 @@
 
     <p>Edgewonk excels in one specific area: psychology-based trading improvement. The Tiltmeter and Edge Finder AI are genuinely best-in-class for understanding how your emotions affect your trading.</p>
 
-    <p>But the feature gap compared to comprehensive platforms is significant. Edgewonk has no backtesting, no trade replay, no strategy templates, no mentor tools, no education, and 60% fewer broker integrations than platforms like TradeZella (200+ vs 500+). If psychology is your primary focus and you already have a separate backtesting solution, Edgewonk delivers excellent value at $169/year. If you want an all-in-one platform that covers journaling, analytics, backtesting, strategy development, education, and mentorship, TradeZella provides all of that in a single subscription.</p>
+    <p>But the feature gap compared to comprehensive platforms is significant. Below is a detailed comparison against the two journals most commonly considered alongside Edgewonk.</p>
+
+    <h3>Edgewonk vs TradeZella</h3>
+
+    <p>TradeZella is the broadest platform in the space. It covers journaling, analytics, backtesting (unlimited sessions with 11+ years of historical data), trade replay, 25+ strategy templates, Zella University education, and mentorship tools -- all within a single subscription. With 500+ broker integrations and full mobile apps, it is designed as an all-in-one trading improvement platform.</p>
+
+    <p>Edgewonk wins on psychology depth. The Tiltmeter has no equivalent in TradeZella. TradeZella offers basic trade notes and tagging, but nothing close to the structured emotional tracking, dollar-value tilt attribution, or behavioral pattern analysis that Edgewonk provides. Edgewonk also wins on price: $169/year vs $288+/year for TradeZella.</p>
+
+    <p>TradeZella wins on everything else. Backtesting, trade replay, strategy templates, education, mentor tools, mobile apps, broker coverage, and UI design are all areas where TradeZella offers more. For traders who want a single platform that handles their full workflow -- from strategy development through execution analysis -- TradeZella is the stronger choice. For traders who already have their tools set up and specifically need psychology tracking, Edgewonk is the specialist pick.</p>
+
+    <h3>Edgewonk vs TraderSync</h3>
+
+    <p>TraderSync is the analytics-heavy journal with the widest broker coverage (900+) and full mobile apps on iOS and Android. It focuses on detailed performance reporting, with strong P&L analytics, calendar views, and customizable dashboards. TraderSync also offers AI-powered trade analysis, though its approach is more focused on pattern recognition in trade outcomes than in emotional states.</p>
+
+    <p>Edgewonk's advantage over TraderSync is the same as over TradeZella: the Tiltmeter. TraderSync has no structured emotional tracking. Edgewonk also costs less ($169/year vs ~$216+/year for TraderSync). TraderSync's advantages include 900+ broker integrations (vs 200+), mobile apps, a more modern interface, and more extensive reporting dashboards. Traders who prioritize mobile access and broker compatibility will lean toward TraderSync; traders who prioritize psychology tracking and value will prefer Edgewonk.</p>
+
+    <table>
+      <thead>
+        <tr><th>Feature</th><th>Edgewonk</th><th>TradeZella</th><th>TraderSync</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Price (annual)</td><td><strong>$169</strong></td><td>$288+</td><td>~$216+</td></tr>
+        <tr><td>Psychology Tracking</td><td><strong>Tiltmeter (best-in-class)</strong></td><td>Basic tags/notes</td><td>Basic tags/notes</td></tr>
+        <tr><td>AI Analytics</td><td><strong>Edge Finder AI</strong></td><td>AI trade analysis</td><td>AI trade analysis</td></tr>
+        <tr><td>Backtesting</td><td>Simulator only</td><td><strong>Unlimited (11+ years data)</strong></td><td>No</td></tr>
+        <tr><td>Trade Replay</td><td>No</td><td><strong>Yes</strong></td><td>No</td></tr>
+        <tr><td>Strategy Templates</td><td>No</td><td><strong>25+</strong></td><td>No</td></tr>
+        <tr><td>Education</td><td>No</td><td><strong>Zella University</strong></td><td>No</td></tr>
+        <tr><td>Mobile App</td><td>No</td><td>Yes</td><td><strong>Yes (iOS + Android)</strong></td></tr>
+        <tr><td>Broker Integrations</td><td>200+</td><td>500+</td><td><strong>900+</strong></td></tr>
+        <tr><td>Free Trial</td><td><strong>14 days</strong></td><td>7 days</td><td>7 days</td></tr>
+        <tr><td>Trustpilot Rating</td><td>4.7/5</td><td><strong>4.8/5</strong></td><td>4.7/5</td></tr>
+      </tbody>
+    </table>
+
+    <p>If psychology is your primary focus and you already have a separate backtesting solution, Edgewonk delivers excellent value at $169/year. If you want an all-in-one platform that covers journaling, analytics, backtesting, strategy development, education, and mentorship, TradeZella provides all of that in a single subscription.</p>
 
     <h2>Frequently Asked Questions</h2>
 

@@ -579,11 +579,13 @@
       "author": { "@type": "Organization", "name": "TradingJournal.com", "url": "https://tradingjournal.com/" },
       "publisher": { "@type": "Organization", "name": "TradingJournal.com", "url": "https://tradingjournal.com/", "logo": { "@type": "ImageObject", "url": "https://tradingjournal.com/favicon.svg" } },
       "itemReviewed": {
-        "@type": "SoftwareApplication",
+        "@type": ["SoftwareApplication", "Product"],
         "name": "TraderSync",
         "applicationCategory": "FinanceApplication",
         "operatingSystem": "Web",
         "url": "https://www.tradersync.com",
+        "image": "https://tradingjournal.com/tradersync-dashboard.png",
+        "brand": { "@type": "Brand", "name": "TraderSync" },
         "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.7", "bestRating": "5", "worstRating": "1", "ratingCount": "800" }
       },
       "reviewRating": { "@type": "Rating", "ratingValue": "4.7", "bestRating": "5", "worstRating": "1" }
@@ -715,7 +717,7 @@
   <div class="article-meta">
     <span>March 2026</span>
     <span class="article-meta-sep">&middot;</span>
-    <span>12 min read</span>
+    <span>18 min read</span>
     <span class="article-meta-sep">&middot;</span>
     <span>By the TradingJournal.com team</span>
   </div>
@@ -770,6 +772,12 @@
 
     <p>What makes Cypher AI different from other journal AI features is the interactive, conversational nature. You can ask it questions, get real-time feedback, and receive coaching-style guidance rather than just looking at charts and numbers. For traders who respond well to coaching interaction, this is a meaningful differentiator.</p>
 
+    <p>In practice, the Cypher AI interface works like a chat window embedded within your dashboard. You might ask "What time of day am I most profitable?" or "Which setups should I avoid on Mondays?" and Cypher responds with data-backed answers drawn from your personal trade log. The experience feels closer to messaging a human mentor than running a report. It can surface insights you would not think to look for on your own -- correlations between hold time and win rate, the impact of position sizing on drawdowns, or patterns around how your emotional state (logged through tags and notes) correlates with performance.</p>
+
+    <p>One important caveat: Cypher AI needs a meaningful sample size before its insights are genuinely useful. With fewer than 30 trades logged, the suggestions tend to be generic. The system hits its stride somewhere around 50--100 trades, at which point it has enough data to recognize your specific tendencies and edge. Traders who log notes, tag their emotional state, and categorize setups consistently will get significantly more out of Cypher than those who just import raw trade data and leave everything else blank.</p>
+
+    <p>Compared to AI features in other journals, Cypher is genuinely a generation ahead in interactivity. Most competing platforms offer AI-generated summaries or static pattern recognition -- useful, but passive. TradeZella's AI recap feature, for instance, generates daily and weekly summaries of your performance and flags areas for improvement, but it is not conversational. You read the output; you do not have a dialogue with it. Cypher's chat-based format lets you drill down, ask follow-ups, and direct the analysis toward whatever you are currently trying to improve. For self-directed traders who know what questions to ask, this is a powerful tool.</p>
+
     <h3>Market Replay -- Three Precision Levels</h3>
 
     <p>TraderSync offers Market Replay across three precision tiers based on your subscription:</p>
@@ -782,11 +790,29 @@
 
     <p>The 250ms Elite replay is genuinely unique in the trading journal space. No other platform offers this level of execution-review granularity.</p>
 
+    <p>How the replay experience actually works: you select a completed trade from your journal, and TraderSync reconstructs the chart at the moment of your entry. You can then step forward bar-by-bar or let it play at variable speeds. On the Pro tier, each bar represents one minute of price action, which is enough to review the general setup, trend direction, and whether your thesis played out. The Premium tier's 1-second bars let you see the actual price movement within each candle -- useful for reviewing entries and exits where a few seconds made the difference between a good fill and a bad one.</p>
+
+    <p>The Elite tier is where things get genuinely specialized. The 250ms bars combined with Level II order book data reconstruct the bid/ask spread, order flow, and liquidity at the exact moment you entered or exited a position. For scalpers trading off level II, this is invaluable for reviewing whether you were reading the tape correctly, whether your limit order placement was optimal, or whether you were consistently getting filled at worse prices than expected. No other trading journal offers this depth of execution analysis.</p>
+
+    <p>For comparison, TradeZella's replay feature focuses on chart-based visual backtesting with historical data going back 11+ years and support for multi-chart layouts and ICT indicators. The use cases are different: TradeZella's replay is oriented toward strategy development and pattern recognition, while TraderSync's is built for execution review and post-trade analysis. Which matters more depends entirely on whether you are trying to refine your setups or refine your execution.</p>
+
     <h3>900+ Broker Integrations</h3>
 
     <p>TraderSync's broker network is the largest in the industry. At 900+ integrations, it covers virtually every retail broker globally -- including niche regional platforms, prop firms, and specialized futures/forex brokers that smaller networks might miss.</p>
 
     <p>For most US and European traders, any journal with 200+ integrations covers the major platforms. But for traders using less common brokers or trading across multiple regions, TraderSync's breadth is a genuine advantage.</p>
+
+    <h3>Broker Integration -- How It Works</h3>
+
+    <p>TraderSync offers three methods for getting your trade data into the platform: automatic sync, file upload, and manual entry. The method available to you depends on your broker.</p>
+
+    <p>For supported brokers with direct API connections -- including major platforms like TD Ameritrade, Interactive Brokers, Webull, Tastytrade, and TradeStation -- trades sync automatically. You connect your brokerage account once, and new trades appear in your journal without any manual effort. The sync interval varies by broker, but most update within minutes of trade execution. This is the ideal workflow and works seamlessly for the most popular US brokers.</p>
+
+    <p>For brokers without direct API connections, TraderSync accepts CSV and other file exports. You download your trade history from your broker's platform and upload it to TraderSync, which parses the data and maps it to the correct fields. The platform supports file formats from hundreds of brokers, including many prop firms (FTMO, MyForexFunds, The5ers, and others) and international brokers that are not commonly supported elsewhere. If your broker has any kind of trade export functionality, there is a good chance TraderSync can ingest it.</p>
+
+    <p>Manual trade entry is also available, which works for traders using platforms with no export capability or for those who want to log paper trades, simulated trades, or trades from platforms TraderSync does not yet support. The manual entry form captures all essential fields -- ticker, direction, entry/exit price, quantity, date/time, and fees -- plus optional fields for notes, tags, and setup categorization.</p>
+
+    <p>For traders who work with multiple brokers or trade across different asset classes with different platforms, TraderSync's integration breadth is a practical advantage. Your stocks from Webull, futures from NinjaTrader, and forex from OANDA can all live in a single journal with unified analytics. Competing platforms like TradeZella and Edgewonk support fewer integrations (though they cover the most popular brokers), so this only becomes a meaningful differentiator if you use a less common platform.</p>
 
     <h3>Strategy Checker</h3>
 
@@ -808,6 +834,14 @@
 
     <p>For traders who review trades on the go, log notes during the trading day, or want coaching feedback without sitting at a desktop, the mobile experience is excellent. This is a significant advantage over most competitors, which either lack mobile apps entirely or offer limited mobile functionality.</p>
 
+    <p>The app includes full trade logging with all fields available on desktop, meaning you can categorize setups, add tags, and write notes from your phone immediately after a trade. The analytics section mirrors the desktop dashboard with performance charts, P&L curves, win rate breakdowns, and Cypher AI access. Market Replay is also accessible on mobile, though the smaller screen makes it less practical for detailed 250ms analysis -- it works fine for 1-minute and 1-second reviews.</p>
+
+    <p>Push notifications are available for Cypher AI insights, daily performance summaries, and rule-compliance alerts from the Strategy Checker. This means the app can proactively notify you about patterns in your trading without you having to open the journal and check manually.</p>
+
+    <p>What is missing on mobile compared to desktop: the backtesting module is not available on the mobile apps, and some advanced reporting views are simplified or absent. Multi-monitor chart layouts and detailed Level II replay are better experienced on a desktop screen for obvious reasons. But for the core journal workflow -- log, review, get AI feedback -- the mobile app is functionally complete.</p>
+
+    <p>For context, most competitors either have no mobile app at all (Edgewonk is desktop-only), or offer limited mobile web access that does not match the native app experience TraderSync provides. TradeZella has mobile access, but TraderSync's native apps have been available longer and feel more polished in day-to-day use.</p>
+
     <h2>Pricing</h2>
 
     <p>TraderSync has three tiers:</p>
@@ -821,6 +855,14 @@
     <p>TraderSync offers a 7-day free trial, which is an advantage over platforms that require paid commitments upfront.</p>
 
     <p>Annual billing discounts are significant -- up to 50% off monthly pricing. But the Elite tier at $79.95/month (or ~$40/mo annually) makes TraderSync one of the more expensive journals if you want the full feature set.</p>
+
+    <p>To break this down more concretely: the <strong>Pro tier</strong> is the entry point and includes the core journal experience -- automated trade imports from 900+ brokers, the full analytics dashboard, Cypher AI in its standard mode, 1-minute Market Replay, the Strategy Checker, and full mobile app access. For most traders who are primarily interested in trade logging, AI coaching, and basic performance analysis, Pro covers the essentials.</p>
+
+    <p>The <strong>Premium tier</strong> upgrades Market Replay from 1-minute to 1-second precision and unlocks deeper Cypher AI coaching capabilities, including more granular pattern analysis and additional behavioral insights. It also adds expanded analytics views and reporting features. The jump from Pro to Premium makes sense for active day traders who review their executions closely and want more detailed AI feedback on their patterns.</p>
+
+    <p>The <strong>Elite tier</strong> is purpose-built for high-frequency and execution-focused traders. The 250ms Market Replay with Level II order book data is the headline addition, along with full API access for custom integrations and data export. At nearly $80/month (or $40/mo on annual billing), it is a significant investment -- roughly double the cost of most competing trading journals. The Elite tier is only justified if you specifically need sub-second replay with order book data, or if you require API access for programmatic workflows.</p>
+
+    <p>How does TraderSync pricing compare to the field? TradeZella charges $49.99/month (or $29.99/mo annually) for a single tier that includes everything -- backtesting, strategy templates, AI recaps, education, and mentor tools. Edgewonk is $169/year (about $14/mo) for its full feature set. TraderSync's Pro tier is competitively priced, but the total cost to access its most differentiated features (250ms replay, advanced AI) pushes it toward the expensive end of the market.</p>
 
     <h2>Pros and Cons</h2>
 
@@ -849,6 +891,51 @@
     <p>TraderSync excels in areas where it innovates -- Cypher AI, mobile apps, 250ms replay, and broker coverage. But it lacks the strategy development and education tools that define more comprehensive platforms. TradeZella offers 25+ strategy templates, backtesting with 11+ years of data and ICT indicators, Zella University education, and Spaces mentor tools -- features TraderSync doesn't have. Edgewonk offers superior psychology tracking through the Tiltmeter at a lower price point.</p>
 
     <p>TraderSync's sweet spot is the trader who values AI coaching and mobile access above all else, or the scalper who needs 250ms replay precision.</p>
+
+    <table>
+      <thead>
+        <tr><th>Feature</th><th>TraderSync</th><th>TradeZella</th><th>Edgewonk</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>AI Features</td><td>Cypher AI (conversational coach)</td><td>AI Recap (daily/weekly summaries)</td><td>None</td></tr>
+        <tr><td>Market Replay</td><td>250ms with Level II (Elite)</td><td>Visual backtesting, 11+ yr data</td><td>None</td></tr>
+        <tr><td>Broker Integrations</td><td>900+</td><td>200+</td><td>170+</td></tr>
+        <tr><td>Mobile App</td><td>iOS & Android (native)</td><td>Mobile access</td><td>Desktop only</td></tr>
+        <tr><td>Strategy Templates</td><td>No</td><td>25+ templates</td><td>No</td></tr>
+        <tr><td>Psychology Tracking</td><td>Tags & notes</td><td>Tags & notes</td><td>Tiltmeter system</td></tr>
+        <tr><td>Education Platform</td><td>No</td><td>Zella University</td><td>No</td></tr>
+        <tr><td>Mentor Tools</td><td>No</td><td>Spaces (unlimited students)</td><td>No</td></tr>
+        <tr><td>Backtesting</td><td>Systematic/rule-based</td><td>Visual/chart-based + ICT</td><td>No</td></tr>
+        <tr><td>Starting Price</td><td>$29.95/mo ($18/mo annual)</td><td>$49.99/mo ($29.99/mo annual)</td><td>$169/year</td></tr>
+        <tr><td>Trustpilot Rating</td><td>4.7/5</td><td>4.8/5</td><td>4.7/5</td></tr>
+      </tbody>
+    </table>
+
+    <p>Against TradeZella specifically, the trade-offs are clear. TraderSync wins on AI interactivity (Cypher is conversational; TradeZella's AI recaps are read-only), mobile experience (native apps vs. mobile web), broker coverage (900+ vs. 200+), and execution replay precision (250ms vs. visual backtesting). TradeZella wins on strategy development (templates, management, sharing), education (Zella University), mentorship (Spaces), visual backtesting (11+ years of data with ICT indicators), and overall feature breadth within a single pricing tier.</p>
+
+    <p>Against Edgewonk, TraderSync offers significantly more features -- AI coaching, market replay, mobile apps, and deeper broker integration. Edgewonk's advantage is pricing ($169/year is roughly one-third the cost of TraderSync Premium on annual billing) and its Tiltmeter psychology tracking system, which is the most structured emotional analytics tool in the space. Edgewonk is the right choice for budget-conscious traders focused on psychology; TraderSync is the right choice for traders willing to pay more for AI coaching and replay tools.</p>
+
+    <h2>Who Should Use TraderSync</h2>
+
+    <p>TraderSync is an excellent fit for several specific trader profiles:</p>
+
+    <p><strong>Mobile-first traders</strong> who do most of their journaling and review from a phone or tablet. TraderSync's native apps are the best in the category, and no other journal matches the mobile experience.</p>
+
+    <p><strong>Scalpers and execution-focused traders</strong> who need to review trades at sub-second precision. The 250ms replay with Level II data on the Elite tier is a capability no other trading journal offers.</p>
+
+    <p><strong>Self-directed traders who want AI coaching.</strong> Cypher AI is the most interactive AI feature available in any trading journal. If you are the type of trader who benefits from external feedback and wants a system that actively coaches you based on your data, TraderSync delivers that better than anyone.</p>
+
+    <p><strong>Multi-broker traders</strong> who use less common platforms or trade across multiple regions. The 900+ broker integration network means you are unlikely to find a broker that TraderSync cannot import from.</p>
+
+    <h3>Who Should Look Elsewhere</h3>
+
+    <p><strong>Beginners who need structure.</strong> TraderSync has no education platform, no strategy templates, and no guided learning path. If you are still developing your trading approach, platforms with built-in education (TradeZella's Zella University, for example) will serve you better.</p>
+
+    <p><strong>Educators and mentors.</strong> TraderSync has no mentor mode, no student management, and no way for coaches to review their students' trade logs. TradeZella's Spaces feature is purpose-built for this use case.</p>
+
+    <p><strong>Discretionary traders focused on strategy development.</strong> If your primary goal is to build, test, and refine trading strategies using visual backtesting on historical charts, TraderSync's systematic backtesting module is not designed for that workflow. TradeZella's visual backtester with 11+ years of data and ICT indicators is a better fit.</p>
+
+    <p><strong>Budget-conscious traders.</strong> If you want a capable journal at the lowest possible cost and do not need AI coaching or market replay, Edgewonk at $169/year offers excellent analytics and psychology tracking at a fraction of TraderSync's annual cost.</p>
 
     <h2>Frequently Asked Questions</h2>
 
