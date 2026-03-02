@@ -67,7 +67,9 @@
     transition: 0.2s;
   }
   .article-body table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 14px; line-height: 1.6; }
-  .article-body th { background: var(--paper-warm); font-weight: 600; color: var(--ink); padding: 10px 14px; text-align: left; border: 1px solid var(--line); font-size: 13px; }
+  .article-body caption { caption-side: top; text-align: left; font-size: 12px; color: var(--ink-subtle); margin-bottom: 8px; font-style: italic; }
+  .article-body th { font-weight: 600; color: var(--ink); padding: 10px 14px; text-align: left; border: 1px solid var(--line); font-size: 13px; }
+  .article-body thead th { background: var(--paper-warm); }
   .article-body td { padding: 10px 14px; border: 1px solid var(--line); color: var(--ink-muted); }
   .article-body strong { color: var(--ink); font-weight: 600; }
   .article-hero { width: 100%; aspect-ratio: 3/1; max-height: 360px; background: linear-gradient(145deg, #1a2a3a 0%, #2a4a5a 100%); display: flex; align-items: center; justify-content: center; }
@@ -141,19 +143,20 @@
     <p>TraderSync is the clearly better trading journal in this comparison. It offers AI coaching through Cypher AI, market replay with up to 250ms precision, polished mobile apps, systematic backtesting, and 900+ broker integrations. Tradervue's only advantage is its free plan (30 trades/month) — once you're paying, TraderSync delivers far more value.</p>
     <p>Neither platform is the most complete option on the market — both lack strategy templates, integrated education, and the analytical depth that all-in-one platforms like TradeZella provide. But between these two, TraderSync is the modern choice.</p>
     <table>
+      <caption>Quick Verdict: Tradervue vs TraderSync</caption>
       <thead>
-        <tr><th>Quick Stats</th><th>Tradervue</th><th>TraderSync</th></tr>
+        <tr><th scope="col">Quick Stats</th><th scope="col">Tradervue</th><th scope="col">TraderSync</th></tr>
       </thead>
       <tbody>
-        <tr><td>Trustpilot</td><td>2.6/5</td><td>4.7/5</td></tr>
-        <tr><td>Price</td><td>Free-$49.95/mo</td><td>$29.95-79.95/mo</td></tr>
-        <tr><td>Free Plan</td><td>Yes (30 trades/mo)</td><td>No (7-day trial)</td></tr>
-        <tr><td>Brokers</td><td>80+</td><td>900+</td></tr>
-        <tr><td>Mobile App</td><td>No</td><td>iOS &amp; Android</td></tr>
-        <tr><td>Backtesting</td><td>No</td><td>Yes (systematic)</td></tr>
-        <tr><td>Trade Replay</td><td>No</td><td>Yes (up to 250ms)</td></tr>
-        <tr><td>AI</td><td>No</td><td>Cypher AI</td></tr>
-        <tr><td>Community</td><td>Forums &amp; sharing</td><td>Limited</td></tr>
+        <tr><th scope="row">Trustpilot</th><td>2.6/5</td><td>4.7/5</td></tr>
+        <tr><th scope="row">Price</th><td>Free-$49.95/mo</td><td>$29.95-79.95/mo</td></tr>
+        <tr><th scope="row">Free Plan</th><td>Yes (30 trades/mo)</td><td>No (7-day trial)</td></tr>
+        <tr><th scope="row">Brokers</th><td>80+</td><td>900+</td></tr>
+        <tr><th scope="row">Mobile App</th><td>No</td><td>iOS &amp; Android</td></tr>
+        <tr><th scope="row">Backtesting</th><td>No</td><td>Yes (systematic)</td></tr>
+        <tr><th scope="row">Trade Replay</th><td>No</td><td>Yes (up to 250ms)</td></tr>
+        <tr><th scope="row">AI</th><td>No</td><td>Cypher AI</td></tr>
+        <tr><th scope="row">Community</th><td>Forums &amp; sharing</td><td>Limited</td></tr>
       </tbody>
     </table>
 

@@ -67,7 +67,9 @@
     transition: 0.2s;
   }
   .article-body table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 14px; line-height: 1.6; }
-  .article-body th { background: var(--paper-warm); font-weight: 600; color: var(--ink); padding: 10px 14px; text-align: left; border: 1px solid var(--line); font-size: 13px; }
+  .article-body caption { caption-side: top; text-align: left; font-size: 12px; color: var(--ink-subtle); margin-bottom: 8px; font-style: italic; }
+  .article-body th { font-weight: 600; color: var(--ink); padding: 10px 14px; text-align: left; border: 1px solid var(--line); font-size: 13px; }
+  .article-body thead th { background: var(--paper-warm); }
   .article-body td { padding: 10px 14px; border: 1px solid var(--line); color: var(--ink-muted); }
   .article-body strong { color: var(--ink); font-weight: 600; }
   .article-hero { width: 100%; aspect-ratio: 3/1; max-height: 360px; background: linear-gradient(145deg, #3a2a1a 0%, #5a4a2a 100%); display: flex; align-items: center; justify-content: center; }
@@ -141,19 +143,20 @@
     <p>Edgewonk and TraderSync serve different trading philosophies. Edgewonk is a psychology-first journal with the unique Tiltmeter emotional tracking tool at just $169/year. TraderSync is an AI-coached platform with Cypher AI, 250ms market replay, and full mobile apps at $29.95–$79.95/month.</p>
     <p>Neither platform is the most comprehensive option available — both lack features like strategy templates, integrated education, and the depth of backtesting that all-in-one platforms like TradeZella provide. But if you're choosing between these two, the decision comes down to your priority: emotional discipline (Edgewonk) or AI coaching and mobile access (TraderSync).</p>
     <table>
+      <caption>Quick Verdict: Edgewonk vs TraderSync</caption>
       <thead>
-        <tr><th>Quick Stats</th><th>Edgewonk</th><th>TraderSync</th></tr>
+        <tr><th scope="col">Quick Stats</th><th scope="col">Edgewonk</th><th scope="col">TraderSync</th></tr>
       </thead>
       <tbody>
-        <tr><td>Trustpilot</td><td>4.7/5</td><td>4.7/5</td></tr>
-        <tr><td>Price</td><td>$169/year (~$14/mo)</td><td>$29.95-79.95/mo</td></tr>
-        <tr><td>Free Trial</td><td>14 days</td><td>7 days</td></tr>
-        <tr><td>Brokers</td><td>200+</td><td>900+</td></tr>
-        <tr><td>Mobile App</td><td>No</td><td>iOS &amp; Android</td></tr>
-        <tr><td>Backtesting</td><td>No (simulator only)</td><td>Yes (systematic)</td></tr>
-        <tr><td>Trade Replay</td><td>No</td><td>Yes (up to 250ms)</td></tr>
-        <tr><td>AI</td><td>Edge Finder</td><td>Cypher AI</td></tr>
-        <tr><td>Psychology</td><td>Tiltmeter</td><td>No</td></tr>
+        <tr><th scope="row">Trustpilot</th><td>4.7/5</td><td>4.7/5</td></tr>
+        <tr><th scope="row">Price</th><td>$169/year (~$14/mo)</td><td>$29.95-79.95/mo</td></tr>
+        <tr><th scope="row">Free Trial</th><td>14 days</td><td>7 days</td></tr>
+        <tr><th scope="row">Brokers</th><td>200+</td><td>900+</td></tr>
+        <tr><th scope="row">Mobile App</th><td>No</td><td>iOS &amp; Android</td></tr>
+        <tr><th scope="row">Backtesting</th><td>No (simulator only)</td><td>Yes (systematic)</td></tr>
+        <tr><th scope="row">Trade Replay</th><td>No</td><td>Yes (up to 250ms)</td></tr>
+        <tr><th scope="row">AI</th><td>Edge Finder</td><td>Cypher AI</td></tr>
+        <tr><th scope="row">Psychology</th><td>Tiltmeter</td><td>No</td></tr>
       </tbody>
     </table>
 

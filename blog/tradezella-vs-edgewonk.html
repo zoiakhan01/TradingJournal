@@ -56,7 +56,9 @@
     transition: 0.2s;
   }
   .article-body table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 14px; line-height: 1.6; }
-  .article-body th { background: var(--paper-warm); font-weight: 600; color: var(--ink); padding: 10px 14px; text-align: left; border: 1px solid var(--line); font-size: 13px; }
+  .article-body caption { caption-side: top; text-align: left; font-size: 12px; color: var(--ink-subtle); margin-bottom: 8px; font-style: italic; }
+  .article-body th { font-weight: 600; color: var(--ink); padding: 10px 14px; text-align: left; border: 1px solid var(--line); font-size: 13px; }
+  .article-body thead th { background: var(--paper-warm); }
   .article-body td { padding: 10px 14px; border: 1px solid var(--line); color: var(--ink-muted); }
   .article-body strong { color: var(--ink); font-weight: 600; }
   .article-hero { width: 100%; aspect-ratio: 3/1; max-height: 360px; background: linear-gradient(145deg, #3a2a1a 0%, #5a4a2a 100%); display: flex; align-items: center; justify-content: center; }
@@ -123,20 +125,22 @@
     <h2>Quick Verdict</h2>
 
     <table>
+      <caption>Quick Verdict: TradeZella vs Edgewonk</caption>
       <thead>
-        <tr><th>Category</th><th>Winner</th></tr>
+        <tr><th scope="col">Quick Stats</th><th scope="col">TradeZella</th><th scope="col">Edgewonk</th></tr>
       </thead>
       <tbody>
-        <tr><td><strong>Overall Value</strong></td><td>TradeZella</td></tr>
-        <tr><td><strong>Analytics &amp; Reports</strong></td><td>TradeZella (50+ reports)</td></tr>
-        <tr><td><strong>Backtesting</strong></td><td>TradeZella (Edgewonk has none)</td></tr>
-        <tr><td><strong>Trade Replay</strong></td><td>TradeZella (Edgewonk has none)</td></tr>
-        <tr><td><strong>Strategy Tools</strong></td><td>TradeZella (25+ strategy templates)</td></tr>
-        <tr><td><strong>Education &amp; Mentorship</strong></td><td>TradeZella (Zella University + Spaces)</td></tr>
-        <tr><td><strong>Psychology Tracking</strong></td><td>Edgewonk (Tiltmeter)</td></tr>
-        <tr><td><strong>Price</strong></td><td>Edgewonk ($169/year)</td></tr>
-        <tr><td><strong>AI Features</strong></td><td>Tie (different approaches)</td></tr>
-        <tr><td><strong>Broker Support</strong></td><td>TradeZella (500+ vs 200+)</td></tr>
+        <tr><th scope="row">Trustpilot</th><td>4.8/5</td><td>4.7/5</td></tr>
+        <tr><th scope="row">Price</th><td>$24–49/mo</td><td>$169/year (~$14/mo)</td></tr>
+        <tr><th scope="row">Brokers</th><td>500+</td><td>200+</td></tr>
+        <tr><th scope="row">Backtesting</th><td>Yes (11+ years, all plans)</td><td>No</td></tr>
+        <tr><th scope="row">Trade Replay</th><td>Yes (3 modes, all plans)</td><td>No</td></tr>
+        <tr><th scope="row">Strategy Templates</th><td>25+ templates</td><td>No</td></tr>
+        <tr><th scope="row">AI Features</th><td>Zella Insights + Zella AI (coming)</td><td>Edge Finder AI</td></tr>
+        <tr><th scope="row">Psychology Tracking</th><td>Tags + behavioral analysis</td><td>Tiltmeter (dedicated)</td></tr>
+        <tr><th scope="row">Education</th><td>Zella University + Spaces</td><td>No</td></tr>
+        <tr><th scope="row">Mobile App</th><td>Coming Soon</td><td>No</td></tr>
+        <tr><th scope="row">Free Trial</th><td>No</td><td>14 days</td></tr>
       </tbody>
     </table>
 
@@ -175,30 +179,31 @@
     <h2>Head-to-Head Feature Comparison</h2>
 
     <table>
+      <caption>Head-to-Head Feature Comparison: TradeZella vs Edgewonk</caption>
       <thead>
-        <tr><th>Feature</th><th>TradeZella</th><th>Edgewonk</th></tr>
+        <tr><th scope="col">Feature</th><th scope="col">TradeZella</th><th scope="col">Edgewonk</th></tr>
       </thead>
       <tbody>
-        <tr><td><strong>Automated Trade Import</strong></td><td>✓ (500+ brokers)</td><td>✓ (200+ brokers)</td></tr>
-        <tr><td><strong>Analytics Reports</strong></td><td>50+ pre-built</td><td>50+ pre-built stats + 20 custom slots</td></tr>
-        <tr><td><strong>AI Insights</strong></td><td>Zella Insights (+ Zella AI coming)</td><td>Edge Finder AI</td></tr>
-        <tr><td><strong>Backtesting</strong></td><td>All plans, unlimited (11+ years)</td><td>No</td></tr>
-        <tr><td><strong>Trade Replay</strong></td><td>All plans (3 modes)</td><td>No</td></tr>
-        <tr><td><strong>Strategy Templates</strong></td><td>25+ templates + custom</td><td>No</td></tr>
-        <tr><td><strong>ICT Indicators</strong></td><td>Built-in (FVG, ASR, HTF Bias, etc.)</td><td>No</td></tr>
-        <tr><td><strong>Psychology Tracking</strong></td><td>Tags + behavioral analysis</td><td>Tiltmeter (dedicated)</td></tr>
-        <tr><td><strong>Emotional Correlation</strong></td><td>Through reports and tags</td><td>Direct emotion-to-P&amp;L tracking</td></tr>
-        <tr><td><strong>Coin Flip Distribution</strong></td><td>No</td><td>Yes</td></tr>
-        <tr><td><strong>Trade Simulator</strong></td><td>No (has backtesting instead)</td><td>Yes</td></tr>
-        <tr><td><strong>MFA/MFE Analysis</strong></td><td>Yes</td><td>Limited</td></tr>
-        <tr><td><strong>Zella Scale</strong></td><td>Yes</td><td>No</td></tr>
-        <tr><td><strong>Best Exit Analysis</strong></td><td>Yes</td><td>No</td></tr>
-        <tr><td><strong>Mentor Mode</strong></td><td>Spaces (unlimited students)</td><td>No</td></tr>
-        <tr><td><strong>Education</strong></td><td>Zella University (bootcamps, webinars)</td><td>No</td></tr>
-        <tr><td><strong>Mobile App</strong></td><td>Coming Soon</td><td>No (desktop-first)</td></tr>
-        <tr><td><strong>Prop Firm Tools</strong></td><td>Prop Firm Sync (coming soon)</td><td>No</td></tr>
-        <tr><td><strong>Multi-Chart Backtesting</strong></td><td>Up to 8 charts, 5 symbols</td><td>No</td></tr>
-        <tr><td><strong>Free Trial</strong></td><td>No</td><td>14 days</td></tr>
+        <tr><th scope="row">Automated Trade Import</th><td>✓ (500+ brokers)</td><td>✓ (200+ brokers)</td></tr>
+        <tr><th scope="row">Analytics Reports</th><td>50+ pre-built</td><td>50+ pre-built stats + 20 custom slots</td></tr>
+        <tr><th scope="row">AI Insights</th><td>Zella Insights (+ Zella AI coming)</td><td>Edge Finder AI</td></tr>
+        <tr><th scope="row">Backtesting</th><td>All plans, unlimited (11+ years)</td><td>No</td></tr>
+        <tr><th scope="row">Trade Replay</th><td>All plans (3 modes)</td><td>No</td></tr>
+        <tr><th scope="row">Strategy Templates</th><td>25+ templates + custom</td><td>No</td></tr>
+        <tr><th scope="row">ICT Indicators</th><td>Built-in (FVG, ASR, HTF Bias, etc.)</td><td>No</td></tr>
+        <tr><th scope="row">Psychology Tracking</th><td>Tags + behavioral analysis</td><td>Tiltmeter (dedicated)</td></tr>
+        <tr><th scope="row">Emotional Correlation</th><td>Through reports and tags</td><td>Direct emotion-to-P&amp;L tracking</td></tr>
+        <tr><th scope="row">Coin Flip Distribution</th><td>No</td><td>Yes</td></tr>
+        <tr><th scope="row">Trade Simulator</th><td>No (has backtesting instead)</td><td>Yes</td></tr>
+        <tr><th scope="row">MFA/MFE Analysis</th><td>Yes</td><td>Limited</td></tr>
+        <tr><th scope="row">Zella Scale</th><td>Yes</td><td>No</td></tr>
+        <tr><th scope="row">Best Exit Analysis</th><td>Yes</td><td>No</td></tr>
+        <tr><th scope="row">Mentor Mode</th><td>Spaces (unlimited students)</td><td>No</td></tr>
+        <tr><th scope="row">Education</th><td>Zella University (bootcamps, webinars)</td><td>No</td></tr>
+        <tr><th scope="row">Mobile App</th><td>Coming Soon</td><td>No (desktop-first)</td></tr>
+        <tr><th scope="row">Prop Firm Tools</th><td>Prop Firm Sync (coming soon)</td><td>No</td></tr>
+        <tr><th scope="row">Multi-Chart Backtesting</th><td>Up to 8 charts, 5 symbols</td><td>No</td></tr>
+        <tr><th scope="row">Free Trial</th><td>No</td><td>14 days</td></tr>
       </tbody>
     </table>
 
@@ -359,14 +364,15 @@
     <h2>Annual Cost Comparison</h2>
 
     <table>
+      <caption>Pricing Comparison: TradeZella vs Edgewonk</caption>
       <thead>
-        <tr><th>Scenario</th><th>TradeZella</th><th>Edgewonk</th></tr>
+        <tr><th scope="col">Scenario</th><th scope="col">TradeZella</th><th scope="col">Edgewonk</th></tr>
       </thead>
       <tbody>
-        <tr><td>Annual cost (basic)</td><td>$288/yr (Basic annual)</td><td>$169/yr</td></tr>
-        <tr><td>Annual cost (full features)</td><td>$399/yr (Premium annual)</td><td>$169/yr</td></tr>
-        <tr><td>Cost per trade (100 trades/mo)</td><td>$0.24–$0.33/trade</td><td>$0.14/trade</td></tr>
-        <tr><td>Features included</td><td>Journaling, 50+ reports, backtesting, replay, strategy templates, education, mentor tools</td><td>Journaling, stats, Tiltmeter, Edge Finder AI</td></tr>
+        <tr><th scope="row">Annual cost (basic)</th><td>$288/yr (Basic annual)</td><td>$169/yr</td></tr>
+        <tr><th scope="row">Annual cost (full features)</th><td>$399/yr (Premium annual)</td><td>$169/yr</td></tr>
+        <tr><th scope="row">Cost per trade (100 trades/mo)</th><td>$0.24–$0.33/trade</td><td>$0.14/trade</td></tr>
+        <tr><th scope="row">Features included</th><td>Journaling, 50+ reports, backtesting, replay, strategy templates, education, mentor tools</td><td>Journaling, stats, Tiltmeter, Edge Finder AI</td></tr>
       </tbody>
     </table>
 

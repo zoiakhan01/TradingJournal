@@ -56,7 +56,9 @@
     transition: 0.2s;
   }
   .article-body table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 14px; line-height: 1.6; }
-  .article-body th { background: var(--paper-warm); font-weight: 600; color: var(--ink); padding: 10px 14px; text-align: left; border: 1px solid var(--line); font-size: 13px; }
+  .article-body caption { caption-side: top; text-align: left; font-size: 12px; color: var(--ink-subtle); margin-bottom: 8px; font-style: italic; }
+  .article-body th { font-weight: 600; color: var(--ink); padding: 10px 14px; text-align: left; border: 1px solid var(--line); font-size: 13px; }
+  .article-body thead th { background: var(--paper-warm); }
   .article-body td { padding: 10px 14px; border: 1px solid var(--line); color: var(--ink-muted); }
   .article-body strong { color: var(--ink); font-weight: 600; }
   .article-hero { width: 100%; aspect-ratio: 3/1; max-height: 360px; background: linear-gradient(145deg, #2a1a2e 0%, #4a2a5a 100%); display: flex; align-items: center; justify-content: center; }
@@ -123,20 +125,21 @@
     <h2>Quick Verdict</h2>
 
     <table>
+      <caption>Quick Verdict: TradeZella vs TraderSync</caption>
       <thead>
-        <tr><th>Category</th><th>Winner</th></tr>
+        <tr><th scope="col">Quick Stats</th><th scope="col">TradeZella</th><th scope="col">TraderSync</th></tr>
       </thead>
       <tbody>
-        <tr><td><strong>Overall Value</strong></td><td>TradeZella</td></tr>
-        <tr><td><strong>Analytics &amp; Reports</strong></td><td>TradeZella (50+ reports)</td></tr>
-        <tr><td><strong>Backtesting</strong></td><td>TradeZella (11+ years data, ICT indicators)</td></tr>
-        <tr><td><strong>Strategy Tools</strong></td><td>TradeZella (25+ strategy templates)</td></tr>
-        <tr><td><strong>Education &amp; Mentorship</strong></td><td>TradeZella (Zella University + Spaces)</td></tr>
-        <tr><td><strong>AI Features</strong></td><td>Tie (different approaches)</td></tr>
-        <tr><td><strong>Trade Replay</strong></td><td>TraderSync (250ms precision)</td></tr>
-        <tr><td><strong>Mobile Experience</strong></td><td>TraderSync (iOS &amp; Android)</td></tr>
-        <tr><td><strong>Broker Support</strong></td><td>TraderSync (900+ vs 500+)</td></tr>
-        <tr><td><strong>User Rating</strong></td><td>Tie (4.8 and 4.7 Trustpilot)</td></tr>
+        <tr><th scope="row">Trustpilot</th><td>4.8/5</td><td>4.7/5</td></tr>
+        <tr><th scope="row">Price</th><td>$24–49/mo</td><td>$18–40/mo (annual)</td></tr>
+        <tr><th scope="row">Brokers</th><td>500+</td><td>900+</td></tr>
+        <tr><th scope="row">Backtesting</th><td>Yes (11+ years, ICT indicators)</td><td>Yes (systematic, 70+ indicators)</td></tr>
+        <tr><th scope="row">Trade Replay</th><td>Yes (3 modes)</td><td>Yes (up to 250ms)</td></tr>
+        <tr><th scope="row">Strategy Templates</th><td>25+ templates</td><td>No</td></tr>
+        <tr><th scope="row">AI Features</th><td>Zella Insights + Zella AI (coming)</td><td>Cypher AI</td></tr>
+        <tr><th scope="row">Education</th><td>Zella University + Spaces</td><td>Limited</td></tr>
+        <tr><th scope="row">Mobile App</th><td>Coming Soon</td><td>iOS &amp; Android</td></tr>
+        <tr><th scope="row">Free Trial</th><td>No</td><td>7 days</td></tr>
       </tbody>
     </table>
 
@@ -176,30 +179,31 @@
     <h2>Head-to-Head Feature Comparison</h2>
 
     <table>
+      <caption>Head-to-Head Feature Comparison: TradeZella vs TraderSync</caption>
       <thead>
-        <tr><th>Feature</th><th>TradeZella</th><th>TraderSync</th></tr>
+        <tr><th scope="col">Feature</th><th scope="col">TradeZella</th><th scope="col">TraderSync</th></tr>
       </thead>
       <tbody>
-        <tr><td><strong>Automated Trade Import</strong></td><td>✓</td><td>✓</td></tr>
-        <tr><td><strong>Broker Integrations</strong></td><td>500+</td><td>900+</td></tr>
-        <tr><td><strong>Asset Classes</strong></td><td>Stocks, Options, Futures, Forex, Crypto</td><td>Stocks, Options, Futures, Forex, Crypto</td></tr>
-        <tr><td><strong>Analytics Reports</strong></td><td>50+ pre-built</td><td>20+ customizable widgets</td></tr>
-        <tr><td><strong>AI Insights</strong></td><td>Zella Insights (+ Zella AI coming soon)</td><td>Cypher AI (interactive)</td></tr>
-        <tr><td><strong>Trade Replay</strong></td><td>All plans (3 modes)</td><td>All tiers (3 precision levels)</td></tr>
-        <tr><td><strong>Backtesting</strong></td><td>All plans, unlimited (11+ years)</td><td>Systematic (70+ indicators, 30K+ assets)</td></tr>
-        <tr><td><strong>Strategy Templates</strong></td><td>25+ templates + custom</td><td>No</td></tr>
-        <tr><td><strong>Strategy Checker</strong></td><td>No</td><td>Yes (rule compliance)</td></tr>
-        <tr><td><strong>ICT Indicators</strong></td><td>Built-in (FVG, ASR, HTF Bias, etc.)</td><td>No</td></tr>
-        <tr><td><strong>Multi-Chart Backtesting</strong></td><td>Up to 8 charts, 5 symbols</td><td>No</td></tr>
-        <tr><td><strong>MFA/MFE Analysis</strong></td><td>Yes</td><td>Limited</td></tr>
-        <tr><td><strong>Zella Scale</strong></td><td>Yes</td><td>No</td></tr>
-        <tr><td><strong>Best Exit Analysis</strong></td><td>Yes</td><td>No</td></tr>
-        <tr><td><strong>Mentor Mode</strong></td><td>Spaces (unlimited students)</td><td>No</td></tr>
-        <tr><td><strong>Education</strong></td><td>Zella University (bootcamps, webinars)</td><td>Limited</td></tr>
-        <tr><td><strong>Mobile App</strong></td><td>Coming Soon</td><td>iOS &amp; Android</td></tr>
-        <tr><td><strong>Prop Firm Tools</strong></td><td>Prop Firm Sync (coming soon)</td><td>No</td></tr>
-        <tr><td><strong>Free Trial</strong></td><td>No</td><td>7 days</td></tr>
-        <tr><td><strong>Trustpilot Rating</strong></td><td>4.8/5</td><td>4.7/5</td></tr>
+        <tr><th scope="row">Automated Trade Import</th><td>✓</td><td>✓</td></tr>
+        <tr><th scope="row">Broker Integrations</th><td>500+</td><td>900+</td></tr>
+        <tr><th scope="row">Asset Classes</th><td>Stocks, Options, Futures, Forex, Crypto</td><td>Stocks, Options, Futures, Forex, Crypto</td></tr>
+        <tr><th scope="row">Analytics Reports</th><td>50+ pre-built</td><td>20+ customizable widgets</td></tr>
+        <tr><th scope="row">AI Insights</th><td>Zella Insights (+ Zella AI coming soon)</td><td>Cypher AI (interactive)</td></tr>
+        <tr><th scope="row">Trade Replay</th><td>All plans (3 modes)</td><td>All tiers (3 precision levels)</td></tr>
+        <tr><th scope="row">Backtesting</th><td>All plans, unlimited (11+ years)</td><td>Systematic (70+ indicators, 30K+ assets)</td></tr>
+        <tr><th scope="row">Strategy Templates</th><td>25+ templates + custom</td><td>No</td></tr>
+        <tr><th scope="row">Strategy Checker</th><td>No</td><td>Yes (rule compliance)</td></tr>
+        <tr><th scope="row">ICT Indicators</th><td>Built-in (FVG, ASR, HTF Bias, etc.)</td><td>No</td></tr>
+        <tr><th scope="row">Multi-Chart Backtesting</th><td>Up to 8 charts, 5 symbols</td><td>No</td></tr>
+        <tr><th scope="row">MFA/MFE Analysis</th><td>Yes</td><td>Limited</td></tr>
+        <tr><th scope="row">Zella Scale</th><td>Yes</td><td>No</td></tr>
+        <tr><th scope="row">Best Exit Analysis</th><td>Yes</td><td>No</td></tr>
+        <tr><th scope="row">Mentor Mode</th><td>Spaces (unlimited students)</td><td>No</td></tr>
+        <tr><th scope="row">Education</th><td>Zella University (bootcamps, webinars)</td><td>Limited</td></tr>
+        <tr><th scope="row">Mobile App</th><td>Coming Soon</td><td>iOS &amp; Android</td></tr>
+        <tr><th scope="row">Prop Firm Tools</th><td>Prop Firm Sync (coming soon)</td><td>No</td></tr>
+        <tr><th scope="row">Free Trial</th><td>No</td><td>7 days</td></tr>
+        <tr><th scope="row">Trustpilot Rating</th><td>4.8/5</td><td>4.7/5</td></tr>
       </tbody>
     </table>
 
@@ -210,25 +214,27 @@
     <p><strong>TradeZella Pricing:</strong></p>
 
     <table>
+      <caption>TradeZella Pricing</caption>
       <thead>
-        <tr><th>Plan</th><th>Monthly</th><th>Annual</th></tr>
+        <tr><th scope="col">Plan</th><th scope="col">Monthly</th><th scope="col">Annual</th></tr>
       </thead>
       <tbody>
-        <tr><td>Basic</td><td>$29/mo</td><td>$24/mo ($288/yr)</td></tr>
-        <tr><td>Premium</td><td>$49/mo</td><td>$33/mo ($399/yr)</td></tr>
+        <tr><th scope="row">Basic</th><td>$29/mo</td><td>$24/mo ($288/yr)</td></tr>
+        <tr><th scope="row">Premium</th><td>$49/mo</td><td>$33/mo ($399/yr)</td></tr>
       </tbody>
     </table>
 
     <p><strong>TraderSync Pricing:</strong></p>
 
     <table>
+      <caption>TraderSync Pricing</caption>
       <thead>
-        <tr><th>Plan</th><th>Monthly</th><th>Annual (with discount)</th></tr>
+        <tr><th scope="col">Plan</th><th scope="col">Monthly</th><th scope="col">Annual (with discount)</th></tr>
       </thead>
       <tbody>
-        <tr><td>Pro</td><td>$29.95/mo</td><td>~$18/mo (~$216/yr)</td></tr>
-        <tr><td>Premium</td><td>$49.95/mo</td><td>~$25/mo (~$300/yr)</td></tr>
-        <tr><td>Elite</td><td>$79.95/mo</td><td>~$40/mo (~$480/yr)</td></tr>
+        <tr><th scope="row">Pro</th><td>$29.95/mo</td><td>~$18/mo (~$216/yr)</td></tr>
+        <tr><th scope="row">Premium</th><td>$49.95/mo</td><td>~$25/mo (~$300/yr)</td></tr>
+        <tr><th scope="row">Elite</th><td>$79.95/mo</td><td>~$40/mo (~$480/yr)</td></tr>
       </tbody>
     </table>
 
@@ -452,13 +458,14 @@
     <h2>Annual Cost Comparison</h2>
 
     <table>
+      <caption>Annual Cost Comparison: TradeZella vs TraderSync</caption>
       <thead>
-        <tr><th>What You Get</th><th>TradeZella</th><th>TraderSync</th></tr>
+        <tr><th scope="col">What You Get</th><th scope="col">TradeZella</th><th scope="col">TraderSync</th></tr>
       </thead>
       <tbody>
-        <tr><td>Entry-level plan</td><td>$288/yr (Basic)</td><td>~$216/yr (Pro, annual)</td></tr>
-        <tr><td>Full-featured plan</td><td>$399/yr (Premium)</td><td>~$300/yr (Premium, annual)</td></tr>
-        <tr><td>Maximum tier</td><td>$399/yr (Premium)</td><td>~$480/yr (Elite, annual)</td></tr>
+        <tr><th scope="row">Entry-level plan</th><td>$288/yr (Basic)</td><td>~$216/yr (Pro, annual)</td></tr>
+        <tr><th scope="row">Full-featured plan</th><td>$399/yr (Premium)</td><td>~$300/yr (Premium, annual)</td></tr>
+        <tr><th scope="row">Maximum tier</th><td>$399/yr (Premium)</td><td>~$480/yr (Elite, annual)</td></tr>
       </tbody>
     </table>
 

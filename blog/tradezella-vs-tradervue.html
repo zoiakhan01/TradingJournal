@@ -67,7 +67,9 @@
     transition: 0.2s;
   }
   .article-body table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 14px; line-height: 1.6; }
-  .article-body th { background: var(--paper-warm); font-weight: 600; color: var(--ink); padding: 10px 14px; text-align: left; border: 1px solid var(--line); font-size: 13px; }
+  .article-body caption { caption-side: top; text-align: left; font-size: 12px; color: var(--ink-subtle); margin-bottom: 8px; font-style: italic; }
+  .article-body th { font-weight: 600; color: var(--ink); padding: 10px 14px; text-align: left; border: 1px solid var(--line); font-size: 13px; }
+  .article-body thead th { background: var(--paper-warm); }
   .article-body td { padding: 10px 14px; border: 1px solid var(--line); color: var(--ink-muted); }
   .article-body strong { color: var(--ink); font-weight: 600; }
   .article-hero { width: 100%; aspect-ratio: 3/1; max-height: 360px; background: linear-gradient(145deg, #1a2a3a 0%, #2a4a5a 100%); display: flex; align-items: center; justify-content: center; }
@@ -139,21 +141,22 @@
     <h2>Quick Verdict</h2>
 
     <table>
+      <caption>Quick Verdict: TradeZella vs Tradervue</caption>
       <thead>
-        <tr><th>Category</th><th>Winner</th></tr>
+        <tr><th scope="col">Quick Stats</th><th scope="col">TradeZella</th><th scope="col">Tradervue</th></tr>
       </thead>
       <tbody>
-        <tr><td><strong>Overall Value</strong></td><td>TradeZella</td></tr>
-        <tr><td><strong>Analytics &amp; Reports</strong></td><td>TradeZella (50+ vs basic)</td></tr>
-        <tr><td><strong>Backtesting</strong></td><td>TradeZella (Tradervue has none)</td></tr>
-        <tr><td><strong>Trade Replay</strong></td><td>TradeZella (Tradervue has none)</td></tr>
-        <tr><td><strong>AI Features</strong></td><td>TradeZella (Tradervue has none)</td></tr>
-        <tr><td><strong>Strategy Tools</strong></td><td>TradeZella (25+ strategy templates)</td></tr>
-        <tr><td><strong>Education</strong></td><td>TradeZella (Zella University)</td></tr>
-        <tr><td><strong>Mentorship</strong></td><td>TradeZella (Spaces)</td></tr>
-        <tr><td><strong>Broker Support</strong></td><td>TradeZella (500+ vs 80+)</td></tr>
-        <tr><td><strong>Free Plan</strong></td><td>Tradervue (30 trades/mo)</td></tr>
-        <tr><td><strong>User Rating</strong></td><td>TradeZella (4.8 vs 2.6 Trustpilot)</td></tr>
+        <tr><th scope="row">Trustpilot</th><td>4.8/5</td><td>2.6/5</td></tr>
+        <tr><th scope="row">Price</th><td>$24–49/mo</td><td>Free–$49.95/mo</td></tr>
+        <tr><th scope="row">Brokers</th><td>500+</td><td>80+</td></tr>
+        <tr><th scope="row">Backtesting</th><td>Yes (11+ years, all plans)</td><td>No</td></tr>
+        <tr><th scope="row">Trade Replay</th><td>Yes (3 modes, all plans)</td><td>No</td></tr>
+        <tr><th scope="row">Strategy Templates</th><td>25+ templates</td><td>No</td></tr>
+        <tr><th scope="row">AI Features</th><td>Zella Insights + Zella AI (coming)</td><td>No</td></tr>
+        <tr><th scope="row">Education</th><td>Zella University</td><td>No</td></tr>
+        <tr><th scope="row">Mentor Mode</th><td>Spaces (unlimited students)</td><td>Basic sharing</td></tr>
+        <tr><th scope="row">Mobile App</th><td>Coming Soon</td><td>No</td></tr>
+        <tr><th scope="row">Free Plan</th><td>No</td><td>Yes (30 trades/mo)</td></tr>
       </tbody>
     </table>
 
@@ -195,30 +198,31 @@
     <h2>Head-to-Head Feature Comparison</h2>
 
     <table>
+      <caption>Head-to-Head Feature Comparison: TradeZella vs Tradervue</caption>
       <thead>
-        <tr><th>Feature</th><th>TradeZella</th><th>Tradervue</th></tr>
+        <tr><th scope="col">Feature</th><th scope="col">TradeZella</th><th scope="col">Tradervue</th></tr>
       </thead>
       <tbody>
-        <tr><td><strong>Automated Trade Import</strong></td><td>✓ (500+ brokers)</td><td>✓ (80+ brokers)</td></tr>
-        <tr><td><strong>Asset Classes</strong></td><td>Stocks, Options, Futures, Forex, Crypto</td><td>Stocks, Options, Futures, Forex</td></tr>
-        <tr><td><strong>Analytics Reports</strong></td><td>50+ pre-built</td><td>Basic (6–8 report types)</td></tr>
-        <tr><td><strong>AI Insights</strong></td><td>Zella Insights (+ Zella AI coming)</td><td>No</td></tr>
-        <tr><td><strong>Backtesting</strong></td><td>All plans, unlimited (11+ years)</td><td>No</td></tr>
-        <tr><td><strong>Trade Replay</strong></td><td>All plans (3 modes)</td><td>No</td></tr>
-        <tr><td><strong>Strategy Templates</strong></td><td>25+ templates + custom</td><td>No</td></tr>
-        <tr><td><strong>ICT Indicators</strong></td><td>Built-in (FVG, ASR, HTF Bias, etc.)</td><td>No</td></tr>
-        <tr><td><strong>MFA/MFE Analysis</strong></td><td>Yes</td><td>No</td></tr>
-        <tr><td><strong>Zella Scale</strong></td><td>Yes</td><td>No</td></tr>
-        <tr><td><strong>Best Exit Analysis</strong></td><td>Yes</td><td>No</td></tr>
-        <tr><td><strong>Auto Chart Generation</strong></td><td>Yes (with executions plotted)</td><td>Yes (TradingView integration)</td></tr>
-        <tr><td><strong>Mentor Mode</strong></td><td>Spaces (unlimited students)</td><td>Share trades publicly/privately</td></tr>
-        <tr><td><strong>Education</strong></td><td>Zella University</td><td>No</td></tr>
-        <tr><td><strong>Community</strong></td><td>Built-in community</td><td>Forums &amp; trade sharing</td></tr>
-        <tr><td><strong>Commission Tracking</strong></td><td>Yes</td><td>Yes</td></tr>
-        <tr><td><strong>Mobile App</strong></td><td>Coming Soon</td><td>No</td></tr>
-        <tr><td><strong>Prop Firm Tools</strong></td><td>Prop Firm Sync (coming soon)</td><td>No</td></tr>
-        <tr><td><strong>Free Plan</strong></td><td>No</td><td>Yes (30 trades/mo)</td></tr>
-        <tr><td><strong>Trustpilot Rating</strong></td><td>4.8/5</td><td>2.6/5</td></tr>
+        <tr><th scope="row">Automated Trade Import</th><td>✓ (500+ brokers)</td><td>✓ (80+ brokers)</td></tr>
+        <tr><th scope="row">Asset Classes</th><td>Stocks, Options, Futures, Forex, Crypto</td><td>Stocks, Options, Futures, Forex</td></tr>
+        <tr><th scope="row">Analytics Reports</th><td>50+ pre-built</td><td>Basic (6–8 report types)</td></tr>
+        <tr><th scope="row">AI Insights</th><td>Zella Insights (+ Zella AI coming)</td><td>No</td></tr>
+        <tr><th scope="row">Backtesting</th><td>All plans, unlimited (11+ years)</td><td>No</td></tr>
+        <tr><th scope="row">Trade Replay</th><td>All plans (3 modes)</td><td>No</td></tr>
+        <tr><th scope="row">Strategy Templates</th><td>25+ templates + custom</td><td>No</td></tr>
+        <tr><th scope="row">ICT Indicators</th><td>Built-in (FVG, ASR, HTF Bias, etc.)</td><td>No</td></tr>
+        <tr><th scope="row">MFA/MFE Analysis</th><td>Yes</td><td>No</td></tr>
+        <tr><th scope="row">Zella Scale</th><td>Yes</td><td>No</td></tr>
+        <tr><th scope="row">Best Exit Analysis</th><td>Yes</td><td>No</td></tr>
+        <tr><th scope="row">Auto Chart Generation</th><td>Yes (with executions plotted)</td><td>Yes (TradingView integration)</td></tr>
+        <tr><th scope="row">Mentor Mode</th><td>Spaces (unlimited students)</td><td>Share trades publicly/privately</td></tr>
+        <tr><th scope="row">Education</th><td>Zella University</td><td>No</td></tr>
+        <tr><th scope="row">Community</th><td>Built-in community</td><td>Forums &amp; trade sharing</td></tr>
+        <tr><th scope="row">Commission Tracking</th><td>Yes</td><td>Yes</td></tr>
+        <tr><th scope="row">Mobile App</th><td>Coming Soon</td><td>No</td></tr>
+        <tr><th scope="row">Prop Firm Tools</th><td>Prop Firm Sync (coming soon)</td><td>No</td></tr>
+        <tr><th scope="row">Free Plan</th><td>No</td><td>Yes (30 trades/mo)</td></tr>
+        <tr><th scope="row">Trustpilot Rating</th><td>4.8/5</td><td>2.6/5</td></tr>
       </tbody>
     </table>
 
@@ -229,25 +233,27 @@
     <p><strong>TradeZella Pricing:</strong></p>
 
     <table>
+      <caption>TradeZella Pricing</caption>
       <thead>
-        <tr><th>Plan</th><th>Monthly</th><th>Annual</th></tr>
+        <tr><th scope="col">Plan</th><th scope="col">Monthly</th><th scope="col">Annual</th></tr>
       </thead>
       <tbody>
-        <tr><td>Basic</td><td>$29/mo</td><td>$24/mo ($288/yr)</td></tr>
-        <tr><td>Premium</td><td>$49/mo</td><td>$33/mo ($399/yr)</td></tr>
+        <tr><th scope="row">Basic</th><td>$29/mo</td><td>$24/mo ($288/yr)</td></tr>
+        <tr><th scope="row">Premium</th><td>$49/mo</td><td>$33/mo ($399/yr)</td></tr>
       </tbody>
     </table>
 
     <p><strong>Tradervue Pricing:</strong></p>
 
     <table>
+      <caption>Tradervue Pricing</caption>
       <thead>
-        <tr><th>Plan</th><th>Price</th><th>Key Features</th></tr>
+        <tr><th scope="col">Plan</th><th scope="col">Price</th><th scope="col">Key Features</th></tr>
       </thead>
       <tbody>
-        <tr><td>Free</td><td>$0</td><td>30 trades/month, basic import, community access</td></tr>
-        <tr><td>Silver</td><td>$29.95/mo</td><td>Unlimited trades, full reports, sharing</td></tr>
-        <tr><td>Gold</td><td>$49.95/mo</td><td>Auto-import, risk analysis, commissions</td></tr>
+        <tr><th scope="row">Free</th><td>$0</td><td>30 trades/month, basic import, community access</td></tr>
+        <tr><th scope="row">Silver</th><td>$29.95/mo</td><td>Unlimited trades, full reports, sharing</td></tr>
+        <tr><th scope="row">Gold</th><td>$49.95/mo</td><td>Auto-import, risk analysis, commissions</td></tr>
       </tbody>
     </table>
 
@@ -371,14 +377,15 @@
     <h2>Annual Cost Comparison</h2>
 
     <table>
+      <caption>Annual Cost Comparison: TradeZella vs Tradervue</caption>
       <thead>
-        <tr><th>Scenario</th><th>TradeZella</th><th>Tradervue</th></tr>
+        <tr><th scope="col">Scenario</th><th scope="col">TradeZella</th><th scope="col">Tradervue</th></tr>
       </thead>
       <tbody>
-        <tr><td>Free tier</td><td>Not available</td><td>Free (30 trades/mo)</td></tr>
-        <tr><td>Entry paid plan</td><td>$288/yr (Basic annual)</td><td>$359.40/yr (Silver)</td></tr>
-        <tr><td>Full-featured plan</td><td>$399/yr (Premium annual)</td><td>$599.40/yr (Gold)</td></tr>
-        <tr><td>Features at paid tiers</td><td>50+ reports, backtesting, replay, strategy templates, education, mentor tools, AI</td><td>Basic reports, unlimited trades, auto-import (Gold only)</td></tr>
+        <tr><th scope="row">Free tier</th><td>Not available</td><td>Free (30 trades/mo)</td></tr>
+        <tr><th scope="row">Entry paid plan</th><td>$288/yr (Basic annual)</td><td>$359.40/yr (Silver)</td></tr>
+        <tr><th scope="row">Full-featured plan</th><td>$399/yr (Premium annual)</td><td>$599.40/yr (Gold)</td></tr>
+        <tr><th scope="row">Features at paid tiers</th><td>50+ reports, backtesting, replay, strategy templates, education, mentor tools, AI</td><td>Basic reports, unlimited trades, auto-import (Gold only)</td></tr>
       </tbody>
     </table>
 

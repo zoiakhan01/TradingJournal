@@ -67,7 +67,9 @@
     transition: 0.2s;
   }
   .article-body table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 14px; line-height: 1.6; }
-  .article-body th { background: var(--paper-warm); font-weight: 600; color: var(--ink); padding: 10px 14px; text-align: left; border: 1px solid var(--line); font-size: 13px; }
+  .article-body caption { caption-side: top; text-align: left; font-size: 12px; color: var(--ink-subtle); margin-bottom: 8px; font-style: italic; }
+  .article-body th { font-weight: 600; color: var(--ink); padding: 10px 14px; text-align: left; border: 1px solid var(--line); font-size: 13px; }
+  .article-body thead th { background: var(--paper-warm); }
   .article-body td { padding: 10px 14px; border: 1px solid var(--line); color: var(--ink-muted); }
   .article-body strong { color: var(--ink); font-weight: 600; }
   .article-hero { width: 100%; aspect-ratio: 3/1; max-height: 360px; background: linear-gradient(145deg, #2d1f1f 0%, #4a3232 100%); display: flex; align-items: center; justify-content: center; }
@@ -141,20 +143,21 @@
     <p>TradeZella is the more powerful platform for traders serious about improvement — offering backtesting, trade replay, 25+ strategy templates, and 50+ analytics reports that Trademetria doesn't have. Trademetria is the better choice if you want a free plan, mobile apps right now, or gamification features to stay motivated.</p>
     <p><strong>Best for:</strong> TradeZella for comprehensive analysis and strategy development. Trademetria for budget-conscious traders who want mobile access and a free starting point.</p>
     <table>
+      <caption>Quick Verdict: TradeZella vs Trademetria</caption>
       <thead>
-        <tr><th>Quick Stats</th><th>TradeZella</th><th>Trademetria</th></tr>
+        <tr><th scope="col">Quick Stats</th><th scope="col">TradeZella</th><th scope="col">Trademetria</th></tr>
       </thead>
       <tbody>
-        <tr><td>Trustpilot</td><td>4.8/5</td><td>4.0/5</td></tr>
-        <tr><td>Price</td><td>$24-49/mo</td><td>Free-$39.95/mo</td></tr>
-        <tr><td>Brokers</td><td>500+</td><td>400+</td></tr>
-        <tr><td>Backtesting</td><td>Yes (11+ years, all plans)</td><td>No</td></tr>
-        <tr><td>Trade Replay</td><td>Yes (3 modes, all plans)</td><td>No</td></tr>
-        <tr><td>Strategy Templates</td><td>25+ templates</td><td>No</td></tr>
-        <tr><td>Mobile App</td><td>Coming Soon</td><td>iOS &amp; Android</td></tr>
-        <tr><td>AI Features</td><td>Zella Insights + Zella AI (coming)</td><td>AI Coach (Pro)</td></tr>
-        <tr><td>Education</td><td>Zella University</td><td>No</td></tr>
-        <tr><td>Mentor Mode</td><td>Spaces (unlimited students)</td><td>White-label dashboards</td></tr>
+        <tr><th scope="row">Trustpilot</th><td>4.8/5</td><td>4.0/5</td></tr>
+        <tr><th scope="row">Price</th><td>$24-49/mo</td><td>Free-$39.95/mo</td></tr>
+        <tr><th scope="row">Brokers</th><td>500+</td><td>400+</td></tr>
+        <tr><th scope="row">Backtesting</th><td>Yes (11+ years, all plans)</td><td>No</td></tr>
+        <tr><th scope="row">Trade Replay</th><td>Yes (3 modes, all plans)</td><td>No</td></tr>
+        <tr><th scope="row">Strategy Templates</th><td>25+ templates</td><td>No</td></tr>
+        <tr><th scope="row">Mobile App</th><td>Coming Soon</td><td>iOS &amp; Android</td></tr>
+        <tr><th scope="row">AI Features</th><td>Zella Insights + Zella AI (coming)</td><td>AI Coach (Pro)</td></tr>
+        <tr><th scope="row">Education</th><td>Zella University</td><td>No</td></tr>
+        <tr><th scope="row">Mentor Mode</th><td>Spaces (unlimited students)</td><td>White-label dashboards</td></tr>
       </tbody>
     </table>
 
