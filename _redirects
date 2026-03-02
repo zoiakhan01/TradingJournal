@@ -25,5 +25,26 @@
 /review-tradersync.html  /review/tradersync       301
 /review-edgewonk         /review/edgewonk         301
 /review-edgewonk.html    /review/edgewonk         301
+/review-trademetria      /review/trademetria      301
+/review-trademetria.html /review/trademetria      301
 /blog.html               /blog                    301
 /compare.html            /compare                 301
+
+# Strip .html from current folder-structured URLs
+/blog/best-trading-journals.html        /blog/best-trading-journals        301
+/blog/tradezella-vs-tradervue.html      /blog/tradezella-vs-tradervue      301
+/blog/tradezella-vs-tradersync.html     /blog/tradezella-vs-tradersync     301
+/blog/tradezella-vs-edgewonk.html       /blog/tradezella-vs-edgewonk       301
+/blog/tradezella-vs-trademetria.html    /blog/tradezella-vs-trademetria    301
+/blog/tradervue-vs-tradersync.html      /blog/tradervue-vs-tradersync      301
+/blog/edgewonk-vs-tradersync.html       /blog/edgewonk-vs-tradersync       301
+/review/tradezella.html                 /review/tradezella                 301
+/review/tradersync.html                 /review/tradersync                 301
+/review/edgewonk.html                   /review/edgewonk                   301
+/review/tradervue.html                  /review/tradervue                  301
+/review/trademetria.html                /review/trademetria                301
+/compare/tradezella-vs-tradervue.html   /compare/tradezella-vs-tradervue   301
+/compare/tradezella-vs-tradersync.html  /compare/tradezella-vs-tradersync  301
+/compare/tradezella-vs-edgewonk.html    /compare/tradezella-vs-edgewonk    301
+/compare/tradezella-vs-trademetria.html /compare/tradezella-vs-trademetria 301
+/compare/tradervue-vs-tradersync.html   /compare/tradervue-vs-tradersync   301
