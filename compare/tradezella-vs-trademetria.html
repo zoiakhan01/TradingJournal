@@ -873,6 +873,16 @@
     .footer-cols { grid-template-columns: 1fr; }
     .nl-form { flex-direction: column; }
   }
+.faq-section { max-width: 800px; margin: 0 auto; padding: 60px 24px; }
+.faq-section h2 { font-family: var(--serif); font-size: 28px; margin-bottom: 32px; text-align: center; }
+.faq-item { border-bottom: 1px solid #e5e1db; padding: 20px 0; }
+.faq-item:first-of-type { border-top: 1px solid #e5e1db; }
+.faq-q { font-family: var(--sans); font-weight: 600; font-size: 16px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.faq-q::after { content: '+'; font-size: 20px; color: #999; flex-shrink: 0; transition: transform 0.2s; }
+.faq-item.open .faq-q::after { content: '\2212'; }
+.faq-a { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+.faq-item.open .faq-a { max-height: 500px; }
+.faq-a p { margin-top: 12px; font-size: 15px; line-height: 1.7; color: #555; }
 </style>
 </head>
 <body>
@@ -1443,6 +1453,52 @@
   </div>
 </section>
 
+<!-- FAQ -->
+<section class="faq-section" itemscope itemtype="https://schema.org/FAQPage">
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <div class="faq-q" itemprop="name">Is TradeZella or Trademetria better for beginners?</div>
+    <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text">Both are beginner-friendly, but in different ways. Trademetria offers a free plan and a clean, simple interface that won't overwhelm new traders. TradeZella provides structured learning through Zella University with video courses, 25+ strategy templates, and mentorship tools. If budget is the priority, Trademetria's free tier is a good starting point. If learning to trade properly matters most, TradeZella's education features give beginners a faster path to improvement.</p></div>
+  </div>
+
+  <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <div class="faq-q" itemprop="name">Does Trademetria have a free plan?</div>
+    <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text">Yes — Trademetria offers a free plan with basic trade logging, limited reports, and support for manual trade entry. It's one of the few trading journals with a functional free tier. TradeZella does not currently offer a free plan but provides significantly more features starting at $29/month.</p></div>
+  </div>
+
+  <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <div class="faq-q" itemprop="name">How many brokers does TradeZella support compared to Trademetria?</div>
+    <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text">TradeZella supports 500+ broker integrations across stocks, options, futures, forex, and crypto. Trademetria supports approximately 400+ brokers. Both have strong broker coverage, though TradeZella has a slight edge and includes more direct API connections for automatic trade syncing.</p></div>
+  </div>
+
+  <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <div class="faq-q" itemprop="name">Does Trademetria have backtesting or trade replay?</div>
+    <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text">No. Trademetria does not offer backtesting or trade replay. TradeZella includes both — unlimited backtesting with 11+ years of historical data and trade replay with multiple modes. These are significant differentiators for traders who want to test strategies and review their executions visually.</p></div>
+  </div>
+
+  <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <div class="faq-q" itemprop="name">What is the price difference between TradeZella and Trademetria?</div>
+    <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text">Trademetria offers Free, Basic ($19.99/month), and Premium ($29.99/month) plans. TradeZella starts at $29/month (Essential) with higher tiers at $49/month and $79/month. Trademetria is more affordable, especially with its free tier. TradeZella costs more but includes backtesting, trade replay, strategy templates, and education that Trademetria doesn't offer.</p></div>
+  </div>
+
+  <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <div class="faq-q" itemprop="name">Which trading journal is better for options trading?</div>
+    <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text">TradeZella has stronger options support with dedicated options expiration reports, strategy templates for options strategies, and backtesting capabilities. Trademetria supports options as an asset class and provides basic P&L tracking but lacks options-specific analytics and tools.</p></div>
+  </div>
+
+  <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <div class="faq-q" itemprop="name">What are the Trustpilot ratings for TradeZella vs Trademetria?</div>
+    <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text">TradeZella has a 4.8/5 rating on Trustpilot, while Trademetria has a 4.0/5 rating. TradeZella's higher rating reflects its more comprehensive feature set and active development, while Trademetria's solid 4.0 reflects a reliable if more basic trading journal experience.</p></div>
+  </div>
+
+  <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <div class="faq-q" itemprop="name">Does Trademetria support crypto trading?</div>
+    <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text">Yes — both Trademetria and TradeZella support cryptocurrency trading. Trademetria integrates with several crypto exchanges, and TradeZella covers crypto through its 500+ broker integrations. Both are viable options for crypto traders.</p></div>
+  </div>
+
+</section>
+
 <!-- OTHER COMPARISONS -->
 <section class="other-comparisons">
   <div class="other-inner">
@@ -1525,6 +1581,13 @@
 <script>
 document.querySelector('.nav-toggle').addEventListener('click', function() {
   document.querySelector('.nav-menu').classList.toggle('open');
+});
+</script>
+<script>
+document.querySelectorAll('.faq-q').forEach(function(q) {
+  q.addEventListener('click', function() {
+    this.parentElement.classList.toggle('open');
+  });
 });
 </script>
 </body>

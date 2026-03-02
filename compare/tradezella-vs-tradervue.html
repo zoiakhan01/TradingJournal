@@ -873,6 +873,16 @@
     .footer-cols { grid-template-columns: 1fr; }
     .nl-form { flex-direction: column; }
   }
+.faq-section { max-width: 800px; margin: 0 auto; padding: 60px 24px; }
+.faq-section h2 { font-family: var(--serif); font-size: 28px; margin-bottom: 32px; text-align: center; }
+.faq-item { border-bottom: 1px solid #e5e1db; padding: 20px 0; }
+.faq-item:first-of-type { border-top: 1px solid #e5e1db; }
+.faq-q { font-family: var(--sans); font-weight: 600; font-size: 16px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+.faq-q::after { content: '+'; font-size: 20px; color: #999; flex-shrink: 0; transition: transform 0.2s; }
+.faq-item.open .faq-q::after { content: '−'; }
+.faq-a { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
+.faq-item.open .faq-a { max-height: 500px; }
+.faq-a p { margin-top: 12px; font-size: 15px; line-height: 1.7; color: #555; }
 </style>
 </head>
 <body>
@@ -1423,6 +1433,52 @@
   </div>
 </section>
 
+<!-- FAQ -->
+<section class="faq-section" itemscope itemtype="https://schema.org/FAQPage">
+  <h2>Frequently Asked Questions</h2>
+
+  <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <div class="faq-q" itemprop="name">Is TradeZella better than Tradervue for day trading?</div>
+    <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text">Yes. TradeZella offers trade replay, backtesting with 11+ years of data, 50+ analytics reports, and strategy templates — all essential tools for active day traders. Tradervue provides basic trade logging and simple P&L charts but lacks replay, backtesting, and advanced analytics. For day traders who want to review executions, test strategies, and identify patterns, TradeZella is the stronger platform.</p></div>
+  </div>
+
+  <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <div class="faq-q" itemprop="name">Does Tradervue have a free plan?</div>
+    <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text">Yes — Tradervue offers a free tier that allows up to 30 trades per month with basic import and community access. This is Tradervue's main advantage for casual or low-frequency traders who just need simple trade record-keeping at no cost.</p></div>
+  </div>
+
+  <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <div class="faq-q" itemprop="name">How many brokers does TradeZella support vs Tradervue?</div>
+    <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text">TradeZella supports 500+ broker integrations including stocks, options, futures, forex, and crypto. Tradervue supports approximately 80+ brokers covering stocks, options, futures, and forex but does not support cryptocurrency trading. TradeZella covers over 6x more brokers and platforms.</p></div>
+  </div>
+
+  <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <div class="faq-q" itemprop="name">Which trading journal has backtesting — TradeZella or Tradervue?</div>
+    <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text">Only TradeZella offers backtesting. It includes unlimited backtesting on all plans with 11+ years of historical data, multi-chart layouts, and built-in ICT indicators. Tradervue does not have any backtesting functionality.</p></div>
+  </div>
+
+  <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <div class="faq-q" itemprop="name">What is the Trustpilot rating for TradeZella vs Tradervue?</div>
+    <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text">TradeZella has a 4.8/5 rating on Trustpilot, while Tradervue has a 2.6/5 rating. The significant gap reflects differences in feature development, user experience, and ongoing platform investment.</p></div>
+  </div>
+
+  <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <div class="faq-q" itemprop="name">Does TradeZella or Tradervue have trade replay?</div>
+    <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text">TradeZella offers trade replay with three modes — Trade Replay, Day Replay, and Scenario Replay (coming soon). This lets traders visually review their entries and exits on price charts. Tradervue does not offer trade replay in any form.</p></div>
+  </div>
+
+  <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <div class="faq-q" itemprop="name">How much does TradeZella cost compared to Tradervue?</div>
+    <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text">TradeZella starts at $29/month (Essential plan). Tradervue's paid plans are $29.95/month (Silver) and $49.95/month (Gold). While similarly priced, TradeZella includes backtesting, trade replay, strategy templates, and 50+ reports on all plans — features Tradervue doesn't offer at any price tier.</p></div>
+  </div>
+
+  <div class="faq-item" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+    <div class="faq-q" itemprop="name">Can I switch from Tradervue to TradeZella?</div>
+    <div class="faq-a" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"><p itemprop="text">Yes. You can export your trade history from Tradervue as a CSV file and import it into TradeZella. Going forward, TradeZella's 500+ broker integrations will automatically sync your new trades, eliminating manual imports.</p></div>
+  </div>
+
+</section>
+
 <!-- OTHER COMPARISONS -->
 <section class="other-comparisons">
   <div class="other-inner">
@@ -1505,6 +1561,13 @@
 <script>
 document.querySelector('.nav-toggle').addEventListener('click', function() {
   document.querySelector('.nav-menu').classList.toggle('open');
+});
+</script>
+<script>
+document.querySelectorAll('.faq-q').forEach(function(q) {
+  q.addEventListener('click', function() {
+    this.parentElement.classList.toggle('open');
+  });
 });
 </script>
 </body>
