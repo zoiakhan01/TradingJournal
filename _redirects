@@ -27,6 +27,7 @@
 /review-edgewonk.html    /review/edgewonk         301
 /review-trademetria      /review/trademetria      301
 /review-trademetria.html /review/trademetria      301
+/reviews/*               /review/:splat           301
 /blog.html               /blog                    301
 /compare.html            /compare                 301
 
