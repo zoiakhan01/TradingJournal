@@ -564,6 +564,17 @@
     .footer-cols { grid-template-columns: 1fr; }
     .nl-form { flex-direction: column; }
   }
+  .faq-section { margin-top: 40px; }
+  .faq-item { border-bottom: 1px solid var(--line); }
+  .faq-item summary {
+    font-family: var(--sans); font-weight: 600; font-size: 16px; cursor: pointer;
+    padding: 16px 0; display: flex; justify-content: space-between; align-items: center;
+    list-style: none; color: var(--ink);
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after { content: '+'; font-size: 20px; color: var(--ink-subtle); font-weight: 300; flex-shrink: 0; margin-left: 12px; }
+  .faq-item[open] summary::after { content: '\2212'; }
+  .faq-item p { font-size: 15px; line-height: 1.7; color: var(--ink-muted); padding: 0 0 16px; }
 </style>
 <script type="application/ld+json">
 {
@@ -1014,37 +1025,60 @@
 
     <p>For a detailed side-by-side analysis, see our <a href="/compare/tradezella-vs-tradervue">TradeZella vs Tradervue comparison</a> and our <a href="/blog/best-trading-journals">Best Trading Journals in 2026</a> guide.</p>
 
+    <div class="faq-section">
     <h2>Frequently Asked Questions</h2>
 
-    <h3>Is Tradervue still worth using in 2026?</h3>
-    <p>The free plan is still a legitimate option for casual traders who need basic logging at no cost. At paid tiers, it's difficult to recommend when modern platforms offer dramatically more features at comparable or lower prices.</p>
+    <details class="faq-item">
+      <summary>Is Tradervue still worth using in 2026?</summary>
+      <p>The free plan is still a legitimate option for casual traders who need basic logging at no cost. At paid tiers, it's difficult to recommend when modern platforms offer dramatically more features at comparable or lower prices.</p>
+    </details>
 
-    <h3>Does Tradervue have a free plan?</h3>
-    <p>Yes -- 30 trades per month for free, including basic import and community access. This is Tradervue's strongest selling point.</p>
+    <details class="faq-item">
+      <summary>Does Tradervue have a free plan?</summary>
+      <p>Yes -- 30 trades per month for free, including basic import and community access. This is Tradervue's strongest selling point.</p>
+    </details>
 
-    <h3>Does Tradervue support crypto?</h3>
-    <p>No. Tradervue supports stocks, options, futures, and forex only.</p>
+    <details class="faq-item">
+      <summary>Does Tradervue support crypto?</summary>
+      <p>No. Tradervue supports stocks, options, futures, and forex only.</p>
+    </details>
 
-    <h3>Does Tradervue have backtesting or trade replay?</h3>
-    <p>No to both. Tradervue has no backtesting and no trade replay capabilities.</p>
+    <details class="faq-item">
+      <summary>Does Tradervue have backtesting or trade replay?</summary>
+      <p>No to both. Tradervue has no backtesting and no trade replay capabilities.</p>
+    </details>
 
-    <h3>Why does Tradervue have a low Trustpilot rating?</h3>
-    <p>The 2.6/5 rating reflects concerns about slow development, a dated interface, and features that haven't kept pace with modern competitors. Users expect more from paid journal software in 2026.</p>
+    <details class="faq-item">
+      <summary>Why does Tradervue have a low Trustpilot rating?</summary>
+      <p>The 2.6/5 rating reflects concerns about slow development, a dated interface, and features that haven't kept pace with modern competitors. Users expect more from paid journal software in 2026.</p>
+    </details>
 
-    <h3>How many brokers does Tradervue support?</h3>
-    <p>80+ -- covering major US platforms but significantly fewer than TradeZella (500+) or TraderSync (900+).</p>
+    <details class="faq-item">
+      <summary>How many brokers does Tradervue support?</summary>
+      <p>80+ -- covering major US platforms but significantly fewer than TradeZella (500+) or TraderSync (900+).</p>
+    </details>
 
-    <h3>Does Tradervue have a mobile app?</h3>
-    <p>No. The platform is desktop-focused with limited mobile functionality.</p>
+    <details class="faq-item">
+      <summary>Does Tradervue have a mobile app?</summary>
+      <p>No. The platform is desktop-focused with limited mobile functionality.</p>
+    </details>
 
-    <h3>Can I migrate from Tradervue to another journal?</h3>
-    <p>Yes. You can export trade data as CSV and import it into platforms like TradeZella, which also supports direct broker connections for automatic syncing going forward.</p>
+    <details class="faq-item">
+      <summary>Can I migrate from Tradervue to another journal?</summary>
+      <p>Yes. You can export trade data as CSV and import it into platforms like TradeZella, which also supports direct broker connections for automatic syncing going forward.</p>
+    </details>
 
-    <h3>Is Tradervue good for beginners?</h3>
-    <p>The free plan is a low-risk option for beginners. But for learning and development, platforms with education features (like TradeZella's Zella University and 25+ strategy templates) provide more structured support.</p>
+    <details class="faq-item">
+      <summary>Is Tradervue good for beginners?</summary>
+      <p>The free plan is a low-risk option for beginners. But for learning and development, platforms with education features (like TradeZella's Zella University and 25+ strategy templates) provide more structured support.</p>
+    </details>
 
-    <h3>Does Tradervue have AI features?</h3>
-    <p>No. Tradervue has no AI-powered analysis, no pattern recognition, and no automated insights.</p>
+    <details class="faq-item">
+      <summary>Does Tradervue have AI features?</summary>
+      <p>No. Tradervue has no AI-powered analysis, no pattern recognition, and no automated insights.</p>
+    </details>
+
+    </div>
   </div>
 </article>
 
@@ -1053,7 +1087,7 @@
   <div class="related-heading">Related Articles</div>
   <div class="related-grid">
     <a href="/review/tradersync" class="related-card"><div class="related-img"><div class="related-img-inner bg-3"><div class="related-cover"><img src="/tradersync-logo.svg" alt="TraderSync" class="cover-single-logo"></div><span class="related-tag tag-r">Review</span></div></div><div class="related-title">TraderSync Review 2026</div><div class="related-meta">Mar 2026 &middot; 14 min read</div></a>
-    <a href="/blog/edgewonk-vs-tradersync" class="related-card"><div class="related-img"><div class="related-img-inner bg-4"><div class="related-cover"><img src="/edgewonk-logo.webp" alt="Edgewonk"><span class="cover-vs">vs</span><img src="/tradersync-logo.svg" alt="TraderSync"></div><span class="related-tag tag-c">Comparison</span></div></div><div class="related-title">Edgewonk vs TraderSync: Psychology vs AI</div><div class="related-meta">Mar 2026 &middot; 14 min read</div></a>
+    <a href="/blog/edgewonk-vs-tradersync" class="related-card"><div class="related-img"><div class="related-img-inner bg-4"><div class="related-cover"><img src="/edgewonk-logo.webp" alt="Edgewonk"><span class="cover-vs">vs</span><img src="/tradersync-logo.svg" alt="TraderSync"></div><span class="related-tag tag-c">Comparison</span></div></div><div class="related-title">Edgewonk vs TraderSync: Psychology vs AI</div><div class="related-meta">Mar 2026 &middot; 16 min read</div></a>
     <a href="/blog/best-trading-journals" class="related-card"><div class="related-img"><div class="related-img-inner bg-1"><div class="related-cover-text"><div class="cover-year">2026</div><div class="cover-title">Best Trading Journals</div></div><span class="related-tag tag-g">Guide</span></div></div><div class="related-title">Best Trading Journals in 2026</div><div class="related-meta">Mar 2026 &middot; 13 min read</div></a>
   </div>
 </section>

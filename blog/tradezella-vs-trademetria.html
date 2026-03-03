@@ -177,6 +177,17 @@
   .footer-list a:hover { color: rgba(255,255,255,0.8); }
   @media (max-width: 1024px) { .related-grid { grid-template-columns: repeat(2, 1fr); } .footer-cols { grid-template-columns: repeat(2, 1fr); } }
   @media (max-width: 640px) { .nav-toggle { display: flex; } .nav-menu { display: none; position: absolute; top: 64px; left: 0; right: 0; background: var(--paper-white); border-bottom: 1px solid var(--line); flex-direction: column; padding: 16px clamp(24px, 4vw, 64px); gap: 0; } .nav-menu.open { display: flex; } .nav-menu li { padding: 12px 0; border-bottom: 1px solid var(--line-light); } .nav-menu li:last-child { border-bottom: none; } .article-title { font-size: 28px; } .article-hero { aspect-ratio: 2/1; } .related-grid { grid-template-columns: 1fr; } .footer-cols { grid-template-columns: 1fr; } .nl-form { flex-direction: column; } }
+  .faq-section { margin-top: 40px; }
+  .faq-item { border-bottom: 1px solid var(--line); }
+  .faq-item summary {
+    font-family: var(--sans); font-weight: 600; font-size: 16px; cursor: pointer;
+    padding: 16px 0; display: flex; justify-content: space-between; align-items: center;
+    list-style: none; color: var(--ink);
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after { content: '+'; font-size: 20px; color: var(--ink-subtle); font-weight: 300; flex-shrink: 0; margin-left: 12px; }
+  .faq-item[open] summary::after { content: '\2212'; }
+  .faq-item p { font-size: 15px; line-height: 1.7; color: var(--ink-muted); padding: 0 0 16px; }
 </style>
 <script type="application/ld+json">
 {
@@ -336,7 +347,7 @@
   <span class="article-tag">Comparison</span>
   <h1 class="article-title">TradeZella vs Trademetria: Which Trading Journal Should You Choose in 2026?</h1>
   <div class="article-meta">
-    <span>March 2026</span><span class="article-meta-sep">&middot;</span><span>15 min read</span><span class="article-meta-sep">&middot;</span><span>By the TradingJournal.com team</span>
+    <span>March 2026</span><span class="article-meta-sep">&middot;</span><span>17 min read</span><span class="article-meta-sep">&middot;</span><span>By the TradingJournal.com team</span>
   </div>
   <div class="article-body">
     <h2>Quick Verdict</h2>
@@ -684,13 +695,68 @@
 
 <h3>Which has better mentorship tools?</h3>
 <p>Different strengths. TradeZella's Spaces provides better hands-on coaching functionality — full account access, trade-level feedback, real-time P&amp;L monitoring, and unlimited students. Trademetria's white-label dashboards are better for building a branded teaching business or prop firm monitoring system at scale.</p>
+
+    <div class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+
+    <details class="faq-item">
+      <summary>Is Trademetria free?</summary>
+      <p>Yes — 30 orders per month on the free plan. TradeZella has no free plan or trial.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Which has better backtesting?</summary>
+      <p>TradeZella — unlimited backtesting on all plans with 11+ years of data, ICT indicators, and strategy template integration. Trademetria has no backtesting (only a PnL Simulator).</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Does Trademetria have a mobile app?</summary>
+      <p>No. Trademetria does not have native iOS or Android apps. The platform is web-based and can be accessed through a mobile browser, but there is no dedicated app in the App Store or Google Play. TradeZella is also web-based with a native app coming soon. Neither platform currently offers a native mobile app.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Which is better for beginners?</summary>
+      <p>It depends on what kind of beginner you are. Trademetria is more accessible with a free plan and AI-generated journal entries that reduce the effort of getting started. TradeZella offers more learning resources — Zella University, 25+ strategy templates, and backtesting — for beginners who want structured development and are willing to invest $24–29/month.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Does Trademetria have trade replay?</summary>
+      <p>No. TradeZella offers trade replay on all plans with 3 modes.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Which has better AI?</summary>
+      <p>Different strengths. TradeZella's Zella Insights powers deeper analytics and feeds into the 50+ report system. Trademetria's AI Coach (Pro plan, $29.95/mo) is better at auto-generating journal entries and provides a chat-based assistant for asking questions about your trading. TradeZella's upcoming Zella AI will add conversational capabilities.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Which is better for prop firm trading?</summary>
+      <p>Different use cases. TradeZella connects to prop firm platforms directly and has Prop Firm Sync Mode coming soon — better for traders at prop firms. Trademetria offers white-label tools for prop firms themselves to build branded monitoring dashboards — better for prop firm operators, not individual traders.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Which has more broker integrations?</summary>
+      <p>TradeZella supports 500+ brokers with direct auto-sync. Trademetria claims 1,500+ platform support, but direct auto-sync is available for approximately 20–30 major brokers, with the rest requiring CSV file upload. For most traders, TradeZella's broader auto-sync coverage means less manual work.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Is TradeZella worth the extra cost over Trademetria's free plan?</summary>
+      <p>If you backtest strategies, replay trades, use strategy templates, or want structured education — yes. The features TradeZella includes at $29/mo would cost significantly more if purchased as separate tools. If you only need basic trade logging, Trademetria's free plan works fine.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Which has better mentorship tools?</summary>
+      <p>Different strengths. TradeZella's Spaces provides better coaching functionality (full account access, trade-level feedback, unlimited students). Trademetria's white-label dashboards are better for building a branded teaching business.</p>
+    </details>
+
+    </div>
   </div>
 </article>
 <section class="related">
   <div class="related-heading">Related Articles</div>
   <div class="related-grid">
     <a href="/review/edgewonk" class="related-card"><div class="related-img"><div class="related-img-inner bg-4"><div class="related-cover"><img src="/edgewonk-logo.webp" alt="Edgewonk" class="cover-single-logo"></div><span class="related-tag tag-r">Review</span></div></div><div class="related-title">Edgewonk Review 2026</div><div class="related-meta">Mar 2026 &middot; 14 min read</div></a>
-    <a href="/blog/tradervue-vs-tradersync" class="related-card"><div class="related-img"><div class="related-img-inner bg-5"><div class="related-cover"><img src="/tradervue-logo.svg" alt="Tradervue"><span class="cover-vs">vs</span><img src="/tradersync-logo.svg" alt="TraderSync"></div><span class="related-tag tag-c">Comparison</span></div></div><div class="related-title">Tradervue vs TraderSync: Which Is Better?</div><div class="related-meta">Mar 2026 &middot; 13 min read</div></a>
+    <a href="/blog/tradervue-vs-tradersync" class="related-card"><div class="related-img"><div class="related-img-inner bg-5"><div class="related-cover"><img src="/tradervue-logo.svg" alt="Tradervue"><span class="cover-vs">vs</span><img src="/tradersync-logo.svg" alt="TraderSync"></div><span class="related-tag tag-c">Comparison</span></div></div><div class="related-title">Tradervue vs TraderSync: Which Is Better?</div><div class="related-meta">Mar 2026 &middot; 15 min read</div></a>
     <a href="/blog/best-trading-journals" class="related-card"><div class="related-img"><div class="related-img-inner bg-1"><div class="related-cover-text"><div class="cover-year">2026</div><div class="cover-title">Best Trading Journals</div></div><span class="related-tag tag-g">Guide</span></div></div><div class="related-title">Best Trading Journals in 2026</div><div class="related-meta">Mar 2026 &middot; 13 min read</div></a>
   </div>
 </section>

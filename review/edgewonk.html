@@ -564,6 +564,17 @@
     .footer-cols { grid-template-columns: 1fr; }
     .nl-form { flex-direction: column; }
   }
+  .faq-section { margin-top: 40px; }
+  .faq-item { border-bottom: 1px solid var(--line); }
+  .faq-item summary {
+    font-family: var(--sans); font-weight: 600; font-size: 16px; cursor: pointer;
+    padding: 16px 0; display: flex; justify-content: space-between; align-items: center;
+    list-style: none; color: var(--ink);
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after { content: '+'; font-size: 20px; color: var(--ink-subtle); font-weight: 300; flex-shrink: 0; margin-left: 12px; }
+  .faq-item[open] summary::after { content: '\2212'; }
+  .faq-item p { font-size: 15px; line-height: 1.7; color: var(--ink-muted); padding: 0 0 16px; }
 </style>
 <script type="application/ld+json">
 {
@@ -963,37 +974,60 @@
 
     <p>If psychology is your primary focus and you already have a separate backtesting solution, Edgewonk delivers excellent value at $197/year. If you want an all-in-one platform that covers journaling, analytics, backtesting, strategy development, education, and mentorship, TradeZella provides all of that in a single subscription.</p>
 
+    <div class="faq-section">
     <h2>Frequently Asked Questions</h2>
 
-    <h3>Is Edgewonk worth $197 a year?</h3>
-    <p>Yes, if psychology tracking is your primary need. The Tiltmeter and Edge Finder AI provide genuine value for traders focused on emotional discipline. At ~$16/month, it's hard to beat on price. But you won't get backtesting, trade replay, or strategy templates.</p>
+    <details class="faq-item">
+      <summary>Is Edgewonk worth $197 a year?</summary>
+      <p>Yes, if psychology tracking is your primary need. The Tiltmeter and Edge Finder AI provide genuine value for traders focused on emotional discipline. At ~$16/month, it's hard to beat on price. But you won't get backtesting, trade replay, or strategy templates.</p>
+    </details>
 
-    <h3>Does Edgewonk have backtesting?</h3>
-    <p>No -- just a basic trade simulator. For comprehensive backtesting, TradeZella offers unlimited sessions with 11+ years of historical data, multi-chart layouts, and built-in ICT indicators.</p>
+    <details class="faq-item">
+      <summary>Does Edgewonk have backtesting?</summary>
+      <p>No -- just a basic trade simulator. For comprehensive backtesting, TradeZella offers unlimited sessions with 11+ years of historical data, multi-chart layouts, and built-in ICT indicators.</p>
+    </details>
 
-    <h3>Does Edgewonk have a mobile app?</h3>
-    <p>No. Edgewonk is desktop-first with limited web access. If mobile is important, TraderSync has full iOS/Android apps.</p>
+    <details class="faq-item">
+      <summary>Does Edgewonk have a mobile app?</summary>
+      <p>No. Edgewonk is desktop-first with limited web access. If mobile is important, TraderSync has full iOS/Android apps.</p>
+    </details>
 
-    <h3>What is the Tiltmeter?</h3>
-    <p>A dedicated emotional tracking tool that assigns a numerical rating to your emotional state during each trade and correlates it with performance. It quantifies how much money your emotions are costing (or earning) you.</p>
+    <details class="faq-item">
+      <summary>What is the Tiltmeter?</summary>
+      <p>A dedicated emotional tracking tool that assigns a numerical rating to your emotional state during each trade and correlates it with performance. It quantifies how much money your emotions are costing (or earning) you.</p>
+    </details>
 
-    <h3>How many brokers does Edgewonk support?</h3>
-    <p>200+ -- solid coverage of major brokers, but less than TradeZella (500+) or TraderSync (900+).</p>
+    <details class="faq-item">
+      <summary>How many brokers does Edgewonk support?</summary>
+      <p>200+ -- solid coverage of major brokers, but less than TradeZella (500+) or TraderSync (900+).</p>
+    </details>
 
-    <h3>Is Edgewonk good for beginners?</h3>
-    <p>Edgewonk assumes you already have a trading strategy and focuses on helping you execute it better. Beginners still developing their approach may benefit more from platforms with education and strategy templates, like TradeZella's Zella University and 25+ strategy templates.</p>
+    <details class="faq-item">
+      <summary>Is Edgewonk good for beginners?</summary>
+      <p>Edgewonk assumes you already have a trading strategy and focuses on helping you execute it better. Beginners still developing their approach may benefit more from platforms with education and strategy templates, like TradeZella's Zella University and 25+ strategy templates.</p>
+    </details>
 
-    <h3>Does Edgewonk have a free trial?</h3>
-    <p>Yes -- 14 days. One of the longer trial periods in the trading journal space.</p>
+    <details class="faq-item">
+      <summary>Does Edgewonk have a free trial?</summary>
+      <p>Yes -- 14 days. One of the longer trial periods in the trading journal space.</p>
+    </details>
 
-    <h3>Can I use Edgewonk for options trading?</h3>
-    <p>Edgewonk supports options as an asset class, but it doesn't have options-specific analytics like expiration reports. TradeZella offers dedicated options expiration reports.</p>
+    <details class="faq-item">
+      <summary>Can I use Edgewonk for options trading?</summary>
+      <p>Edgewonk supports options as an asset class, but it doesn't have options-specific analytics like expiration reports. TradeZella offers dedicated options expiration reports.</p>
+    </details>
 
-    <h3>What is Edge Finder AI?</h3>
-    <p>An AI engine that scans your trade log and identifies which variables have the biggest statistical impact on your results. It ranks them by impact to show you where your actual edge comes from.</p>
+    <details class="faq-item">
+      <summary>What is Edge Finder AI?</summary>
+      <p>An AI engine that scans your trade log and identifies which variables have the biggest statistical impact on your results. It ranks them by impact to show you where your actual edge comes from.</p>
+    </details>
 
-    <h3>Is Edgewonk better than TradeZella?</h3>
-    <p>For psychology tracking, yes -- the Tiltmeter is unique and genuinely superior. For everything else -- backtesting, trade replay, strategy templates, education, mentorship, broker coverage -- TradeZella offers significantly more. Most traders get more value from TradeZella's comprehensive platform, but psychology-focused traders may prefer Edgewonk's specialized approach.</p>
+    <details class="faq-item">
+      <summary>Is Edgewonk better than TradeZella?</summary>
+      <p>For psychology tracking, yes -- the Tiltmeter is unique and genuinely superior. For everything else -- backtesting, trade replay, strategy templates, education, mentorship, broker coverage -- TradeZella offers significantly more. Most traders get more value from TradeZella's comprehensive platform, but psychology-focused traders may prefer Edgewonk's specialized approach.</p>
+    </details>
+
+    </div>
   </div>
 </article>
 
@@ -1002,7 +1036,7 @@
   <div class="related-heading">Related Articles</div>
   <div class="related-grid">
     <a href="/review/trademetria" class="related-card"><div class="related-img"><div class="related-img-inner bg-6"><div class="related-cover"><img src="/trademetria-logo.svg" alt="Trademetria" class="cover-single-logo"></div><span class="related-tag tag-r">Review</span></div></div><div class="related-title">Trademetria Review 2026</div><div class="related-meta">Mar 2026 &middot; 14 min read</div></a>
-    <a href="/blog/tradervue-vs-tradersync" class="related-card"><div class="related-img"><div class="related-img-inner bg-5"><div class="related-cover"><img src="/tradervue-logo.svg" alt="Tradervue"><span class="cover-vs">vs</span><img src="/tradersync-logo.svg" alt="TraderSync"></div><span class="related-tag tag-c">Comparison</span></div></div><div class="related-title">Tradervue vs TraderSync: Which Is Better?</div><div class="related-meta">Mar 2026 &middot; 13 min read</div></a>
+    <a href="/blog/tradervue-vs-tradersync" class="related-card"><div class="related-img"><div class="related-img-inner bg-5"><div class="related-cover"><img src="/tradervue-logo.svg" alt="Tradervue"><span class="cover-vs">vs</span><img src="/tradersync-logo.svg" alt="TraderSync"></div><span class="related-tag tag-c">Comparison</span></div></div><div class="related-title">Tradervue vs TraderSync: Which Is Better?</div><div class="related-meta">Mar 2026 &middot; 15 min read</div></a>
     <a href="/blog/best-trading-journals" class="related-card"><div class="related-img"><div class="related-img-inner bg-1"><div class="related-cover-text"><div class="cover-year">2026</div><div class="cover-title">Best Trading Journals</div></div><span class="related-tag tag-g">Guide</span></div></div><div class="related-title">Best Trading Journals in 2026</div><div class="related-meta">Mar 2026 &middot; 13 min read</div></a>
   </div>
 </section>

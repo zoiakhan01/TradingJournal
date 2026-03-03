@@ -564,6 +564,17 @@
     .footer-cols { grid-template-columns: 1fr; }
     .nl-form { flex-direction: column; }
   }
+  .faq-section { margin-top: 40px; }
+  .faq-item { border-bottom: 1px solid var(--line); }
+  .faq-item summary {
+    font-family: var(--sans); font-weight: 600; font-size: 16px; cursor: pointer;
+    padding: 16px 0; display: flex; justify-content: space-between; align-items: center;
+    list-style: none; color: var(--ink);
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after { content: '+'; font-size: 20px; color: var(--ink-subtle); font-weight: 300; flex-shrink: 0; margin-left: 12px; }
+  .faq-item[open] summary::after { content: '\2212'; }
+  .faq-item p { font-size: 15px; line-height: 1.7; color: var(--ink-muted); padding: 0 0 16px; }
 </style>
 <script type="application/ld+json">
 {
@@ -948,37 +959,60 @@
 
     <p><strong>Budget-conscious traders.</strong> If you want a capable journal at the lowest possible cost and do not need AI coaching or market replay, Edgewonk at $197/year offers excellent analytics and psychology tracking at a fraction of TraderSync's annual cost.</p>
 
+    <div class="faq-section">
     <h2>Frequently Asked Questions</h2>
 
-    <h3>Is TraderSync worth the price?</h3>
-    <p>At the Pro tier ($29.95/mo or ~$18/mo annually), TraderSync offers good value -- Cypher AI, 1-minute replay, and mobile access. At Elite ($79.95/mo), it's expensive and only justified if you specifically need 250ms replay with Level II data.</p>
+    <details class="faq-item">
+      <summary>Is TraderSync worth the price?</summary>
+      <p>At the Pro tier ($29.95/mo or ~$18/mo annually), TraderSync offers good value -- Cypher AI, 1-minute replay, and mobile access. At Elite ($79.95/mo), it's expensive and only justified if you specifically need 250ms replay with Level II data.</p>
+    </details>
 
-    <h3>Does TraderSync have backtesting?</h3>
-    <p>Yes -- systematic, rule-based backtesting with 70+ indicators and 100+ candlestick patterns across 30,000+ assets. It's more automated/rule-based than visual chart-based backtesting offered by platforms like TradeZella.</p>
+    <details class="faq-item">
+      <summary>Does TraderSync have backtesting?</summary>
+      <p>Yes -- systematic, rule-based backtesting with 70+ indicators and 100+ candlestick patterns across 30,000+ assets. It's more automated/rule-based than visual chart-based backtesting offered by platforms like TradeZella.</p>
+    </details>
 
-    <h3>How does Cypher AI work?</h3>
-    <p>Cypher AI is an interactive, conversational coaching system that learns your trading patterns over time. It identifies behavioral blind spots, suggests strategy adjustments, and provides real-time guidance. It becomes more accurate after 50--100+ logged trades.</p>
+    <details class="faq-item">
+      <summary>How does Cypher AI work?</summary>
+      <p>Cypher AI is an interactive, conversational coaching system that learns your trading patterns over time. It identifies behavioral blind spots, suggests strategy adjustments, and provides real-time guidance. It becomes more accurate after 50--100+ logged trades.</p>
+    </details>
 
-    <h3>Does TraderSync have strategy templates?</h3>
-    <p>No. TraderSync has a Strategy Checker (rule compliance tool) but no strategy templates or strategy management system. For ready-made strategy templates, TradeZella offers 25+ professional strategy templates.</p>
+    <details class="faq-item">
+      <summary>Does TraderSync have strategy templates?</summary>
+      <p>No. TraderSync has a Strategy Checker (rule compliance tool) but no strategy templates or strategy management system. For ready-made strategy templates, TradeZella offers 25+ professional strategy templates.</p>
+    </details>
 
-    <h3>Is there a free trial?</h3>
-    <p>Yes -- 7 days. This is an advantage over some competitors that require immediate paid commitments.</p>
+    <details class="faq-item">
+      <summary>Is there a free trial?</summary>
+      <p>Yes -- 7 days. This is an advantage over some competitors that require immediate paid commitments.</p>
+    </details>
 
-    <h3>Does TraderSync have a mobile app?</h3>
-    <p>Yes -- full-featured iOS and Android apps with near-complete desktop parity. The best mobile experience in the trading journal space.</p>
+    <details class="faq-item">
+      <summary>Does TraderSync have a mobile app?</summary>
+      <p>Yes -- full-featured iOS and Android apps with near-complete desktop parity. The best mobile experience in the trading journal space.</p>
+    </details>
 
-    <h3>What makes TraderSync's Market Replay special?</h3>
-    <p>The 250ms precision on the Elite tier with Level II order book data is unmatched. No other trading journal offers sub-second replay with order book visibility.</p>
+    <details class="faq-item">
+      <summary>What makes TraderSync's Market Replay special?</summary>
+      <p>The 250ms precision on the Elite tier with Level II order book data is unmatched. No other trading journal offers sub-second replay with order book visibility.</p>
+    </details>
 
-    <h3>How many brokers does TraderSync support?</h3>
-    <p>900+ -- the widest integration network in the trading journal category.</p>
+    <details class="faq-item">
+      <summary>How many brokers does TraderSync support?</summary>
+      <p>900+ -- the widest integration network in the trading journal category.</p>
+    </details>
 
-    <h3>Does TraderSync have mentor or coaching tools?</h3>
-    <p>Cypher AI provides AI-based coaching, but there are no human mentorship tools like TradeZella's Spaces where mentors can view students' accounts, leave trade-specific feedback, and manage unlimited students.</p>
+    <details class="faq-item">
+      <summary>Does TraderSync have mentor or coaching tools?</summary>
+      <p>Cypher AI provides AI-based coaching, but there are no human mentorship tools like TradeZella's Spaces where mentors can view students' accounts, leave trade-specific feedback, and manage unlimited students.</p>
+    </details>
 
-    <h3>Is TraderSync good for beginners?</h3>
-    <p>TraderSync works for beginners but may feel overwhelming with its three-tier pricing and feature complexity. Cypher AI can provide helpful guidance, but there's no structured education curriculum. Platforms with dedicated learning resources (like TradeZella's Zella University and strategy templates) may serve beginners better.</p>
+    <details class="faq-item">
+      <summary>Is TraderSync good for beginners?</summary>
+      <p>TraderSync works for beginners but may feel overwhelming with its three-tier pricing and feature complexity. Cypher AI can provide helpful guidance, but there's no structured education curriculum. Platforms with dedicated learning resources (like TradeZella's Zella University and strategy templates) may serve beginners better.</p>
+    </details>
+
+    </div>
   </div>
 </article>
 
@@ -987,7 +1021,7 @@
   <div class="related-heading">Related Articles</div>
   <div class="related-grid">
     <a href="/review/edgewonk" class="related-card"><div class="related-img"><div class="related-img-inner bg-4"><div class="related-cover"><img src="/edgewonk-logo.webp" alt="Edgewonk" class="cover-single-logo"></div><span class="related-tag tag-r">Review</span></div></div><div class="related-title">Edgewonk Review 2026</div><div class="related-meta">Mar 2026 &middot; 14 min read</div></a>
-    <a href="/blog/tradezella-vs-trademetria" class="related-card"><div class="related-img"><div class="related-img-inner bg-6"><div class="related-cover"><img src="/tradezella-logo-text.webp" alt="TradeZella"><span class="cover-vs">vs</span><img src="/trademetria-logo.svg" alt="Trademetria"></div><span class="related-tag tag-c">Comparison</span></div></div><div class="related-title">TradeZella vs Trademetria: Which Is Better?</div><div class="related-meta">Mar 2026 &middot; 15 min read</div></a>
+    <a href="/blog/tradezella-vs-trademetria" class="related-card"><div class="related-img"><div class="related-img-inner bg-6"><div class="related-cover"><img src="/tradezella-logo-text.webp" alt="TradeZella"><span class="cover-vs">vs</span><img src="/trademetria-logo.svg" alt="Trademetria"></div><span class="related-tag tag-c">Comparison</span></div></div><div class="related-title">TradeZella vs Trademetria: Which Is Better?</div><div class="related-meta">Mar 2026 &middot; 17 min read</div></a>
     <a href="/blog/best-trading-journals" class="related-card"><div class="related-img"><div class="related-img-inner bg-1"><div class="related-cover-text"><div class="cover-year">2026</div><div class="cover-title">Best Trading Journals</div></div><span class="related-tag tag-g">Guide</span></div></div><div class="related-title">Best Trading Journals in 2026</div><div class="related-meta">Mar 2026 &middot; 13 min read</div></a>
   </div>
 </section>

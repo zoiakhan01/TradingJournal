@@ -564,6 +564,17 @@
     .footer-cols { grid-template-columns: 1fr; }
     .nl-form { flex-direction: column; }
   }
+  .faq-section { margin-top: 40px; }
+  .faq-item { border-bottom: 1px solid var(--line); }
+  .faq-item summary {
+    font-family: var(--sans); font-weight: 600; font-size: 16px; cursor: pointer;
+    padding: 16px 0; display: flex; justify-content: space-between; align-items: center;
+    list-style: none; color: var(--ink);
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after { content: '+'; font-size: 20px; color: var(--ink-subtle); font-weight: 300; flex-shrink: 0; margin-left: 12px; }
+  .faq-item[open] summary::after { content: '\2212'; }
+  .faq-item p { font-size: 15px; line-height: 1.7; color: var(--ink-muted); padding: 0 0 16px; }
 </style>
 <script type="application/ld+json">
 {
@@ -954,37 +965,60 @@
 
     <p>For traders who want comprehensive tools for serious improvement -- backtesting with 11+ years of data, trade replay, 25+ professional strategy templates, and structured education -- TradeZella provides a more complete ecosystem at a comparable price point.</p>
 
+    <div class="faq-section">
     <h2>Frequently Asked Questions</h2>
 
-    <h3>Is Trademetria free?</h3>
-    <p>Yes -- the free plan allows 30 orders per month with basic analytics and mobile access. For higher-volume traders, paid plans start at $29.95/month.</p>
+    <details class="faq-item">
+      <summary>Is Trademetria free?</summary>
+      <p>Yes -- the free plan allows 30 orders per month with basic analytics and mobile access. For higher-volume traders, paid plans start at $29.95/month.</p>
+    </details>
 
-    <h3>Does Trademetria have backtesting?</h3>
-    <p>No. Trademetria has a PnL Simulator (which models different position sizes against past trades) but no true backtesting engine. For backtesting with historical market data, TradeZella offers unlimited sessions with 11+ years of data.</p>
+    <details class="faq-item">
+      <summary>Does Trademetria have backtesting?</summary>
+      <p>No. Trademetria has a PnL Simulator (which models different position sizes against past trades) but no true backtesting engine. For backtesting with historical market data, TradeZella offers unlimited sessions with 11+ years of data.</p>
+    </details>
 
-    <h3>Does Trademetria have a mobile app?</h3>
-    <p>Yes -- native iOS and Android apps. This is a genuine advantage over most competitors.</p>
+    <details class="faq-item">
+      <summary>Does Trademetria have a mobile app?</summary>
+      <p>Yes -- native iOS and Android apps. This is a genuine advantage over most competitors.</p>
+    </details>
 
-    <h3>What is Trademetria's AI Coach?</h3>
-    <p>An AI feature on the Pro plan ($39.95/mo) that analyzes your trading patterns and provides personalized recommendations. It's useful but less interactive than TraderSync's Cypher AI and less analytically deep than TradeZella's Zella Insights.</p>
+    <details class="faq-item">
+      <summary>What is Trademetria's AI Coach?</summary>
+      <p>An AI feature on the Pro plan ($39.95/mo) that analyzes your trading patterns and provides personalized recommendations. It's useful but less interactive than TraderSync's Cypher AI and less analytically deep than TradeZella's Zella Insights.</p>
+    </details>
 
-    <h3>How many brokers does Trademetria support?</h3>
-    <p>400+ -- covering all major retail platforms (TradeZella has 500+, TraderSync has 900+).</p>
+    <details class="faq-item">
+      <summary>How many brokers does Trademetria support?</summary>
+      <p>400+ -- covering all major retail platforms (TradeZella has 500+, TraderSync has 900+).</p>
+    </details>
 
-    <h3>Does Trademetria support crypto?</h3>
-    <p>Yes -- plus stocks, options, futures, forex, and CFDs. It supports the widest range of asset classes among major journals.</p>
+    <details class="faq-item">
+      <summary>Does Trademetria support crypto?</summary>
+      <p>Yes -- plus stocks, options, futures, forex, and CFDs. It supports the widest range of asset classes among major journals.</p>
+    </details>
 
-    <h3>Is Trademetria good for beginners?</h3>
-    <p>The free plan and mobile apps make it accessible for beginners. But there's no structured education. For learning-focused beginners, TradeZella's Zella University and 25+ strategy templates provide more guided development.</p>
+    <details class="faq-item">
+      <summary>Is Trademetria good for beginners?</summary>
+      <p>The free plan and mobile apps make it accessible for beginners. But there's no structured education. For learning-focused beginners, TradeZella's Zella University and 25+ strategy templates provide more guided development.</p>
+    </details>
 
-    <h3>What are Trademetria's gamification features?</h3>
-    <p>Trading challenges, achievements, and community competitions designed to keep traders engaged and accountable. Unique in the journal space but may not appeal to all trader profiles.</p>
+    <details class="faq-item">
+      <summary>What are Trademetria's gamification features?</summary>
+      <p>Trading challenges, achievements, and community competitions designed to keep traders engaged and accountable. Unique in the journal space but may not appeal to all trader profiles.</p>
+    </details>
 
-    <h3>Does Trademetria have trade replay?</h3>
-    <p>No. For trade replay, TradeZella offers 3 replay modes on all plans, and TraderSync offers Market Replay with up to 250ms precision.</p>
+    <details class="faq-item">
+      <summary>Does Trademetria have trade replay?</summary>
+      <p>No. For trade replay, TradeZella offers 3 replay modes on all plans, and TraderSync offers Market Replay with up to 250ms precision.</p>
+    </details>
 
-    <h3>Can I use Trademetria for mentoring students?</h3>
-    <p>Yes -- through white-label admin dashboards that let you create branded monitoring for your trading community. It's a different approach from TradeZella's Spaces, which provides structured mentorship tools (trade-level feedback, full account access, unlimited students) within the platform.</p>
+    <details class="faq-item">
+      <summary>Can I use Trademetria for mentoring students?</summary>
+      <p>Yes -- through white-label admin dashboards that let you create branded monitoring for your trading community. It's a different approach from TradeZella's Spaces, which provides structured mentorship tools (trade-level feedback, full account access, unlimited students) within the platform.</p>
+    </details>
+
+    </div>
   </div>
 </article>
 
@@ -993,7 +1027,7 @@
   <div class="related-heading">Related Articles</div>
   <div class="related-grid">
     <a href="/review/edgewonk" class="related-card"><div class="related-img"><div class="related-img-inner bg-4"><div class="related-cover"><img src="/edgewonk-logo.webp" alt="Edgewonk" class="cover-single-logo"></div><span class="related-tag tag-r">Review</span></div></div><div class="related-title">Edgewonk Review 2026</div><div class="related-meta">Mar 2026 &middot; 14 min read</div></a>
-    <a href="/blog/tradervue-vs-tradersync" class="related-card"><div class="related-img"><div class="related-img-inner bg-5"><div class="related-cover"><img src="/tradervue-logo.svg" alt="Tradervue"><span class="cover-vs">vs</span><img src="/tradersync-logo.svg" alt="TraderSync"></div><span class="related-tag tag-c">Comparison</span></div></div><div class="related-title">Tradervue vs TraderSync: Which Is Better?</div><div class="related-meta">Mar 2026 &middot; 13 min read</div></a>
+    <a href="/blog/tradervue-vs-tradersync" class="related-card"><div class="related-img"><div class="related-img-inner bg-5"><div class="related-cover"><img src="/tradervue-logo.svg" alt="Tradervue"><span class="cover-vs">vs</span><img src="/tradersync-logo.svg" alt="TraderSync"></div><span class="related-tag tag-c">Comparison</span></div></div><div class="related-title">Tradervue vs TraderSync: Which Is Better?</div><div class="related-meta">Mar 2026 &middot; 15 min read</div></a>
     <a href="/blog/best-trading-journals" class="related-card"><div class="related-img"><div class="related-img-inner bg-1"><div class="related-cover-text"><div class="cover-year">2026</div><div class="cover-title">Best Trading Journals</div></div><span class="related-tag tag-g">Guide</span></div></div><div class="related-title">Best Trading Journals in 2026</div><div class="related-meta">Mar 2026 &middot; 13 min read</div></a>
   </div>
 </section>

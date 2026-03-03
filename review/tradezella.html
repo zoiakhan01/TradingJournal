@@ -564,6 +564,17 @@
     .footer-cols { grid-template-columns: 1fr; }
     .nl-form { flex-direction: column; }
   }
+  .faq-section { margin-top: 40px; }
+  .faq-item { border-bottom: 1px solid var(--line); }
+  .faq-item summary {
+    font-family: var(--sans); font-weight: 600; font-size: 16px; cursor: pointer;
+    padding: 16px 0; display: flex; justify-content: space-between; align-items: center;
+    list-style: none; color: var(--ink);
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after { content: '+'; font-size: 20px; color: var(--ink-subtle); font-weight: 300; flex-shrink: 0; margin-left: 12px; }
+  .faq-item[open] summary::after { content: '\2212'; }
+  .faq-item p { font-size: 15px; line-height: 1.7; color: var(--ink-muted); padding: 0 0 16px; }
 </style>
 <script type="application/ld+json">
 {
@@ -1040,56 +1051,90 @@
       </tbody>
     </table>
 
+    <div class="faq-section">
     <h2>Frequently Asked Questions</h2>
 
-    <h3>Is TradeZella worth the price?</h3>
-    <p>For traders who actively use the platform's tools -- backtesting, trade replay, strategies, and analytics -- the value is strong. A standalone backtesting platform alone can cost $30--$100/month. Add education subscriptions and separate analytics tools, and you're easily above $100/month. TradeZella bundles everything starting at $24/month on annual billing. If you only need basic trade logging, cheaper options exist. But for comprehensive trader development, it's the best all-in-one value.</p>
+    <details class="faq-item">
+      <summary>Is TradeZella worth the price?</summary>
+      <p>For traders who actively use the platform's tools -- backtesting, trade replay, strategies, and analytics -- the value is strong. A standalone backtesting platform alone can cost $30--$100/month. Add education subscriptions and separate analytics tools, and you're easily above $100/month. TradeZella bundles everything starting at $24/month on annual billing. If you only need basic trade logging, cheaper options exist. But for comprehensive trader development, it's the best all-in-one value.</p>
+    </details>
 
-    <h3>Does TradeZella have a free trial?</h3>
-    <p>No. This is the platform's most cited drawback. Start with monthly Basic at $29 and treat the first month as your evaluation period. If it delivers value, switch to annual billing.</p>
+    <details class="faq-item">
+      <summary>Does TradeZella have a free trial?</summary>
+      <p>No. This is the platform's most cited drawback. Start with monthly Basic at $29 and treat the first month as your evaluation period. If it delivers value, switch to annual billing.</p>
+    </details>
 
-    <h3>How many brokers does TradeZella support?</h3>
-    <p>Over 500 brokers and platforms, including Interactive Brokers, MetaTrader 4/5, cTrader, TradeLocker, NinjaTrader, Tradovate, ThinkorSwim, Schwab, Robinhood, Webull, and many more. New integrations are added regularly.</p>
+    <details class="faq-item">
+      <summary>How many brokers does TradeZella support?</summary>
+      <p>Over 500 brokers and platforms, including Interactive Brokers, MetaTrader 4/5, cTrader, TradeLocker, NinjaTrader, Tradovate, ThinkorSwim, Schwab, Robinhood, Webull, and many more. New integrations are added regularly.</p>
+    </details>
 
-    <h3>Does TradeZella have a mobile app?</h3>
-    <p>Not yet -- a mobile app is in development. The web platform is responsive on mobile browsers, but a dedicated app will improve the experience. TraderSync and Trademetria both offer iOS and Android apps if mobile is a priority right now.</p>
+    <details class="faq-item">
+      <summary>Does TradeZella have a mobile app?</summary>
+      <p>Not yet -- a mobile app is in development. The web platform is responsive on mobile browsers, but a dedicated app will improve the experience. TraderSync and Trademetria both offer iOS and Android apps if mobile is a priority right now.</p>
+    </details>
 
-    <h3>Is TradeZella good for beginners?</h3>
-    <p>Yes. Zella University provides structured education from beginner to advanced. The 25+ strategy templates give new traders proven frameworks to study, backtest, and adapt. The dashboard is customizable, so beginners can start simple and add complexity as they grow.</p>
+    <details class="faq-item">
+      <summary>Is TradeZella good for beginners?</summary>
+      <p>Yes. Zella University provides structured education from beginner to advanced. The 25+ strategy templates give new traders proven frameworks to study, backtest, and adapt. The dashboard is customizable, so beginners can start simple and add complexity as they grow.</p>
+    </details>
 
-    <h3>Can I use TradeZella for prop firm trading?</h3>
-    <p>Yes. TradeZella connects to all major prop firm platforms. Prop Firm Sync Mode is coming soon -- connect all prop firm accounts into one dashboard, manage multiple evaluations, and track payouts.</p>
+    <details class="faq-item">
+      <summary>Can I use TradeZella for prop firm trading?</summary>
+      <p>Yes. TradeZella connects to all major prop firm platforms. Prop Firm Sync Mode is coming soon -- connect all prop firm accounts into one dashboard, manage multiple evaluations, and track payouts.</p>
+    </details>
 
-    <h3>Does TradeZella support crypto?</h3>
-    <p>Yes. Stocks, options, futures, forex, and crypto. Backtesting data includes crypto pairs going back to September 2014.</p>
+    <details class="faq-item">
+      <summary>Does TradeZella support crypto?</summary>
+      <p>Yes. Stocks, options, futures, forex, and crypto. Backtesting data includes crypto pairs going back to September 2014.</p>
+    </details>
 
-    <h3>What is Trade Replay and how is it different from backtesting?</h3>
-    <p>Trade Replay rewatches your actual trades as they happened -- second by second with full market data, Time of Sales, and Level II. It's for reviewing real trades. Backtesting tests hypothetical strategies on historical data. Both are included on all plans.</p>
+    <details class="faq-item">
+      <summary>What is Trade Replay and how is it different from backtesting?</summary>
+      <p>Trade Replay rewatches your actual trades as they happened -- second by second with full market data, Time of Sales, and Level II. It's for reviewing real trades. Backtesting tests hypothetical strategies on historical data. Both are included on all plans.</p>
+    </details>
 
-    <h3>What are strategies in TradeZella?</h3>
-    <p>Strategies (formerly called playbooks) are structured frameworks where you define entry criteria, exit rules, risk parameters, and market conditions. Tag trades to strategies and track performance over time. TradeZella provides 25+ templates from professional traders, or create your own.</p>
+    <details class="faq-item">
+      <summary>What are strategies in TradeZella?</summary>
+      <p>Strategies (formerly called playbooks) are structured frameworks where you define entry criteria, exit rules, risk parameters, and market conditions. Tag trades to strategies and track performance over time. TradeZella provides 25+ templates from professional traders, or create your own.</p>
+    </details>
 
-    <h3>Does TradeZella have backtesting?</h3>
-    <p>Yes -- unlimited backtesting on all plans with 11+ years of historical data. Multi-chart layouts (up to 8), multi-symbol support (up to 5), built-in ICT indicators, realistic order execution, auto-breakeven, partial closes, speed control, and full integration with strategies and journal.</p>
+    <details class="faq-item">
+      <summary>Does TradeZella have backtesting?</summary>
+      <p>Yes -- unlimited backtesting on all plans with 11+ years of historical data. Multi-chart layouts (up to 8), multi-symbol support (up to 5), built-in ICT indicators, realistic order execution, auto-breakeven, partial closes, speed control, and full integration with strategies and journal.</p>
+    </details>
 
-    <h3>What is the Zella Scale?</h3>
-    <p>A proprietary metric that compares your actual P&amp;L against potential P&amp;L for each trade. It gives you a trading efficiency score -- showing whether you're capturing 40%, 60%, or 80% of available moves. Improvements over time indicate genuine skill development. No other journal has this.</p>
+    <details class="faq-item">
+      <summary>What is the Zella Scale?</summary>
+      <p>A proprietary metric that compares your actual P&amp;L against potential P&amp;L for each trade. It gives you a trading efficiency score -- showing whether you're capturing 40%, 60%, or 80% of available moves. Improvements over time indicate genuine skill development. No other journal has this.</p>
+    </details>
 
-    <h3>How does Spaces (Mentor Mode) work?</h3>
-    <p>Mentors connect with students for data-driven coaching. Mentors view students' full accounts -- Dashboard, Trade Log, Strategies, Notebook, and all 50+ Reports. Monitor multiple students with color-coded P&amp;L charts and leave feedback on specific trades. Basic includes 5 mentor connections; Premium is unlimited.</p>
+    <details class="faq-item">
+      <summary>How does Spaces (Mentor Mode) work?</summary>
+      <p>Mentors connect with students for data-driven coaching. Mentors view students' full accounts -- Dashboard, Trade Log, Strategies, Notebook, and all 50+ Reports. Monitor multiple students with color-coded P&amp;L charts and leave feedback on specific trades. Basic includes 5 mentor connections; Premium is unlimited.</p>
+    </details>
 
-    <h3>What is Zella AI?</h3>
-    <p>An upcoming conversational AI feature. Ask questions about your trading data, get pattern detection, and receive personalized insights. Separate from Zella Insights (the current analytics feature).</p>
+    <details class="faq-item">
+      <summary>What is Zella AI?</summary>
+      <p>An upcoming conversational AI feature. Ask questions about your trading data, get pattern detection, and receive personalized insights. Separate from Zella Insights (the current analytics feature).</p>
+    </details>
 
-    <h3>Does TradeZella have ICT indicators?</h3>
-    <p>Yes -- the only trading journal with built-in ICT indicators in backtesting. Fair Value Gap (FVG), Asian Session Range, HTF Bias, Key Levels, and Power of 3. Native to the platform, no scripts needed.</p>
+    <details class="faq-item">
+      <summary>Does TradeZella have ICT indicators?</summary>
+      <p>Yes -- the only trading journal with built-in ICT indicators in backtesting. Fair Value Gap (FVG), Asian Session Range, HTF Bias, Key Levels, and Power of 3. Native to the platform, no scripts needed.</p>
+    </details>
 
-    <h3>What is the best TradeZella plan?</h3>
-    <p>For most traders, Basic ($29/mo or $24/mo annually) includes everything -- all reports, backtesting, trade replay, strategies, Zella University, Spaces with 5 invites, and all advanced metrics. Premium ($49/mo or $33/mo annually) adds unlimited mentor invites. Only upgrade if you're a coach managing many students.</p>
+    <details class="faq-item">
+      <summary>What is the best TradeZella plan?</summary>
+      <p>For most traders, Basic ($29/mo or $24/mo annually) includes everything -- all reports, backtesting, trade replay, strategies, Zella University, Spaces with 5 invites, and all advanced metrics. Premium ($49/mo or $33/mo annually) adds unlimited mentor invites. Only upgrade if you're a coach managing many students.</p>
+    </details>
 
-    <h3>How does TradeZella compare to spreadsheets?</h3>
-    <p>Spreadsheets give full customization but require manual entry and formula building. TradeZella automates trade logging through 500+ broker integrations, provides 50+ pre-built reports, and includes backtesting, trade replay, strategy tracking, and education that no spreadsheet can replicate. For traders spending more than 15 minutes per day on manual journaling, TradeZella saves time while providing deeper insights.</p>
+    <details class="faq-item">
+      <summary>How does TradeZella compare to spreadsheets?</summary>
+      <p>Spreadsheets give full customization but require manual entry and formula building. TradeZella automates trade logging through 500+ broker integrations, provides 50+ pre-built reports, and includes backtesting, trade replay, strategy tracking, and education that no spreadsheet can replicate. For traders spending more than 15 minutes per day on manual journaling, TradeZella saves time while providing deeper insights.</p>
+    </details>
 
+    </div>
   </div>
 </article>
 
@@ -1098,7 +1143,7 @@
   <div class="related-heading">Related Articles</div>
   <div class="related-grid">
     <a href="/review/tradersync" class="related-card"><div class="related-img"><div class="related-img-inner bg-3"><div class="related-cover"><img src="/tradersync-logo.svg" alt="TraderSync" class="cover-single-logo"></div><span class="related-tag tag-r">Review</span></div></div><div class="related-title">TraderSync Review 2026</div><div class="related-meta">Mar 2026 &middot; 14 min read</div></a>
-    <a href="/blog/tradervue-vs-tradersync" class="related-card"><div class="related-img"><div class="related-img-inner bg-5"><div class="related-cover"><img src="/tradervue-logo.svg" alt="Tradervue"><span class="cover-vs">vs</span><img src="/tradersync-logo.svg" alt="TraderSync"></div><span class="related-tag tag-c">Comparison</span></div></div><div class="related-title">Tradervue vs TraderSync: Which Is Better?</div><div class="related-meta">Mar 2026 &middot; 13 min read</div></a>
+    <a href="/blog/tradervue-vs-tradersync" class="related-card"><div class="related-img"><div class="related-img-inner bg-5"><div class="related-cover"><img src="/tradervue-logo.svg" alt="Tradervue"><span class="cover-vs">vs</span><img src="/tradersync-logo.svg" alt="TraderSync"></div><span class="related-tag tag-c">Comparison</span></div></div><div class="related-title">Tradervue vs TraderSync: Which Is Better?</div><div class="related-meta">Mar 2026 &middot; 15 min read</div></a>
     <a href="/blog/best-trading-journals" class="related-card"><div class="related-img"><div class="related-img-inner bg-1"><div class="related-cover-text"><div class="cover-year">2026</div><div class="cover-title">Best Trading Journals</div></div><span class="related-tag tag-g">Guide</span></div></div><div class="related-title">Best Trading Journals in 2026</div><div class="related-meta">Mar 2026 &middot; 13 min read</div></a>
   </div>
 </section>
