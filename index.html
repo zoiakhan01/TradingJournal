@@ -460,6 +460,29 @@
     margin-bottom: 16px;
   }
 
+  .partner-tj-score {
+    display: flex;
+    align-items: baseline;
+    gap: 4px;
+    margin-bottom: 8px;
+  }
+
+  .partner-tj-score .tj-num {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--ink);
+    letter-spacing: -1px;
+    font-family: var(--serif);
+  }
+
+  .partner-tj-score .tj-label {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--ink-subtle);
+  }
+
+  .partner-item.top-pick .partner-tj-score .tj-num { color: var(--accent); }
+
   .partner-stars-row {
     display: flex;
     align-items: center;
@@ -1158,7 +1181,7 @@
       <div class="ranking-card">
         <div class="ranking-header">
           <h2>2026 Rankings</h2>
-          <span>Trustpilot Ratings</span>
+          <span>TJ Score /10</span>
         </div>
         <a href="/review/tradezella" class="ranking-row">
           <div class="rank-num">01</div>
@@ -1167,7 +1190,7 @@
             <div class="rank-name">TradeZella</div>
             <div class="rank-sub">Journal · Analytics · Backtesting</div>
           </div>
-          <div class="rank-score">4.8</div>
+          <div class="rank-score">9.4</div>
         </a>
         <a href="/review/tradersync" class="ranking-row">
           <div class="rank-num">02</div>
@@ -1176,7 +1199,7 @@
             <div class="rank-name">TraderSync</div>
             <div class="rank-sub">Journal · Analytics</div>
           </div>
-          <div class="rank-score">4.7</div>
+          <div class="rank-score">7.8</div>
         </a>
         <a href="/review/edgewonk" class="ranking-row">
           <div class="rank-num">03</div>
@@ -1185,7 +1208,7 @@
             <div class="rank-name">Edgewonk</div>
             <div class="rank-sub">Journal · Analytics</div>
           </div>
-          <div class="rank-score">4.7</div>
+          <div class="rank-score">7.0</div>
         </a>
         <a href="/review/trademetria" class="ranking-row">
           <div class="rank-num">04</div>
@@ -1194,7 +1217,7 @@
             <div class="rank-name">Trademetria</div>
             <div class="rank-sub">Journal · Analytics</div>
           </div>
-          <div class="rank-score">4.0</div>
+          <div class="rank-score">6.3</div>
         </a>
         <a href="/review/tradervue" class="ranking-row">
           <div class="rank-num">05</div>
@@ -1203,7 +1226,7 @@
             <div class="rank-name">Tradervue</div>
             <div class="rank-sub">Journal · Analytics</div>
           </div>
-          <div class="rank-score">2.6</div>
+          <div class="rank-score">5.2</div>
         </a>
       </div>
     </div>
@@ -1215,7 +1238,7 @@
 <!-- PARTNERS -->
 <section class="partners">
   <div class="section-heading">Top-Rated Platforms for 2026</div>
-  <p class="section-desc">Every platform is independently tested and used by our team. Ratings are based on Trustpilot reviews.</p>
+  <p class="section-desc">Every platform is independently tested and scored across 8 categories by our team. <a href="/methodology" style="color:var(--ink-subtle);text-decoration:underline">See our methodology</a>.</p>
   <div class="partner-carousel">
     <button class="carousel-arrow left" onclick="document.querySelector('.partner-list').scrollBy({left:-300,behavior:'smooth'})">&lsaquo;</button>
     <button class="carousel-arrow right" onclick="document.querySelector('.partner-list').scrollBy({left:300,behavior:'smooth'})">&rsaquo;</button>
@@ -1223,11 +1246,12 @@
     <a href="/review/tradezella" class="partner-item top-pick">
       <img loading="lazy" class="partner-logo-img" src="/tradezella-logo-text.webp" alt="TradeZella">
       <div class="partner-verdict">All-in-One Trading Journal</div>
+      <div class="partner-tj-score"><span class="tj-num">9.4</span><span class="tj-label">/10 TJ Score</span></div>
       <div class="partner-stars-row">
         <div class="star-bar">
           <div class="s"></div><div class="s"></div><div class="s"></div><div class="s"></div><div class="s"></div>
         </div>
-        <span class="partner-score">4.8</span>
+        <span class="partner-score">4.8 Trustpilot</span>
       </div>
       <div class="partner-one-liner">Journaling, analytics, and backtesting in one platform. Trusted by 50,000+ traders with 500+ broker integrations.</div>
       <span class="partner-btn">Read full review</span>
@@ -1235,11 +1259,12 @@
     <a href="/review/tradersync" class="partner-item">
       <img loading="lazy" class="partner-logo-img" src="/tradersync-logo.svg" alt="TraderSync">
       <div class="partner-verdict">Trading Journal & Analytics</div>
+      <div class="partner-tj-score"><span class="tj-num">7.8</span><span class="tj-label">/10 TJ Score</span></div>
       <div class="partner-stars-row">
         <div class="star-bar">
           <div class="s"></div><div class="s"></div><div class="s"></div><div class="s"></div><div class="s"></div>
         </div>
-        <span class="partner-score">4.7</span>
+        <span class="partner-score">4.7 Trustpilot</span>
       </div>
       <div class="partner-one-liner">Trade journaling with performance analytics and a market replay simulator. Connects with 950+ brokers since 2013.</div>
       <span class="partner-btn">Read full review</span>
@@ -1247,11 +1272,12 @@
     <a href="/review/edgewonk" class="partner-item">
       <img loading="lazy" class="partner-logo-img" src="/edgewonk-logo.webp" alt="Edgewonk">
       <div class="partner-verdict">Trading Journal Software</div>
+      <div class="partner-tj-score"><span class="tj-num">7.0</span><span class="tj-label">/10 TJ Score</span></div>
       <div class="partner-stars-row">
         <div class="star-bar">
           <div class="s"></div><div class="s"></div><div class="s"></div><div class="s"></div><div class="s"></div>
         </div>
-        <span class="partner-score">4.7</span>
+        <span class="partner-score">4.7 Trustpilot</span>
       </div>
       <div class="partner-one-liner">Web-based trading journal for forex, stocks, futures, and crypto. Annual plan with no monthly fees.</div>
       <span class="partner-btn">Read full review</span>
@@ -1259,11 +1285,12 @@
     <a href="/review/trademetria" class="partner-item">
       <img loading="lazy" class="partner-logo-img" src="/trademetria-logo.svg" alt="Trademetria">
       <div class="partner-verdict">Multi-Asset Journal</div>
+      <div class="partner-tj-score"><span class="tj-num">6.3</span><span class="tj-label">/10 TJ Score</span></div>
       <div class="partner-stars-row">
         <div class="star-bar">
           <div class="s"></div><div class="s"></div><div class="s"></div><div class="s"></div><div class="s empty"></div>
         </div>
-        <span class="partner-score">4.0</span>
+        <span class="partner-score">4.0 Trustpilot</span>
       </div>
       <div class="partner-one-liner">Performance analytics platform for stocks, futures, forex, options, and crypto. Supports 140+ brokers.</div>
       <span class="partner-btn">Read full review</span>
@@ -1271,11 +1298,12 @@
     <a href="/review/tradervue" class="partner-item">
       <img loading="lazy" class="partner-logo-img" src="/tradervue-logo.svg" alt="Tradervue">
       <div class="partner-verdict">Trading Journal</div>
+      <div class="partner-tj-score"><span class="tj-num">5.2</span><span class="tj-label">/10 TJ Score</span></div>
       <div class="partner-stars-row">
         <div class="star-bar">
           <div class="s"></div><div class="s"></div><div class="s half"></div><div class="s empty"></div><div class="s empty"></div>
         </div>
-        <span class="partner-score">2.6</span>
+        <span class="partner-score">2.6 Trustpilot</span>
       </div>
       <div class="partner-one-liner">Trading journal for stocks, options, futures, and forex. Offers a free plan with basic trade logging and sharing.</div>
       <span class="partner-btn">Read full review</span>
