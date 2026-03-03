@@ -1,3 +1,6 @@
+# Favicon fallback
+/favicon.ico                        /favicon.svg                         200
+
 # Old flat URLs → new clean folder URLs (301 permanent redirects)
 /blog-post                          /blog/best-trading-journals          301
 /blog-post.html                     /blog/best-trading-journals          301
