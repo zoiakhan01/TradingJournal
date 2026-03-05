@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A trading journal is a structured record of every trade you take. Learn what it tracks, why profitable traders use one, and how to choose the right format for your strategy.">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link rel="canonical" href="https://tradingjournal.com/blog/what-is-a-trading-journal">
+<meta property="og:title" content="What Is a Trading Journal? The Complete Guide (2026) — TradingJournal.com">
+<meta property="og:description" content="A trading journal is a structured record of every trade you take. Learn what it tracks, why profitable traders use one, and how to choose the right format for your strategy.">
+<meta property="og:url" content="https://tradingjournal.com/blog/what-is-a-trading-journal">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="TradingJournal.com">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="What Is a Trading Journal? The Complete Guide (2026) — TradingJournal.com">
+<meta name="twitter:description" content="A trading journal is a structured record of every trade you take. Learn what it tracks, why profitable traders use one, and how to choose the right format for your strategy.">
+<title>What Is a Trading Journal? The Complete Guide (2026) — TradingJournal.com</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400&family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
+<style>
+  :root {
+    --ink: #1a1a1a;
+    --ink-light: #2d2d2d;
+    --ink-muted: #555;
+    --ink-subtle: #717171;
+    --ink-faint: #767676;
+    --paper: #fafaf8;
+    --paper-warm: #f5f3ef;
+    --paper-white: #ffffff;
+    --line: #e5e2dc;
+    --line-light: #edeae4;
+    --accent: #c8553d;
+    --accent-light: #d4745f;
+    --accent-bg: #fef6f4;
+    --teal: #2a7d6e;
+    --teal-bg: #f0f9f7;
+    --serif: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+    --sans: 'Geist', -apple-system, BlinkMacSystemFont, sans-serif;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
+  body { font-family: var(--sans); background: var(--paper); color: var(--ink); }
+
+  nav {
+    position: sticky; top: 0; z-index: 100;
+    background: var(--paper-white); border-bottom: 1px solid var(--line);
+    height: 64px; display: flex; align-items: center;
+    padding: 0 clamp(24px, 4vw, 64px);
+  }
+  .nav-inner { max-width: 1200px; margin: 0 auto; width: 100%; display: flex; align-items: center; justify-content: space-between; }
+  .logo { font-family: var(--serif); font-size: 20px; font-weight: 700; color: var(--ink); text-decoration: none; letter-spacing: -0.5px; display: flex; align-items: center; gap: 6px; }
+  .logo-icon { width: 24px; height: 24px; }
+  .logo span { color: var(--accent); }
+  .nav-menu { display: flex; gap: 32px; list-style: none; }
+  .nav-menu a { font-size: 15px; font-weight: 500; color: var(--ink-muted); text-decoration: none; letter-spacing: 0.2px; transition: color 0.15s; }
+  .nav-menu a:hover { color: var(--ink); }
+  .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 4px; flex-direction: column; gap: 5px; }
+  .nav-toggle span { display: block; width: 22px; height: 2px; background: var(--ink); border-radius: 2px; transition: 0.2s; }
+  .nav-menu a.active { color: var(--ink); font-weight: 600; }
+
+  .article-hero { width: 100%; aspect-ratio: 3/1; max-height: 360px; background: linear-gradient(145deg, #1a3a2a 0%, #2a5a42 100%); display: flex; align-items: center; justify-content: center; }
+  .hero-cover-text { text-align: center; color: rgba(255,255,255,0.85); font-family: var(--serif); }
+  .hero-cover-text .cover-year { font-size: 14px; font-weight: 600; letter-spacing: 4px; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 4px; }
+  .hero-cover-text .cover-title { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; }
+
+  .article-wrapper { max-width: 760px; margin: 0 auto; padding: 48px clamp(24px, 4vw, 64px) 80px; }
+  .article-breadcrumb { font-size: 12px; color: var(--ink-faint); margin-bottom: 24px; display: flex; gap: 6px; align-items: center; }
+  .article-breadcrumb a { color: var(--ink-subtle); text-decoration: none; transition: color 0.15s; }
+  .article-breadcrumb a:hover { color: var(--accent); }
+  .article-tag { display: inline-block; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; padding: 4px 10px; border-radius: 3px; color: var(--paper-white); margin-bottom: 16px; }
+  .tag-g { background: #7c6c3e; }
+  .tag-r { background: var(--accent); }
+  .tag-c { background: var(--ink); }
+  .article-title { font-family: var(--serif); font-size: clamp(32px, 4vw, 44px); font-weight: 700; line-height: 1.15; letter-spacing: -1px; color: var(--ink); margin-bottom: 16px; }
+  .article-meta { display: flex; align-items: center; gap: 12px; font-size: 13px; color: var(--ink-subtle); margin-bottom: 40px; padding-bottom: 32px; border-bottom: 1px solid var(--line); }
+  .article-meta-sep { opacity: 0.3; }
+
+  .article-body h2 { font-family: var(--serif); font-size: 26px; font-weight: 700; color: var(--ink); letter-spacing: -0.5px; margin: 40px 0 16px; }
+  .article-body h3 { font-family: var(--serif); font-size: 20px; font-weight: 600; color: var(--ink); margin: 32px 0 12px; }
+  .article-body p { font-size: 16px; line-height: 1.75; color: var(--ink-muted); margin-bottom: 20px; }
+  .article-body ul { margin: 0 0 20px 24px; font-size: 16px; line-height: 1.75; color: var(--ink-muted); }
+  .article-body ul li, .article-body ol li { margin-bottom: 8px; }
+  .article-body ol { margin: 0 0 20px 24px; font-size: 16px; line-height: 1.75; color: var(--ink-muted); }
+  .article-body blockquote { border-left: 3px solid var(--accent); padding: 16px 24px; margin: 28px 0; background: var(--accent-bg); border-radius: 0 6px 6px 0; font-size: 16px; line-height: 1.65; color: var(--ink-muted); font-style: italic; }
+  .article-body .callout { background: var(--teal-bg); border: 1px solid #d0e8e3; border-radius: 8px; padding: 20px 24px; margin: 28px 0; }
+  .article-body .callout-title { font-size: 13px; font-weight: 700; color: var(--teal); text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
+  .article-body .callout p { font-size: 14px; margin-bottom: 0; }
+  .article-body table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 14px; line-height: 1.6; }
+  .article-body th { font-weight: 600; color: var(--ink); padding: 10px 14px; text-align: left; border: 1px solid var(--line); font-size: 13px; }
+  .article-body thead th { background: var(--paper-warm); }
+  .article-body td { padding: 10px 14px; border: 1px solid var(--line); color: var(--ink-muted); }
+  .article-body strong { color: var(--ink); font-weight: 600; }
+  .article-body .table-wrapper { overflow-x: auto; margin: 20px 0; -webkit-overflow-scrolling: touch; }
+  .article-body a { color: var(--accent); text-decoration: none; font-weight: 500; }
+  .article-body a:hover { color: var(--accent-light); }
+  .stat-highlight { background: var(--paper-warm); border-radius: 6px; border: 1px solid var(--line-light); padding: 20px 24px; margin: 24px 0; font-size: 15px; line-height: 1.7; color: var(--ink-muted); }
+  .stat-highlight strong { color: var(--ink); }
+
+  .faq-section { margin-top: 40px; }
+  .faq-item { border-bottom: 1px solid var(--line); }
+  .faq-item summary { font-size: 16px; font-weight: 600; color: var(--ink); padding: 16px 0; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; line-height: 1.4; }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after { content: '+'; font-size: 20px; color: var(--ink-subtle); font-weight: 400; flex-shrink: 0; margin-left: 12px; }
+  .faq-item[open] summary::after { content: '\2212'; }
+  .faq-item p { font-size: 15px; line-height: 1.7; color: var(--ink-muted); padding: 0 0 16px; }
+
+  .related { max-width: 1200px; margin: 0 auto; padding: 0 clamp(24px, 4vw, 64px) 80px; }
+  .related-heading { font-family: var(--serif); font-size: 24px; font-weight: 700; color: var(--ink); letter-spacing: -0.5px; margin-bottom: 28px; padding-top: 48px; border-top: 1px solid var(--line); }
+  .related-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+  .related-card { text-decoration: none; color: inherit; display: block; }
+  .related-card:hover .related-title { color: var(--accent); }
+  .related-img { width: 100%; aspect-ratio: 16/10; border-radius: 6px; margin-bottom: 14px; overflow: hidden; border: 1px solid var(--line); }
+  .related-img-inner { width: 100%; height: 100%; display: flex; align-items: flex-end; padding: 14px; position: relative; }
+  .related-tag { font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; padding: 3px 7px; border-radius: 3px; color: var(--paper-white); }
+  .related-cover { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); display: flex; align-items: center; gap: 10px; z-index: 1; }
+  .related-cover img { height: 28px; width: auto; filter: brightness(0) invert(1); opacity: 0.85; object-fit: contain; }
+  .related-cover .cover-single-logo { height: 36px; max-width: 120px; }
+  .related-cover-text { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); text-align: center; color: rgba(255,255,255,0.85); z-index: 1; }
+  .related-cover-text .cover-year { font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; opacity: 0.6; }
+  .related-cover-text .cover-title { font-family: var(--serif); font-size: 15px; font-weight: 600; }
+  .related-title { font-family: var(--serif); font-size: 17px; font-weight: 600; color: var(--ink); line-height: 1.35; letter-spacing: -0.2px; transition: color 0.15s; margin-bottom: 6px; }
+  .related-meta { font-size: 12px; color: var(--ink-faint); }
+  .bg-1 { background: linear-gradient(145deg, #1a1a1a 0%, #2d2d2d 100%); }
+  .bg-2 { background: linear-gradient(145deg, #1a3a2a 0%, #2a5a42 100%); }
+  .bg-3 { background: linear-gradient(145deg, #2a1a2e 0%, #4a2a5a 100%); }
+  .bg-4 { background: linear-gradient(145deg, #3a2a1a 0%, #5a4a2a 100%); }
+  .bg-5 { background: linear-gradient(145deg, #1a2a3a 0%, #2a4a5a 100%); }
+
+  .newsletter { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--paper-warm); padding: 64px clamp(24px, 4vw, 64px); }
+  .nl-inner { max-width: 560px; margin: 0 auto; text-align: center; }
+  .nl-inner .section-heading { font-family: var(--serif); font-size: 28px; font-weight: 700; color: var(--ink); letter-spacing: -0.8px; margin-bottom: 8px; }
+  .nl-inner .section-desc { font-size: 15px; color: var(--ink-subtle); line-height: 1.6; margin: 0 auto 28px; text-align: center; max-width: 420px; }
+  .nl-btn { padding: 13px 24px; background: var(--ink); color: var(--paper-white); border: none; border-radius: 6px; font-size: 14px; font-weight: 600; font-family: var(--sans); cursor: pointer; transition: background 0.15s; white-space: nowrap; }
+  .nl-btn:hover { background: var(--ink-light); }
+
+  footer { background: var(--ink); padding: 64px clamp(24px, 4vw, 64px) 40px; }
+  .footer-inner { max-width: 1200px; margin: 0 auto; }
+  .footer-cols { display: grid; grid-template-columns: 1fr auto auto auto; gap: 48px; margin-bottom: 48px; padding-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,0.08); }
+  .footer-brand-text { font-family: var(--serif); font-size: 18px; font-weight: 700; color: var(--paper); margin-bottom: 12px; letter-spacing: -0.3px; }
+  .footer-brand-desc { font-size: 13px; color: rgba(255,255,255,0.35); line-height: 1.6; max-width: 260px; }
+  .footer-col-title { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.8px; color: rgba(255,255,255,0.3); margin-bottom: 18px; }
+  .footer-list { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .footer-list a { font-size: 13px; color: rgba(255,255,255,0.45); text-decoration: none; transition: color 0.15s; }
+  .footer-list a:hover { color: rgba(255,255,255,0.8); }
+
+  @media (max-width: 1024px) {
+    .related-grid { grid-template-columns: repeat(2, 1fr); }
+    .footer-cols { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 640px) {
+    .nav-toggle { display: flex; }
+    .nav-menu { display: none; position: absolute; top: 64px; left: 0; right: 0; background: var(--paper-white); border-bottom: 1px solid var(--line); flex-direction: column; padding: 16px clamp(24px, 4vw, 64px); gap: 0; }
+    .nav-menu.open { display: flex; }
+    .nav-menu li { padding: 12px 0; border-bottom: 1px solid var(--line-light); }
+    .nav-menu li:last-child { border-bottom: none; }
+    .article-title { font-size: 28px; }
+    .article-hero { aspect-ratio: 2/1; }
+    .related-grid { grid-template-columns: 1fr; }
+    .footer-cols { grid-template-columns: 1fr; }
+    .nl-form { flex-direction: column; }
+  }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "What Is a Trading Journal? The Complete Guide",
+      "url": "https://tradingjournal.com/blog/what-is-a-trading-journal",
+      "description": "A trading journal is a structured record of every trade you take. Learn what it tracks, why profitable traders use one, and how to choose the right format.",
+      "datePublished": "2026-03-05",
+      "dateModified": "2026-03-05",
+      "author": { "@type": "Organization", "name": "TradingJournal.com", "url": "https://tradingjournal.com/" },
+      "publisher": { "@type": "Organization", "name": "TradingJournal.com", "url": "https://tradingjournal.com/", "logo": { "@type": "ImageObject", "url": "https://tradingjournal.com/favicon.svg" } },
+      "mainEntityOfPage": "https://tradingjournal.com/blog/what-is-a-trading-journal"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://tradingjournal.com/#organization",
+      "name": "TradingJournal.com",
+      "url": "https://tradingjournal.com/",
+      "logo": { "@type": "ImageObject", "url": "https://tradingjournal.com/favicon.svg" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tradingjournal.com/" },
+        { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://tradingjournal.com/blog" },
+        { "@type": "ListItem", "position": 3, "name": "What Is a Trading Journal?", "item": "https://tradingjournal.com/blog/what-is-a-trading-journal" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Do I need a trading journal if I'm a beginner?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. Beginners benefit the most because they have the most to learn. A journal captures lessons from every trade so you build skill faster instead of repeating mistakes. Even if you are paper trading, logging your entries, exits, and reasoning builds the habit before real money is on the line." }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I write in my trading journal?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Record six things for every trade: the setup name, your entry and exit prices, position size, the dollar and percentage outcome, and what you learned. Also note your emotional state before the trade (calm, anxious, frustrated, excited) and whether you followed your trading plan. The emotional data is often more valuable than the numbers." }
+        },
+        {
+          "@type": "Question",
+          "name": "Is a spreadsheet good enough for a trading journal?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A spreadsheet works well for traders taking fewer than 5 trades per day. Once you exceed that, manual data entry becomes a bottleneck. Software like TradeZella or TraderSync auto-imports trades from your broker, attaches chart screenshots, and generates analytics automatically. Our free Google Sheets template is a solid starting point." }
+        },
+        {
+          "@type": "Question",
+          "name": "How often should I review my trading journal?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Review individual trades daily (2 to 3 minutes each) and do a full performance review weekly. The weekly review is where you calculate metrics like win rate by setup, average R multiple, and worst trading hours. Most traders spend 20 to 30 minutes on their Sunday review." }
+        },
+        {
+          "@type": "Question",
+          "name": "Can a trading journal actually improve my win rate?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. A journal does not give you better entries. It shows you which of your existing entries work and which do not. After 50 to 100 logged trades, most traders discover that 2 or 3 specific patterns are responsible for the majority of their losses. Cutting those patterns directly improves win rate and reduces drawdowns." }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the best trading journal software?",
+          "acceptedAnswer": { "@type": "Answer", "text": "TradeZella ranks #1 in our 2026 review with a TJ Score of 9.4/10. It offers 500+ broker integrations, 50+ analytics reports, trade replay, and backtesting. TraderSync (7.8/10) leads in broker coverage with 950+ integrations and Cypher AI coaching. Edgewonk (7.0/10) is the best value at $197/year with psychology-focused Tiltmeter tracking." }
+        },
+        {
+          "@type": "Question",
+          "name": "How is a trading journal different from a broker statement?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A broker statement shows what happened: fills, P&L, commissions. A trading journal captures why it happened: your setup, your reasoning, your emotional state, and whether you followed your rules. The broker statement is raw data. The journal is the analysis layer that turns data into improvement." }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-inner">
+    <a href="/" class="logo"><img src="/favicon.svg" alt="TradingJournal.com" class="logo-icon">TradingJournal</a>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    <ul class="nav-menu">
+      <li><a href="/compare">Compare</a></li>
+      <li><a href="/blog" class="active">Blog</a></li>
+    </ul>
+  </div>
+</nav>
+<main>
+
+<!-- HERO -->
+<div class="article-hero">
+  <div class="hero-cover-text">
+    <div class="cover-year">Guide</div>
+    <div class="cover-title">What Is a Trading Journal?</div>
+  </div>
+</div>
+
+<!-- ARTICLE -->
+<section class="article-wrapper">
+  <div class="article-breadcrumb">
+    <a href="/">Home</a>
+    <span>/</span>
+    <a href="/blog">Blog</a>
+    <span>/</span>
+    <span>What Is a Trading Journal?</span>
+  </div>
+
+  <span class="article-tag tag-g">Guide</span>
+  <h1 class="article-title">What Is a Trading Journal? Everything You Need to Know</h1>
+  <div class="article-meta">
+    <span>March 5, 2026</span>
+    <span class="article-meta-sep">&middot;</span>
+    <span>10 min read</span>
+    <span class="article-meta-sep">&middot;</span>
+    <span>By the TradingJournal.com team</span>
+  </div>
+
+  <div class="article-body">
+
+    <p><strong>A trading journal is a structured record of every trade you take.</strong> It captures what you traded, why you entered, where you exited, how much you risked, and what you learned. Think of it as a personal database of your trading decisions. The best traders in the world use one, and most prop firms require it. The reason is simple: you cannot improve what you do not measure.</p>
+
+    <p>This guide covers what a trading journal actually tracks, why it matters for your profitability, and how to choose between a notebook, a spreadsheet, and dedicated software. If you already know the basics and want to start logging trades today, jump to our <a href="/blog/how-to-journal-trades">step-by-step journaling guide</a> or grab our <a href="/blog/trading-journal-template">free trading journal template</a>.</p>
+
+    <h2>What a Trading Journal Tracks</h2>
+
+    <p>Every journal entry records two categories of information: the objective trade data and the subjective context around it. Both matter equally.</p>
+
+    <h3>Objective Data</h3>
+
+    <p>These are the hard numbers that define each trade:</p>
+
+    <ul>
+      <li><strong>Date and time</strong> of entry and exit</li>
+      <li><strong>Ticker or instrument</strong> (AAPL, /ES, EUR/USD, BTC)</li>
+      <li><strong>Direction</strong> (long or short)</li>
+      <li><strong>Entry price</strong> and <strong>exit price</strong></li>
+      <li><strong>Position size</strong> (shares, contracts, or lots)</li>
+      <li><strong>Stop loss</strong> and <strong>take profit</strong> levels</li>
+      <li><strong>P&amp;L</strong> in dollars and as a percentage of your account</li>
+      <li><strong>R multiple</strong> (profit or loss divided by the amount you risked)</li>
+    </ul>
+
+    <h3>Subjective Context</h3>
+
+    <p>This is the information that separates a useful journal from a glorified trade log:</p>
+
+    <ul>
+      <li><strong>Setup type</strong> (breakout, pullback, VWAP bounce, gap fill, ICT OTE)</li>
+      <li><strong>Emotional state</strong> before the trade (calm, anxious, frustrated, excited, revenge)</li>
+      <li><strong>Trade rationale</strong> in one or two sentences</li>
+      <li><strong>What you learned</strong> after the trade closed</li>
+      <li><strong>Chart screenshots</strong> at entry and exit</li>
+      <li><strong>Whether you followed your plan</strong> or deviated</li>
+    </ul>
+
+    <p>A trader who only logs numbers is collecting data. A trader who also logs context is building a system for improvement. The emotional state field alone has changed the trajectory of more trading careers than any indicator or strategy.</p>
+
+    <h2>Why Traders Keep a Journal</h2>
+
+    <p>Between 70% and 90% of retail traders lose money. The traders who survive that filter share one habit: they track, review, and adjust based on their own performance data. A journal is the tool that makes this possible. Here is what it actually does for you.</p>
+
+    <h3>Pattern Recognition</h3>
+
+    <p>Your brain is terrible at remembering trading patterns across hundreds of trades. You might feel like breakout trades work well for you, but after 100 logged entries, the data might show a 42% win rate on breakouts and a 61% win rate on pullbacks. Without the journal, you would never know. One trader we reviewed discovered that 68% of his losses came from trades taken after 2pm. He stopped trading afternoons and his monthly P&amp;L turned positive within six weeks.</p>
+
+    <h3>Emotional Awareness</h3>
+
+    <p>Revenge trading, FOMO entries, and premature exits are invisible in the moment. They only become visible in retrospect, when you can see that every trade you labeled "frustrated" or "revenge" lost money at a 78% rate. Logging your emotional state before each trade creates a feedback loop between how you feel and what it costs you. Over time, you learn to recognize the feeling before you click the button.</p>
+
+    <h3>Strategy Refinement</h3>
+
+    <p>A journal with tagged setups shows you exactly which strategies earn money and which bleed it. You might run three setups: breakouts, mean reversion, and gap fills. After 200 trades, the data shows breakouts averaging 1.8R, gap fills averaging 0.9R, and mean reversion averaging -0.4R. The decision becomes obvious: cut mean reversion, scale up breakouts. No guessing required.</p>
+
+    <p>For a deeper look at how journaling prevents the most common failure patterns, read <a href="/blog/why-traders-fail-without-journal">why most traders fail without a journal</a>.</p>
+
+    <h2>Paper vs Spreadsheet vs Software</h2>
+
+    <p>There are three ways to keep a trading journal. Each has genuine trade-offs.</p>
+
+    <div class="table-wrapper">
+    <table>
+      <thead>
+        <tr>
+          <th>Format</th>
+          <th>Best For</th>
+          <th>Limitations</th>
+          <th>Cost</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Notebook</strong></td>
+          <td>Swing traders taking 1 to 3 trades per week</td>
+          <td>No analytics, no screenshots, cannot sort or filter data</td>
+          <td>Free</td>
+        </tr>
+        <tr>
+          <td><strong>Spreadsheet</strong></td>
+          <td>Active traders taking up to 5 trades per day</td>
+          <td>Manual data entry, no chart storage, limited analytics</td>
+          <td>Free</td>
+        </tr>
+        <tr>
+          <td><strong>Software</strong></td>
+          <td>Day traders taking 5+ trades per day</td>
+          <td>Monthly subscription cost</td>
+          <td>$16 to $80/mo</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+
+    <p><strong>Paper notebooks</strong> are fine if you take a handful of trades per week and want to build the journaling habit without any friction. Write what you traded, why, and what you learned. The limit is that you cannot run analytics on handwritten notes.</p>
+
+    <p><strong>Spreadsheets</strong> are the sweet spot for most newer traders. Our <a href="/blog/trading-journal-template">free Google Sheets template</a> tracks 15 fields per trade and auto-calculates P&amp;L, R multiples, win rate, and profit factor. The bottleneck is manual data entry: once you are logging 5+ trades per day, it takes 15 to 20 minutes just to fill in the sheet.</p>
+
+    <p><strong>Dedicated software</strong> eliminates the manual work. <a href="/review/tradezella">TradeZella</a> ($29/mo) auto-imports from 500+ brokers, stores chart screenshots with every trade, generates 50+ analytics reports, and includes trade replay in three modes. <a href="/review/tradersync">TraderSync</a> ($29.95/mo) covers 950+ brokers and includes Cypher AI for pattern recognition. <a href="/review/edgewonk">Edgewonk</a> ($197/year) is the most affordable premium option, with 200+ importers and the Tiltmeter for psychology tracking. See our full <a href="/blog/best-trading-journals">best trading journals ranking</a> for detailed comparisons.</p>
+
+    <h2>What Makes a Good Trading Journal</h2>
+
+    <p>Whether you use a spreadsheet or software, look for these five capabilities:</p>
+
+    <ol>
+      <li><strong>Setup tagging.</strong> You need to label each trade by strategy type so you can filter your analytics and see which setups produce results. Without tags, your data is just a flat list of wins and losses.</li>
+      <li><strong>Emotional tracking.</strong> Even a simple 1 to 10 scale before each trade creates the feedback loop that breaks emotional trading patterns.</li>
+      <li><strong>Auto-import (software).</strong> If you trade more than a few times per day, manual entry will kill your consistency. Auto-import from your broker saves hours and eliminates entry errors.</li>
+      <li><strong>Visual review.</strong> Chart screenshots alongside your trade data make weekly reviews dramatically more useful. You see the pattern, the entry, the exit, and the context all in one place.</li>
+      <li><strong>Analytics and filtering.</strong> The ability to slice your data by setup, time of day, ticker, emotional state, and day of week. This is where journals turn raw trades into actionable insights.</li>
+    </ol>
+
+    <p>Use our <a href="/compare">comparison tool</a> to see how each platform stacks up across these criteria.</p>
+
+    <h2>How Professional Traders Use Journals</h2>
+
+    <p>At most prop trading firms, journaling is not optional. Firms like SMB Capital, Maverick Trading, and T3 Trading require daily trade journals from every trader. The format typically includes: entry rationale, exit rationale, what went well, and what needs improvement.</p>
+
+    <p>The reason is practical, not philosophical. A prop firm managing millions in capital needs traders who can identify and fix their own weaknesses quickly. Traders who journal improve faster, take fewer unplanned risks, and generate more consistent returns. The journal is how the firm ensures that screen time translates into skill development.</p>
+
+    <p>Funded trader programs operate the same way. Most evaluation processes include journaling requirements or strongly encourage it. The traders who pass these evaluations overwhelmingly track their trades in detail. The ones who treat trading like a slot machine rarely make it through.</p>
+
+    <p>The principle scales down to retail accounts. You do not need a prop firm mandate to benefit from the same process. The discipline is what matters, and a journal is the simplest way to enforce it.</p>
+
+    <h2>Common Mistakes to Avoid</h2>
+
+    <p>The journaling habit fails for specific, predictable reasons. Knowing them in advance makes them avoidable.</p>
+
+    <ol>
+      <li><strong>Only logging winners.</strong> If your journal skips losing trades, your win rate, average loss, and profit factor are all fiction. Log every trade, especially the ones that hurt.</li>
+      <li><strong>Logging at the end of the day.</strong> By 7pm, you have forgotten the emotional context of your 9:35am trade. Log each trade within 60 seconds of closing it. The context fades faster than you think.</li>
+      <li><strong>Never reviewing the data.</strong> A journal you never read is just a chore. Block 15 to 20 minutes every Sunday to review your summary metrics. That weekly review is where the actual learning happens.</li>
+      <li><strong>Overcomplicating the template.</strong> Starting with 30 columns leads to burnout within two weeks. Begin with 12 to 15 fields. Add complexity only after you have logged 50+ trades and know what additional data would change your behavior.</li>
+      <li><strong>Skipping the emotional field.</strong> Traders dismiss this column as soft or subjective. It is the second most predictive field after setup type. One trader discovered that 73% of his losses happened when he logged a frustration level above 6/10. That single data point changed his entire approach.</li>
+      <li><strong>Not defining setups clearly.</strong> "Breakout" means different things to different traders. Write a one-sentence definition for each setup type you trade. Without clear definitions, your setup-level analytics become noise.</li>
+    </ol>
+
+    <div class="callout">
+      <div class="callout-title">Ready to Start?</div>
+      <p>Grab our <a href="/blog/trading-journal-template">free Google Sheets template</a> and start logging today. If you want auto-import and advanced analytics, read our <a href="/blog/best-trading-journals">best trading journals guide</a> to pick the right software. For a full walkthrough of the journaling process, see <a href="/blog/how-to-journal-trades">how to journal your trades</a>.</p>
+    </div>
+
+    <h2>Frequently Asked Questions</h2>
+    <div class="faq-section">
+
+      <details class="faq-item">
+        <summary>Do I need a trading journal if I'm a beginner?</summary>
+        <p>Yes. Beginners benefit the most because they have the most to learn. A journal captures lessons from every trade so you build skill faster instead of repeating the same mistakes. Even if you are paper trading, logging your entries, exits, and reasoning builds the habit before real money is on the line.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>What should I write in my trading journal?</summary>
+        <p>Record six things for every trade: the setup name, your entry and exit prices, position size, the dollar and percentage outcome, and what you learned. Also note your emotional state before the trade (calm, anxious, frustrated, excited) and whether you followed your trading plan. The emotional data is often more valuable than the numbers.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Is a spreadsheet good enough for a trading journal?</summary>
+        <p>A spreadsheet works well for traders taking fewer than 5 trades per day. Once you exceed that volume, manual data entry becomes a bottleneck. Software like TradeZella or TraderSync auto-imports trades from your broker, attaches chart screenshots, and generates analytics automatically. Our <a href="/blog/trading-journal-template">free Google Sheets template</a> is a solid starting point for most traders.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>How often should I review my trading journal?</summary>
+        <p>Review individual trades daily (2 to 3 minutes per trade) and do a full performance review weekly. The weekly session is where you calculate metrics like win rate by setup, average R multiple, and worst trading hours. Most traders spend 20 to 30 minutes on their Sunday review. That single weekly habit produces more insight than 40 hours of live screen time.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Can a trading journal actually improve my win rate?</summary>
+        <p>Yes. A journal does not give you better entries. It shows you which of your existing entries work and which do not. After 50 to 100 logged trades, most traders discover that 2 or 3 specific patterns cause the majority of their losses. Cutting those patterns directly improves win rate and reduces drawdowns.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>What is the best trading journal software?</summary>
+        <p>TradeZella ranks #1 in our <a href="/blog/best-trading-journals">2026 review</a> with a TJ Score of 9.4/10. It offers 500+ broker integrations, 50+ analytics reports, trade replay, and backtesting. TraderSync (7.8/10) leads in broker coverage with 950+ integrations and Cypher AI coaching. Edgewonk (7.0/10) is the best value at $197/year with psychology tracking.</p>
+      </details>
+
+      <details class="faq-item">
+        <summary>How is a trading journal different from a broker statement?</summary>
+        <p>A broker statement shows what happened: fills, P&amp;L, commissions. A trading journal captures why it happened: your setup, your reasoning, your emotional state, and whether you followed your rules. The broker statement is raw data. The journal is the analysis layer that turns data into improvement.</p>
+      </details>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- RELATED ARTICLES -->
+<section class="related">
+  <div class="related-heading">Related Articles</div>
+  <div class="related-grid">
+    <a href="/blog/best-trading-journals" class="related-card">
+      <div class="related-img">
+        <div class="related-img-inner bg-1">
+          <div class="related-cover-text">
+            <div class="cover-year">2026</div>
+            <div class="cover-title">Best Trading Journals</div>
+          </div>
+          <span class="related-tag tag-g">Guide</span>
+        </div>
+      </div>
+      <div class="related-title">Best Trading Journals in 2026</div>
+      <div class="related-meta">March 2026 &middot; 13 min read</div>
+    </a>
+    <a href="/blog/how-to-journal-trades" class="related-card">
+      <div class="related-img">
+        <div class="related-img-inner bg-5">
+          <div class="related-cover-text">
+            <div class="cover-year">2026</div>
+            <div class="cover-title">Trade Journaling Guide</div>
+          </div>
+          <span class="related-tag tag-g">Guide</span>
+        </div>
+      </div>
+      <div class="related-title">How to Journal Your Trades</div>
+      <div class="related-meta">March 2026 &middot; 11 min read</div>
+    </a>
+    <a href="/review/tradezella" class="related-card">
+      <div class="related-img">
+        <div class="related-img-inner bg-2">
+          <div class="related-cover">
+            <img loading="lazy" src="/tradezella-logo-text.webp" alt="TradeZella" class="cover-single-logo">
+          </div>
+          <span class="related-tag tag-r">Review</span>
+        </div>
+      </div>
+      <div class="related-title">TradeZella Review 2026</div>
+      <div class="related-meta">March 2026 &middot; 14 min read</div>
+    </a>
+  </div>
+</section>
+
+<!-- FREE TEMPLATE CTA -->
+<section class="newsletter">
+  <div class="nl-inner">
+    <div class="section-heading">Free Trading Journal Template</div>
+    <p class="section-desc">Track your trades, analyze performance, and improve your strategy. All in one spreadsheet. No sign-up required.</p>
+    <a href="https://docs.google.com/spreadsheets/d/1FE_sozOLpUm8V3HIIX5vTR6r1yqmJ3nNSTsIhw-q2WE/edit?usp=sharing" target="_blank" rel="noopener" class="nl-btn" style="display:inline-block;text-decoration:none;text-align:center;">Get Free Template</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+</main>
+<footer>
+  <div class="footer-inner">
+    <div class="footer-cols">
+      <div>
+        <div class="footer-brand-text">TradingJournal</div>
+        <p class="footer-brand-desc">The internet's most trusted source for trading journal reviews, comparisons, and guides. Independent and data-driven.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Compare</div>
+        <ul class="footer-list">
+          <li><a href="/compare/tradezella-vs-tradervue">TradeZella vs Tradervue</a></li>
+          <li><a href="/compare/tradervue-vs-tradersync">Tradervue vs TraderSync</a></li>
+          <li><a href="/compare/tradezella-vs-edgewonk">TradeZella vs Edgewonk</a></li>
+          <li><a href="/compare/tradezella-vs-trademetria">TradeZella vs Trademetria</a></li>
+          <li><a href="/compare/tradezella-vs-tradersync">TradeZella vs TraderSync</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Resources</div>
+        <ul class="footer-list">
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="/blog/best-trading-journals">Best Trading Journals 2026</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-col-title">Company</div>
+        <ul class="footer-list">
+          <li><a href="/about">About Us</a></li>
+          <li><a href="/methodology">Our Methodology</a></li>
+          <li><a href="/disclosure">Disclosure</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.querySelector('.nav-toggle').addEventListener('click', function() {
+  document.querySelector('.nav-menu').classList.toggle('open');
+});
+</script>
+</body>
+</html>
