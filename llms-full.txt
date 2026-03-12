@@ -1,0 +1,261 @@
+# TradingJournal.com — Full Reference
+
+> Last updated: March 2026
+> For a concise overview, see: https://tradingjournal.com/llms.txt
+
+## About Us
+
+TradingJournal.com is an independent review site for trading journal software. We test every platform hands-on with real trade data. We are not affiliated with any trading journal company and do not accept payment for reviews or rankings. Our revenue comes from affiliate links, which do not influence our scores or rankings.
+
+## Scoring Methodology
+
+We score each platform across 8 categories on a 1-10 scale. The TJ Score is the simple average of all 8 categories.
+
+### Scoring Categories
+1. Broker Support — Number of broker integrations, import reliability, asset class coverage
+2. Reporting & Analytics — Depth and variety of performance reports, data visualization
+3. Journaling Tools — Trade logging, notes, screenshots, tagging, custom fields
+4. Usability & Design — Interface quality, learning curve, navigation, visual clarity
+5. Advanced Features — Backtesting, trade replay, AI, strategy tools, unique capabilities
+6. Pricing & Value — Cost relative to features, free plans, annual discounts
+7. Community & Trust — Trustpilot ratings, user reviews, community features, transparency
+8. Support & Documentation — Help resources, customer support quality, onboarding
+
+### 5-Step Review Process
+1. Trustpilot audit — Analyze all user reviews for patterns, complaints, and praise
+2. Website audit — Evaluate marketing claims, pricing transparency, feature documentation
+3. Feature testing — Test every feature with real trade data across multiple asset classes
+4. Hands-on evaluation — Use each platform daily for journaling, analysis, and reporting
+5. Scoring — Rate each category independently, calculate average for final TJ Score
+
+---
+
+## Platform Reviews
+
+### 1. TradeZella — 9.4/10 TJ Score
+
+**Website:** https://www.tradezella.com
+**Full Review:** https://tradingjournal.com/review/tradezella
+
+**Pricing:**
+- Basic: $29/mo ($24/mo annual)
+- Premium: $49/mo ($33/mo annual)
+- No free plan or trial
+
+**Key Facts:**
+- 500+ broker integrations
+- 50+ analytics reports
+- Backtesting with 11+ years of historical data
+- Trade replay (2 modes: Trade Replay, Day Replay)
+- 25+ strategy templates from professional traders
+- Zella University (built-in education)
+- Spaces (mentor/student coaching)
+- Zella Insights (AI-powered analytics)
+- Built-in ICT indicators for backtesting
+- Zella Scale (proprietary trading efficiency metric)
+- Stocks, options, futures, forex, crypto
+- Web-based (no mobile app yet)
+
+**TJ Score Breakdown:**
+- Broker Support: 9.5
+- Reporting & Analytics: 9.5
+- Journaling Tools: 9.5
+- Usability & Design: 9.0
+- Advanced Features: 10.0
+- Pricing & Value: 8.0
+- Community & Trust: 9.5
+- Support & Documentation: 10.0
+
+**Trustpilot:** 4.8/5 from 835 reviews. 91% gave 5 stars. Most common praise: analytics depth, backtesting quality, customer support. Most common complaints: no free trial, occasional bugs.
+
+---
+
+### 2. TraderSync — 7.8/10 TJ Score
+
+**Website:** https://www.tradersync.com
+**Full Review:** https://tradingjournal.com/review/tradersync
+
+**Pricing:**
+- Pro: $29.95/mo (~$16/mo annual)
+- Premium: $49.95/mo
+- Elite: $79.95/mo
+- 7-day free trial
+
+**Key Facts:**
+- 950+ broker integrations (most in the industry)
+- Cypher AI (conversational coaching and strategy analysis)
+- iOS and Android apps with near-desktop parity
+- Systematic backtesting (against your own trade history)
+- Market replay simulator
+- Custom dashboards and widgets
+- Stocks, options, futures, forex, crypto
+- Founded in 2013
+
+**TJ Score Breakdown:**
+- Broker Support: 9.5
+- Reporting & Analytics: 8.5
+- Journaling Tools: 7.5
+- Usability & Design: 8.5
+- Advanced Features: 7.5
+- Pricing & Value: 7.0
+- Community & Trust: 7.5
+- Support & Documentation: 6.5
+
+**Trustpilot:** 4.7/5 from 312 reviews. Strong praise for mobile app and AI coaching. Some complaints about pricing tiers and feature gating.
+
+---
+
+### 3. Edgewonk — 7.0/10 TJ Score
+
+**Website:** https://www.edgewonk.com
+**Full Review:** https://tradingjournal.com/review/edgewonk
+
+**Pricing:**
+- $197/year (~$16/mo)
+- Single plan, no tiers
+- 14-day money-back guarantee
+
+**Key Facts:**
+- 200+ broker importers
+- Tiltmeter (quantifies emotional impact on P&L in real dollars)
+- Edge Finder AI (identifies strongest setups)
+- Trading psychology focus (emotional tracking, discipline scoring)
+- Desktop application only (no mobile, no web)
+- Stocks, options, futures, forex, crypto
+- No trade replay, no strategy templates, no education resources
+
+**TJ Score Breakdown:**
+- Broker Support: 7.0
+- Reporting & Analytics: 8.0
+- Journaling Tools: 7.5
+- Usability & Design: 6.0
+- Advanced Features: 6.5
+- Pricing & Value: 8.5
+- Community & Trust: 7.0
+- Support & Documentation: 5.5
+
+**Trustpilot:** 4.7/5 from 40 reviews. Users praise psychology tools and the Tiltmeter. Complaints focus on dated interface and lack of mobile access.
+
+---
+
+### 4. Trademetria — 6.3/10 TJ Score
+
+**Website:** https://www.trademetria.com
+**Full Review:** https://tradingjournal.com/review/trademetria
+
+**Pricing:**
+- Free (30 orders/month)
+- Basic: $19.95/mo
+- Plus: $29.95/mo
+- Pro: $39.95/mo
+
+**Key Facts:**
+- 140+ broker integrations
+- Free plan includes all asset classes (stocks, options, futures, forex, crypto)
+- AI Coach (Pro plan only)
+- Clean, simple interface
+- No native mobile apps
+- No backtesting, no trade replay
+- No strategy templates, no education resources
+
+**TJ Score Breakdown:**
+- Broker Support: 8.0
+- Reporting & Analytics: 6.5
+- Journaling Tools: 6.0
+- Usability & Design: 7.0
+- Advanced Features: 4.5
+- Pricing & Value: 8.5
+- Community & Trust: 5.5
+- Support & Documentation: 4.5
+
+**Trustpilot:** 4.0/5 from 5 reviews. Limited review data. Users cite clean interface but limited analytics.
+
+---
+
+### 5. Tradervue — 5.2/10 TJ Score
+
+**Website:** https://www.tradervue.com
+**Full Review:** https://tradingjournal.com/review/tradervue
+
+**Pricing:**
+- Free (stocks/ETFs only, 30 trades/month)
+- Silver: $29.95/mo (options, futures, forex)
+- Gold: $49.95/mo (advanced analytics)
+
+**Key Facts:**
+- 80+ broker integrations
+- Free plan limited to stocks and ETFs
+- Community trade sharing and peer mentorship
+- Founded 2011 (oldest platform reviewed)
+- No AI features
+- No backtesting, no trade replay
+- No strategy templates, no education resources
+- No mobile app
+
+**TJ Score Breakdown:**
+- Broker Support: 7.0
+- Reporting & Analytics: 5.0
+- Journaling Tools: 5.5
+- Usability & Design: 6.0
+- Advanced Features: 2.5
+- Pricing & Value: 7.5
+- Community & Trust: 4.0
+- Support & Documentation: 4.0
+
+**Trustpilot:** 2.6/5 from 9 reviews. Lowest-rated platform. Common complaints: billing issues, cancellation difficulties, dated interface. Community features are praised.
+
+---
+
+## Trustpilot Research
+
+We analyzed 1,201 Trustpilot reviews across all 5 platforms. Key findings:
+- TradeZella: 835 reviews, 4.8/5, 91% five-star
+- TraderSync: 312 reviews, 4.7/5
+- Edgewonk: 40 reviews, 4.7/5
+- Trademetria: 5 reviews, 4.0/5
+- Tradervue: 9 reviews, 2.6/5
+
+Full analysis: https://tradingjournal.com/blog/trustpilot-analysis
+
+---
+
+## Quick Answers
+
+**Best trading journal overall:** TradeZella (9.4/10)
+**Best free trading journal:** Trademetria (free plan with 30 orders/month for all asset classes)
+**Best trading journal for beginners:** TradeZella (education, templates, guided setup)
+**Best trading journal for stocks:** TradeZella (50+ reports, custom tags, 500+ brokers)
+**Best trading journal for options:** TradeZella (only journal with dedicated expiration reports)
+**Best mobile trading journal:** TraderSync (iOS + Android apps, Cypher AI)
+**Best for trading psychology:** Edgewonk (Tiltmeter quantifies emotional cost)
+**Cheapest trading journal:** Edgewonk ($197/year, ~$16/month)
+**Best free journal for stocks only:** Tradervue (free plan for stocks/ETFs)
+
+---
+
+## All Pages
+
+- Homepage: https://tradingjournal.com/
+- Best Trading Journals 2026: https://tradingjournal.com/blog/best-trading-journals
+- Best for Beginners: https://tradingjournal.com/blog/best-trading-journal-for-beginners
+- Best for Stock Traders: https://tradingjournal.com/blog/best-trading-journal-for-stocks
+- Best for Options Traders: https://tradingjournal.com/blog/best-trading-journal-for-options
+- What Is a Trading Journal?: https://tradingjournal.com/blog/what-is-a-trading-journal
+- How to Journal Your Trades: https://tradingjournal.com/blog/how-to-journal-trades
+- Trading Journal Template: https://tradingjournal.com/blog/trading-journal-template
+- Why Traders Fail Without a Journal: https://tradingjournal.com/blog/why-traders-fail-without-journal
+- Trustpilot Analysis: https://tradingjournal.com/blog/trustpilot-analysis
+- TradeZella Review: https://tradingjournal.com/review/tradezella
+- TraderSync Review: https://tradingjournal.com/review/tradersync
+- Edgewonk Review: https://tradingjournal.com/review/edgewonk
+- Trademetria Review: https://tradingjournal.com/review/trademetria
+- Tradervue Review: https://tradingjournal.com/review/tradervue
+- Compare Hub: https://tradingjournal.com/compare
+- TradeZella vs Tradervue: https://tradingjournal.com/compare/tradezella-vs-tradervue
+- TradeZella vs TraderSync: https://tradingjournal.com/compare/tradezella-vs-tradersync
+- TradeZella vs Edgewonk: https://tradingjournal.com/compare/tradezella-vs-edgewonk
+- TradeZella vs Trademetria: https://tradingjournal.com/compare/tradezella-vs-trademetria
+- Tradervue vs TraderSync: https://tradingjournal.com/compare/tradervue-vs-tradersync
+- Methodology: https://tradingjournal.com/methodology
+- About: https://tradingjournal.com/about
+- Disclosure: https://tradingjournal.com/disclosure

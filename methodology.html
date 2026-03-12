@@ -446,14 +446,19 @@
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "WebPage",
+      "@type": ["WebPage", "Article"],
       "name": "Our Review Methodology",
+      "headline": "How We Score Trading Journals: Our 8-Category Methodology",
       "url": "https://tradingjournal.com/methodology",
       "description": "How TradingJournal.com reviews trading journals: our 5-step process covering Trustpilot ratings, website audits, feature testing, and hands-on evaluation. 8 scoring categories on a 1-10 scale.",
+      "datePublished": "2026-03-01",
+      "dateModified": "2026-03-12",
+      "author": { "@type": "Organization", "name": "TradingJournal.com", "url": "https://tradingjournal.com/" },
       "publisher": {
         "@type": "Organization",
         "name": "TradingJournal.com",
-        "url": "https://tradingjournal.com/"
+        "url": "https://tradingjournal.com/",
+        "logo": { "@type": "ImageObject", "url": "https://tradingjournal.com/favicon.svg" }
       }
     },
     {
@@ -495,8 +500,10 @@
     <a href="/" class="logo"><img src="/favicon.svg" alt="TradingJournal.com" class="logo-icon">TradingJournal</a>
     <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
     <ul class="nav-menu">
+      <li><a href="/blog/best-trading-journals">Reviews</a></li>
       <li><a href="/compare">Compare</a></li>
       <li><a href="/blog">Blog</a></li>
+      <li><a href="/methodology">How We Score</a></li>
     </ul>
   </div>
 </nav>

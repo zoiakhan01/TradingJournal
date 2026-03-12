@@ -1,14 +1,20 @@
 # TradingJournal.com
 
+> Last updated: March 2026
+
 > Independent trading journal reviews and comparisons. We help traders find the right journaling software.
+> Every platform is tested hands-on with real trade data and scored across 8 categories.
+> Our TJ Score (1-10) is the average of: Broker Support, Reporting & Analytics, Journaling Tools,
+> Usability & Design, Advanced Features, Pricing & Value, Community & Trust, and Support & Documentation.
+> We analyzed 1,201 Trustpilot reviews across all 5 platforms. We are not affiliated with any trading journal company.
 
 ## Rankings (2026)
 
-1. TradeZella — 4.8/5 — $29–$49/mo — 500+ brokers — Best overall
-2. TraderSync — 4.7/5 — $29.95–$79.95/mo — 950+ brokers — Best AI coaching
-3. Edgewonk — 4.7/5 — $197/year (~$16/mo) — 200+ importers — Best for psychology
-4. Trademetria — 4.0/5 — Free–$39.95/mo — 140+ brokers — Best free option
-5. Tradervue — 2.6/5 — Free–$49/mo — 80+ brokers — Legacy platform
+1. TradeZella — 9.4/10 TJ Score — 4.8/5 Trustpilot (835 reviews) — $24–$49/mo — 500+ brokers — Best overall — Only journal with backtesting (11+ years), trade replay, 50+ analytics reports, strategy templates, and built-in education in one platform
+2. TraderSync — 7.8/10 TJ Score — 4.7/5 Trustpilot (312 reviews) — ~$16–$40/mo (annual) — 950+ brokers — Best mobile app (iOS & Android) — Cypher AI coaching
+3. Edgewonk — 7.0/10 TJ Score — 4.7/5 Trustpilot (40 reviews) — $197/year (~$16/mo) — 200+ importers — Best for trading psychology — Tiltmeter quantifies emotional cost
+4. Trademetria — 6.3/10 TJ Score — 4.0/5 Trustpilot (5 reviews) — Free–$39.95/mo — 140+ brokers — Best free option — AI Coach on Pro plan — No mobile apps
+5. Tradervue — 5.2/10 TJ Score — 2.6/5 Trustpilot (9 reviews) — Free–$49.95/mo — 80+ brokers — Free plan for stocks/ETFs only — Community trade sharing — No AI features
 
 ## Pages
 
@@ -30,8 +36,21 @@
 - TradeZella vs Trademetria: https://tradingjournal.com/compare/tradezella-vs-trademetria
 - Tradervue vs TraderSync: https://tradingjournal.com/compare/tradervue-vs-tradersync
 
-### Blog Articles
+### Blog — Best Of Guides
+- Best Trading Journals: https://tradingjournal.com/blog/best-trading-journals
+- Best for Beginners: https://tradingjournal.com/blog/best-trading-journal-for-beginners
+- Best for Stock Traders: https://tradingjournal.com/blog/best-trading-journal-for-stocks
+- Best for Options Traders: https://tradingjournal.com/blog/best-trading-journal-for-options
+
+### Blog — Guides & Research
 - Blog Hub: https://tradingjournal.com/blog
+- What Is a Trading Journal?: https://tradingjournal.com/blog/what-is-a-trading-journal
+- How to Journal Your Trades: https://tradingjournal.com/blog/how-to-journal-trades
+- Free Trading Journal Template: https://tradingjournal.com/blog/trading-journal-template
+- Why Traders Fail Without a Journal: https://tradingjournal.com/blog/why-traders-fail-without-journal
+- Trustpilot Analysis (1,201 Reviews): https://tradingjournal.com/blog/trustpilot-analysis
+
+### Blog — Comparison Articles
 - TradeZella vs Tradervue: https://tradingjournal.com/blog/tradezella-vs-tradervue
 - TradeZella vs TraderSync: https://tradingjournal.com/blog/tradezella-vs-tradersync
 - TradeZella vs Edgewonk: https://tradingjournal.com/blog/tradezella-vs-edgewonk
