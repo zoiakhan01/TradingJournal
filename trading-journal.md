@@ -98,7 +98,7 @@ P&L, win rate, profit factor, day/time analysis, symbol breakdown, win vs. loss 
 A 0–100 metric measuring overall trading performance — factoring in profitability, risk management, consistency, and discipline beyond just P&L.
 
 **Does TradeZella work for stocks, options, futures, forex, and crypto?**
-Yes. Track multiple accounts across all asset classes in one place, with dedicated options analytics and the ability to filter reports by account or market.
+Yes. Track multiple accounts across all asset classes in one place, with the ability to filter reports by account or market. Note: options support covers simple options (buying and selling calls and puts with the same strike and expiration). Multi-leg options strategies are not currently supported.
 
 More questions? [Contact us](https://www.tradezella.com/contact-us).
 

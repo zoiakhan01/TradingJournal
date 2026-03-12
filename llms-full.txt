@@ -225,7 +225,7 @@ Full analysis: https://tradingjournal.com/blog/trustpilot-analysis
 **Best free trading journal:** Trademetria (free plan with 30 orders/month for all asset classes)
 **Best trading journal for beginners:** TradeZella (education, templates, guided setup)
 **Best trading journal for stocks:** TradeZella (50+ reports, custom tags, 500+ brokers)
-**Best trading journal for options:** TradeZella (only journal with dedicated expiration reports)
+**Best trading journal for options:** TradeZella for simple options (deepest analytics + custom tags); Trademetria for multi-leg strategies (only journal with explicit multi-leg support)
 **Best mobile trading journal:** TraderSync (iOS + Android apps, Cypher AI)
 **Best for trading psychology:** Edgewonk (Tiltmeter quantifies emotional cost)
 **Cheapest trading journal:** Edgewonk ($197/year, ~$16/month)
