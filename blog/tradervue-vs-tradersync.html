@@ -272,6 +272,30 @@
             "@type": "Answer",
             "text": "Not meaningfully. The only crypto-related instrument Tradervue supports is CME Bitcoin futures, which are futures contracts, not spot crypto. TraderSync supports crypto alongside stocks, options, futures, and forex, though crypto charting is limited to US equities."
           }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I export my trade data from Tradervue to TraderSync?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tradervue allows you to export your trade history as a CSV file. TraderSync accepts CSV imports through its generic importer. The migration is possible but not seamless. You will need to map column headers manually, and Tradervue-specific data like shared trade comments, community notes, and mentor feedback will not carry over. Plan for 20 to 40 minutes of cleanup depending on how many trades you have logged."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I share trade reports publicly with either platform?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tradervue has built-in public trade sharing with granular privacy controls. You can publish individual trades to the community while hiding sensitive details like position size or account value. Other traders can comment on your shared trades. TraderSync does not have a public sharing or community feed feature. If you need to share reports externally (with a mentor or trading group), TraderSync supports PDF and screenshot exports, but there is no interactive sharing system."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which platform handles partial fills better?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "TraderSync automatically groups partial fills into a single trade when imported via broker auto-sync, which keeps your journal clean without manual intervention. Tradervue also groups executions into trades, but its grouping logic occasionally splits what should be one trade into multiple entries, especially with complex options or futures orders. Both platforms let you manually merge or split trades after import if the automatic grouping is incorrect."
+          }
         }
       ]
     }
@@ -574,6 +598,20 @@
       <p>Not meaningfully. The only crypto-related instrument Tradervue supports is CME Bitcoin futures, which are futures contracts, not spot crypto. TraderSync supports crypto alongside stocks, options, futures, and forex, though crypto charting is limited to US equities.</p>
     </details>
 
+    <details class="faq-item">
+      <summary>Can I export my trade data from Tradervue to TraderSync?</summary>
+      <p>Tradervue allows you to export your trade history as a CSV file. TraderSync accepts CSV imports through its generic importer. The migration is possible but not seamless. You will need to map column headers manually, and Tradervue-specific data like shared trade comments, community notes, and mentor feedback will not carry over. Plan for 20 to 40 minutes of cleanup depending on how many trades you have logged.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Can I share trade reports publicly with either platform?</summary>
+      <p>Tradervue has built-in public trade sharing with granular privacy controls. You can publish individual trades to the community while hiding sensitive details like position size or account value. Other traders can comment on your shared trades. TraderSync does not have a public sharing or community feed feature. If you need to share reports externally (with a mentor or trading group), TraderSync supports PDF and screenshot exports, but there is no interactive sharing system.</p>
+    </details>
+
+    <details class="faq-item">
+      <summary>Which platform handles partial fills better?</summary>
+      <p>TraderSync automatically groups partial fills into a single trade when imported via broker auto-sync, which keeps your journal clean without manual intervention. Tradervue also groups executions into trades, but its grouping logic occasionally splits what should be one trade into multiple entries, especially with complex options or futures orders. Both platforms let you manually merge or split trades after import if the automatic grouping is incorrect.</p>
+    </details>
 
     </div>
   </div>
