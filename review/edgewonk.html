@@ -1139,25 +1139,27 @@ document.querySelector('.nav-toggle').addEventListener('click', function() {
 </script>
 
 <script>
+function showTemplateLink(container) {
+  var form = container.querySelector('form[name^="template-download"]');
+  if (form) form.style.display = 'none';
+  var fine = container.querySelector('p[style*="11px"]');
+  if (fine) fine.style.display = 'none';
+  var desc = container.querySelector('.section-desc, .email-gate-desc');
+  if (desc) desc.style.display = 'none';
+  var success = container.querySelector('.nl-gate-success, .email-gate-success');
+  if (success) success.style.display = 'block';
+}
+if (localStorage.getItem('tj-email')) {
+  document.querySelectorAll('.nl-inner, .email-gate').forEach(function(c) { showTemplateLink(c); });
+}
 document.querySelectorAll('form[name^="template-download"]').forEach(function(form) {
   form.addEventListener('submit', function(e) {
     e.preventDefault();
     var data = new FormData(form);
+    localStorage.setItem('tj-email', form.querySelector('input[type="email"]').value);
     fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(data).toString() })
-      .then(function() {
-        form.style.display = 'none';
-        var fine = form.nextElementSibling;
-        if (fine && fine.tagName === 'P') fine.style.display = 'none';
-        var success = form.parentElement.querySelector('.nl-gate-success');
-        if (success) success.style.display = 'block';
-      })
-      .catch(function() {
-        form.style.display = 'none';
-        var fine = form.nextElementSibling;
-        if (fine && fine.tagName === 'P') fine.style.display = 'none';
-        var success = form.parentElement.querySelector('.nl-gate-success');
-        if (success) success.style.display = 'block';
-      });
+      .then(function() { document.querySelectorAll('.nl-inner, .email-gate').forEach(function(c) { showTemplateLink(c); }); })
+      .catch(function() { document.querySelectorAll('.nl-inner, .email-gate').forEach(function(c) { showTemplateLink(c); }); });
   });
 });
 </script>
