@@ -251,11 +251,49 @@
   </div>
 </section>
 
-<section class="newsletter"><div class="nl-inner"><div class="section-heading">Free Trading Journal Template</div><p class="section-desc">Track your trades, analyze performance, and improve your strategy. All in one spreadsheet. No sign-up required.</p><a href="https://docs.google.com/spreadsheets/d/1FE_sozOLpUm8V3HIIX5vTR6r1yqmJ3nNSTsIhw-q2WE/edit?usp=sharing" target="_blank" rel="noopener" class="nl-btn" style="display:inline-block;text-decoration:none;text-align:center;">Get Free Template</a></div></section>
+<section class="newsletter">
+  <div class="nl-inner">
+    <div class="section-heading">Free Trading Journal Template</div>
+    <p class="section-desc">Track your trades, analyze performance, and improve your strategy. Enter your email to get the free spreadsheet.</p>
+    <form name="template-download" method="POST" data-netlify="true" style="display:flex;gap:10px;justify-content:center;">
+      <input type="hidden" name="form-name" value="template-download">
+      <input type="email" name="email" placeholder="you@example.com" required style="padding:13px 16px;border:1px solid #e5e2dc;border-radius:6px;font-size:14px;font-family:var(--sans);background:#fff;color:#1a1a1a;outline:none;width:260px;">
+      <button type="submit" class="nl-btn">Get Free Template</button>
+    </form>
+    <p style="font-size:11px;color:#767676;margin-top:10px;">No spam. Just the template link.</p>
+    <div class="nl-gate-success" style="display:none;">
+      <a href="https://docs.google.com/spreadsheets/d/1FE_sozOLpUm8V3HIIX5vTR6r1yqmJ3nNSTsIhw-q2WE/edit?usp=sharing" target="_blank" rel="noopener" class="nl-btn" style="display:inline-block;text-decoration:none;text-align:center;">Open Google Sheets Template &rarr;</a>
+    </div>
+  </div>
+</section>
 
 </main>
 <footer><div class="footer-inner"><div class="footer-cols"><div><div class="footer-brand-text">TradingJournal</div><p class="footer-brand-desc">The internet's most trusted source for trading journal reviews, comparisons, and guides. Independent and data-driven.</p></div><div><div class="footer-col-title">Compare</div><ul class="footer-list"><li><a href="/compare/tradezella-vs-tradervue">TradeZella vs Tradervue</a></li><li><a href="/compare/tradervue-vs-tradersync">Tradervue vs TraderSync</a></li><li><a href="/compare/tradezella-vs-edgewonk">TradeZella vs Edgewonk</a></li><li><a href="/compare/tradezella-vs-trademetria">TradeZella vs Trademetria</a></li><li><a href="/compare/tradezella-vs-tradersync">TradeZella vs TraderSync</a></li></ul></div><div><div class="footer-col-title">Resources</div><ul class="footer-list"><li><a href="/blog">Blog</a></li><li><a href="/blog/best-trading-journals">Best Trading Journals 2026</a></li></ul></div><div><div class="footer-col-title">Company</div><ul class="footer-list"><li><a href="/about">About Us</a></li><li><a href="/methodology">Our Methodology</a></li><li><a href="/disclosure">Disclosure</a></li></ul></div></div></div></footer>
 
 <script>document.querySelector('.nav-toggle').addEventListener('click', function() { document.querySelector('.nav-menu').classList.toggle('open'); });</script>
+
+<script>
+document.querySelectorAll('form[data-netlify]').forEach(function(form) {
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var data = new FormData(form);
+    fetch('/', { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: new URLSearchParams(data).toString() })
+      .then(function() {
+        form.style.display = 'none';
+        var fine = form.nextElementSibling;
+        if (fine && fine.tagName === 'P') fine.style.display = 'none';
+        var success = form.parentElement.querySelector('.nl-gate-success');
+        if (success) success.style.display = 'block';
+      })
+      .catch(function() {
+        form.style.display = 'none';
+        var fine = form.nextElementSibling;
+        if (fine && fine.tagName === 'P') fine.style.display = 'none';
+        var success = form.parentElement.querySelector('.nl-gate-success');
+        if (success) success.style.display = 'block';
+      });
+  });
+});
+</script>
 </body>
 </html>
