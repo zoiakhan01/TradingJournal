@@ -926,7 +926,7 @@ document.querySelectorAll('.blog-filter').forEach(function(btn) {
 </script>
 
 <script>
-document.querySelectorAll('form[data-netlify]').forEach(function(form) {
+document.querySelectorAll('form[name^="template-download"]').forEach(function(form) {
   form.addEventListener('submit', function(e) {
     e.preventDefault();
     var data = new FormData(form);
