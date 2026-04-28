@@ -45,59 +45,141 @@
   .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 4px; flex-direction: column; gap: 5px; }
   .nav-toggle span { display: block; width: 22px; height: 2px; background: var(--ink); border-radius: 2px; transition: 0.2s; }
 
-  .breadcrumb { max-width: 760px; margin: 0 auto; padding: 24px clamp(24px, 4vw, 64px) 0; font-size: 13px; color: var(--ink-faint); }
-  .breadcrumb a { color: var(--ink-faint); text-decoration: none; }
-  .breadcrumb a:hover { color: var(--ink); }
+  /* ===== HERO ===== */
+  .hero {
+    background: var(--ink);
+    padding: 56px 0 64px;
+    position: relative;
+    overflow: hidden;
+  }
 
-  .tool-wrapper { max-width: 760px; margin: 0 auto; padding: 32px clamp(24px, 4vw, 64px) 0; }
-  .tool-wrapper h1 { font-family: var(--serif); font-size: clamp(28px, 4vw, 40px); font-weight: 700; line-height: 1.15; letter-spacing: -0.8px; margin-bottom: 12px; }
-  .tool-intro { font-size: 16px; line-height: 1.7; color: var(--ink-muted); margin-bottom: 36px; }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(rgba(255,255,255,0.04) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
 
-  /* ===== FORMAT BADGES ===== */
-  .format-badges { display: flex; gap: 10px; margin-bottom: 32px; flex-wrap: wrap; }
-  .format-badge { display: inline-flex; align-items: center; gap: 6px; padding: 6px 14px; border: 1px solid var(--line); border-radius: 6px; font-size: 13px; font-weight: 500; color: var(--ink-muted); background: var(--paper-white); }
+  .hero-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 clamp(24px, 4vw, 64px);
+    position: relative;
+  }
+
+  .hero-breadcrumb {
+    font-size: 13px;
+    color: rgba(255,255,255,0.3);
+    margin-bottom: 24px;
+  }
+
+  .hero-breadcrumb a {
+    color: rgba(255,255,255,0.3);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+
+  .hero-breadcrumb a:hover { color: rgba(255,255,255,0.6); }
+
+  .hero h1 {
+    font-family: var(--serif);
+    font-size: clamp(28px, 4.5vw, 42px);
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.15;
+    letter-spacing: -1px;
+    margin-bottom: 14px;
+  }
+
+  .hero-desc {
+    font-size: 17px;
+    line-height: 1.65;
+    color: rgba(255,255,255,0.45);
+    margin-bottom: 24px;
+  }
+
+  .hero-badges {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 14px;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.5);
+  }
+
+  .hero-badge svg { width: 14px; height: 14px; color: rgba(255,255,255,0.4); }
 
   /* ===== EMAIL GATE ===== */
+  .email-section {
+    max-width: 760px;
+    margin: -32px auto 0;
+    padding: 0 clamp(24px, 4vw, 64px);
+    position: relative;
+    z-index: 2;
+  }
+
   .email-gate {
     background: var(--paper-white);
     border: 1px solid var(--line);
     border-radius: 12px;
-    padding: 40px 32px;
-    text-align: center;
-    margin-bottom: 48px;
+    padding: 40px 36px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.06);
   }
 
-  .email-gate-icon { font-size: 40px; margin-bottom: 16px; }
+  .email-gate-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
 
-  .email-gate h2 {
+  .email-gate-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: var(--accent-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .email-gate-icon svg { width: 22px; height: 22px; color: var(--accent); }
+
+  .email-gate-header h2 {
     font-family: var(--serif);
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 700;
     letter-spacing: -0.3px;
-    margin-bottom: 8px;
   }
 
-  .email-gate-desc {
-    font-size: 15px;
+  .email-gate-header p {
+    font-size: 14px;
     color: var(--ink-muted);
-    line-height: 1.6;
-    margin-bottom: 24px;
-    max-width: 480px;
-    margin-left: auto;
-    margin-right: auto;
+    line-height: 1.5;
+    margin-top: 2px;
   }
 
   .email-gate-form {
     display: flex;
     gap: 10px;
-    justify-content: center;
-    max-width: 440px;
-    margin: 0 auto;
+    margin-bottom: 8px;
   }
 
   .email-gate-input {
     flex: 1;
-    padding: 13px 16px;
+    padding: 14px 16px;
     border: 1px solid var(--line);
     border-radius: 8px;
     font-size: 15px;
@@ -111,12 +193,12 @@
   .email-gate-input:focus { border-color: var(--accent); }
 
   .email-gate-btn {
-    padding: 13px 24px;
+    padding: 14px 28px;
     background: var(--accent);
     color: #fff;
     border: none;
     border-radius: 8px;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 600;
     font-family: var(--sans);
     cursor: pointer;
@@ -127,9 +209,8 @@
   .email-gate-btn:hover { background: var(--accent-light); }
 
   .email-gate-fine {
-    font-size: 11px;
+    font-size: 12px;
     color: var(--ink-faint);
-    margin-top: 12px;
   }
 
   .email-gate-success { display: none; }
@@ -154,25 +235,28 @@
 
   .email-gate-dl:hover { background: var(--accent-light); color: #fff; }
 
+  /* ===== CONTENT WRAPPER ===== */
+  .tool-wrapper { max-width: 760px; margin: 0 auto; padding: 48px clamp(24px, 4vw, 64px) 0; }
+
   /* ===== PREVIEW TABLE ===== */
   .preview-section { margin-bottom: 48px; }
 
-  .preview-heading {
+  .section-title {
     font-family: var(--serif);
-    font-size: 22px;
+    font-size: 24px;
     font-weight: 700;
     letter-spacing: -0.3px;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
   }
 
-  .preview-desc {
+  .section-intro {
     font-size: 15px;
     line-height: 1.6;
     color: var(--ink-muted);
     margin-bottom: 20px;
   }
 
-  .preview-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; margin-bottom: 12px; }
+  .preview-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; margin-bottom: 12px; border-radius: 8px; border: 1px solid var(--line); overflow: hidden; }
 
   .preview-table {
     width: 100%;
@@ -201,6 +285,7 @@
     white-space: nowrap;
   }
 
+  .preview-table tbody tr:last-child td { border-bottom: none; }
   .preview-table tbody tr:hover { background: var(--paper-warm); }
 
   .cell-green { color: var(--teal); font-weight: 600; }
@@ -210,14 +295,16 @@
     font-size: 12px;
     color: var(--ink-faint);
     font-style: italic;
+    margin-top: 12px;
   }
 
   /* ===== FEATURES GRID ===== */
+  .features-section { margin-bottom: 48px; }
+
   .features-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 16px;
-    margin-bottom: 48px;
   }
 
   .feature-card {
@@ -225,23 +312,44 @@
     border: 1px solid var(--line-light);
     border-radius: 10px;
     padding: 24px;
+    display: flex;
+    gap: 16px;
   }
+
+  .feature-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: var(--paper-warm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .feature-icon svg { width: 20px; height: 20px; color: var(--ink-muted); }
 
   .feature-card h3 {
     font-family: var(--serif);
     font-size: 16px;
     font-weight: 600;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
   }
 
   .feature-card p {
     font-size: 14px;
     color: var(--ink-muted);
-    line-height: 1.6;
+    line-height: 1.55;
   }
 
   /* ===== COMPARISON TABLE ===== */
   .compare-section { margin-bottom: 48px; }
+
+  .compare-table-wrap {
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    overflow: hidden;
+  }
 
   .compare-table {
     width: 100%;
@@ -250,18 +358,21 @@
   }
 
   .compare-table thead th {
-    padding: 12px 16px;
+    padding: 14px 20px;
     text-align: left;
     font-weight: 600;
-    border-bottom: 2px solid var(--line);
+    background: var(--paper-warm);
+    border-bottom: 1px solid var(--line);
     font-size: 13px;
   }
 
   .compare-table tbody td {
-    padding: 12px 16px;
+    padding: 13px 20px;
     border-bottom: 1px solid var(--line-light);
     color: var(--ink-muted);
   }
+
+  .compare-table tbody tr:last-child td { border-bottom: none; }
 
   .compare-table tbody td:first-child {
     font-weight: 500;
@@ -271,6 +382,57 @@
   .check { color: var(--teal); font-weight: 700; }
   .cross { color: var(--ink-faint); }
 
+  /* ===== SOFT CTA ===== */
+  .soft-cta {
+    background: var(--ink);
+    border-radius: 12px;
+    padding: 40px 36px;
+    text-align: center;
+    margin-bottom: 48px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .soft-cta::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  .soft-cta-content { position: relative; }
+
+  .soft-cta h3 {
+    font-family: var(--serif);
+    font-size: 22px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+
+  .soft-cta p {
+    font-size: 15px;
+    color: rgba(255,255,255,0.45);
+    line-height: 1.6;
+    max-width: 460px;
+    margin: 0 auto 24px;
+  }
+
+  .soft-cta-btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background: var(--accent);
+    color: #fff;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.15s;
+  }
+
+  .soft-cta-btn:hover { background: var(--accent-light); }
+
   /* ===== CONTENT ===== */
   .content-section { max-width: 760px; margin: 0 auto; padding: 0 clamp(24px, 4vw, 64px) 48px; }
   .content-section h2 { font-family: var(--serif); font-size: 24px; font-weight: 700; letter-spacing: -0.3px; margin-bottom: 16px; }
@@ -279,51 +441,43 @@
   .content-section ul, .content-section ol { font-size: 16px; line-height: 1.75; color: var(--ink-muted); margin: 0 0 20px 24px; }
   .content-section li { margin-bottom: 4px; }
 
-  /* ===== SOFT CTA ===== */
-  .soft-cta {
-    background: var(--paper-warm);
-    border: 1px solid var(--line);
-    border-radius: 12px;
-    padding: 36px 32px;
-    text-align: center;
-    margin-bottom: 48px;
-  }
-
-  .soft-cta h3 {
-    font-family: var(--serif);
-    font-size: 20px;
-    font-weight: 700;
-    margin-bottom: 10px;
-  }
-
-  .soft-cta p {
-    font-size: 15px;
-    color: var(--ink-muted);
-    line-height: 1.6;
-    max-width: 500px;
-    margin: 0 auto 20px;
-  }
-
-  .soft-cta-btn {
-    display: inline-block;
-    padding: 12px 24px;
-    background: var(--ink);
-    color: var(--paper-white);
-    border-radius: 6px;
-    font-size: 14px;
-    font-weight: 600;
-    text-decoration: none;
-    transition: background 0.15s;
-  }
-
-  .soft-cta-btn:hover { background: var(--ink-light); }
-
   /* ===== OTHER TOOLS ===== */
   .other-tools { max-width: 760px; margin: 0 auto; padding: 0 clamp(24px, 4vw, 64px) 48px; }
   .other-tools-heading { font-family: var(--serif); font-size: 22px; font-weight: 700; letter-spacing: -0.3px; margin-bottom: 20px; }
   .other-tools-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
-  .other-tool-card { background: var(--paper-white); border: 1px solid var(--line); border-radius: 10px; padding: 24px; text-decoration: none; transition: all 0.15s; }
-  .other-tool-card:hover { border-color: var(--accent); }
+
+  .other-tool-card {
+    background: var(--paper-white);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: 24px;
+    text-decoration: none;
+    transition: all 0.2s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .other-tool-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    opacity: 0;
+    transition: opacity 0.2s;
+  }
+
+  .other-tool-card:nth-child(1)::before { background: var(--accent); }
+  .other-tool-card:nth-child(2)::before { background: var(--teal); }
+  .other-tool-card:nth-child(3)::before { background: #4a6cf7; }
+
+  .other-tool-card:hover {
+    border-color: transparent;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  }
+
+  .other-tool-card:hover::before { opacity: 1; }
+
   .other-tool-card h3 { font-family: var(--serif); font-size: 17px; font-weight: 600; color: var(--ink); margin-bottom: 6px; }
   .other-tool-card p { font-size: 13px; color: var(--ink-muted); line-height: 1.5; }
 
@@ -355,11 +509,15 @@
     .nav-menu.open { display: flex; }
     .nav-menu li { padding: 12px 0; border-bottom: 1px solid var(--line-light); }
     .nav-menu li:last-child { border-bottom: none; }
+    .hero { padding: 40px 0 48px; }
+    .hero-badges { gap: 8px; }
+    .email-gate { padding: 28px 20px; }
+    .email-gate-form { flex-direction: column; }
+    .email-gate-header { flex-direction: column; align-items: flex-start; gap: 12px; }
     .features-grid { grid-template-columns: 1fr; }
     .other-tools-grid { grid-template-columns: 1fr; }
     .footer-cols { grid-template-columns: 1fr; }
-    .email-gate { padding: 32px 20px; }
-    .email-gate-form { flex-direction: column; }
+    .soft-cta { padding: 32px 24px; }
   }
 </style>
 <script type="application/ld+json">
@@ -434,26 +592,47 @@
 </nav>
 <main>
 
-<div class="breadcrumb">
-  <a href="/">Home</a> <span>/</span> <a href="/tools/">Free Tools</a> <span>/</span> <span>Trading Journal Template</span>
-</div>
-
-<div class="tool-wrapper">
-  <h1>Free Trading Journal Template</h1>
-  <p class="tool-intro">Track every trade, calculate your win rate, and find your most profitable setups. Works in Google Sheets and Excel.</p>
-
-  <div class="format-badges">
-    <span class="format-badge">&#x1F4CA; Google Sheets</span>
-    <span class="format-badge">&#x1F4C4; Excel (.xlsx)</span>
-    <span class="format-badge">&#x2705; 15 fields per trade</span>
-    <span class="format-badge">&#x26A1; Auto-calculated metrics</span>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-breadcrumb">
+      <a href="/">Home</a> <span>/</span> <a href="/tools/">Free Tools</a> <span>/</span> <span>Template</span>
+    </div>
+    <h1>Free Trading Journal Template</h1>
+    <p class="hero-desc">Track every trade, calculate your win rate, and find your most profitable setups. Works in Google Sheets and Excel.</p>
+    <div class="hero-badges">
+      <span class="hero-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8M8 10h8M8 14h8M8 18h4"/></svg>
+        Google Sheets
+      </span>
+      <span class="hero-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg>
+        Excel (.xlsx)
+      </span>
+      <span class="hero-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M9 12l2 2 4-4"/></svg>
+        15 Fields Per Trade
+      </span>
+      <span class="hero-badge">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        Auto-Calculated
+      </span>
+    </div>
   </div>
+</section>
 
-  <!-- EMAIL GATE -->
-  <div class="email-gate" id="get-template">
-    <div class="email-gate-icon">&#x1F4DD;</div>
-    <h2>Get the Free Template</h2>
-    <p class="email-gate-desc">Enter your email to get instant access. Tracks P&L, R multiples, win rate, and profit factor automatically.</p>
+<!-- EMAIL GATE -->
+<section class="email-section" id="get-template">
+  <div class="email-gate">
+    <div class="email-gate-header">
+      <div class="email-gate-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/></svg>
+      </div>
+      <div>
+        <h2>Get the Free Template</h2>
+        <p>Enter your email for instant access. Tracks P&L, R multiples, win rate, and profit factor.</p>
+      </div>
+    </div>
     <form name="template-download" method="POST" data-netlify="true" class="email-gate-form">
       <input type="hidden" name="form-name" value="template-download">
       <input type="email" name="email" class="email-gate-input" placeholder="you@example.com" required>
@@ -465,11 +644,13 @@
       <a class="email-gate-dl" href="https://docs.google.com/spreadsheets/d/1FE_sozOLpUm8V3HIIX5vTR6r1yqmJ3nNSTsIhw-q2WE/edit?usp=sharing" target="_blank" rel="noopener">Open Google Sheets Template &rarr;</a>
     </div>
   </div>
+</section>
 
-  <!-- PREVIEW TABLE -->
+<!-- PREVIEW TABLE -->
+<div class="tool-wrapper">
   <div class="preview-section">
-    <h2 class="preview-heading">What the Template Looks Like</h2>
-    <p class="preview-desc">Here is a sample of real trade data. Every colored cell is auto-calculated from your inputs.</p>
+    <h2 class="section-title">What the Template Looks Like</h2>
+    <p class="section-intro">Here is a sample of real trade data. Every colored cell is auto-calculated from your inputs.</p>
     <div class="preview-scroll">
       <table class="preview-table">
         <thead>
@@ -511,88 +692,114 @@
   </div>
 
   <!-- FEATURES GRID -->
-  <h2 class="preview-heading">What is Included</h2>
-  <div class="features-grid">
-    <div class="feature-card">
-      <h3>15 Fields Per Trade</h3>
-      <p>Date, Time, Ticker, Direction, Setup Type, Entry, Exit, Size, Stop Loss, Take Profit, P&L ($), P&L (%), R Multiple, Emotional State, Notes.</p>
-    </div>
-    <div class="feature-card">
-      <h3>Auto-Calculated Metrics</h3>
-      <p>P&L in dollars and percent, R multiples, win rate, profit factor, and average winner vs. average loser. No manual formulas needed.</p>
-    </div>
-    <div class="feature-card">
-      <h3>Summary Dashboard</h3>
-      <p>Second tab aggregates your data into performance by setup type, time of day, day of week, and emotional state.</p>
-    </div>
-    <div class="feature-card">
-      <h3>Any Market, Any Style</h3>
-      <p>Works for stocks, options, futures, forex, and crypto. Add custom columns for your strategy (ICT zones, Greeks, float, etc.).</p>
+  <div class="features-section">
+    <h2 class="section-title">What is Included</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="4" y="2" width="16" height="20" rx="2"/><path d="M8 6h8M8 10h8M8 14h8M8 18h4"/></svg>
+        </div>
+        <div>
+          <h3>15 Fields Per Trade</h3>
+          <p>Date, Time, Ticker, Direction, Setup Type, Entry, Exit, Size, Stop Loss, Take Profit, P&L ($), P&L (%), R Multiple, Emotional State, Notes.</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+        </div>
+        <div>
+          <h3>Auto-Calculated Metrics</h3>
+          <p>P&L in dollars and percent, R multiples, win rate, profit factor, and average winner vs. average loser. No manual formulas needed.</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><rect x="4" y="14" width="4" height="6" rx="1"/><rect x="10" y="8" width="4" height="12" rx="1"/><rect x="16" y="4" width="4" height="16" rx="1"/></svg>
+        </div>
+        <div>
+          <h3>Summary Dashboard</h3>
+          <p>Second tab aggregates your data into performance by setup type, time of day, day of week, and emotional state.</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+        </div>
+        <div>
+          <h3>Any Market, Any Style</h3>
+          <p>Works for stocks, options, futures, forex, and crypto. Add custom columns for your strategy (ICT zones, Greeks, float, etc.).</p>
+        </div>
+      </div>
     </div>
   </div>
 
   <!-- COMPARISON TABLE -->
   <div class="compare-section">
-    <h2 class="preview-heading">Spreadsheet vs. Journal Software</h2>
-    <p class="preview-desc">A spreadsheet is a great starting point. Here is how it compares to dedicated journal software for traders who want to go further.</p>
-    <table class="compare-table">
-      <thead>
-        <tr>
-          <th>Feature</th>
-          <th>Free Template</th>
-          <th>Journal Software</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Price</td>
-          <td>Free</td>
-          <td>From $24/mo</td>
-        </tr>
-        <tr>
-          <td>Trade Logging</td>
-          <td>Manual entry</td>
-          <td>Auto-import from 500+ brokers</td>
-        </tr>
-        <tr>
-          <td>P&L Calculations</td>
-          <td><span class="check">&#x2713;</span> Basic formulas</td>
-          <td><span class="check">&#x2713;</span> 50+ automated reports</td>
-        </tr>
-        <tr>
-          <td>Win Rate & Profit Factor</td>
-          <td><span class="check">&#x2713;</span></td>
-          <td><span class="check">&#x2713;</span></td>
-        </tr>
-        <tr>
-          <td>Chart Screenshots</td>
-          <td><span class="cross">&#x2717;</span></td>
-          <td><span class="check">&#x2713;</span> Embedded per trade</td>
-        </tr>
-        <tr>
-          <td>Trade Replay</td>
-          <td><span class="cross">&#x2717;</span></td>
-          <td><span class="check">&#x2713;</span> Rewatch price action</td>
-        </tr>
-        <tr>
-          <td>Backtesting</td>
-          <td><span class="cross">&#x2717;</span></td>
-          <td><span class="check">&#x2713;</span> 11+ years of data</td>
-        </tr>
-        <tr>
-          <td>AI Analytics</td>
-          <td><span class="cross">&#x2717;</span></td>
-          <td><span class="check">&#x2713;</span> Pattern detection</td>
-        </tr>
-      </tbody>
-    </table>
+    <h2 class="section-title">Spreadsheet vs. Journal Software</h2>
+    <p class="section-intro">A spreadsheet is a great starting point. Here is how it compares to dedicated journal software for traders who want to go further.</p>
+    <div class="compare-table-wrap">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>Free Template</th>
+            <th>Journal Software</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Price</td>
+            <td>Free</td>
+            <td>From $24/mo</td>
+          </tr>
+          <tr>
+            <td>Trade Logging</td>
+            <td>Manual entry</td>
+            <td>Auto-import from 500+ brokers</td>
+          </tr>
+          <tr>
+            <td>P&L Calculations</td>
+            <td><span class="check">&#x2713;</span> Basic formulas</td>
+            <td><span class="check">&#x2713;</span> 50+ automated reports</td>
+          </tr>
+          <tr>
+            <td>Win Rate & Profit Factor</td>
+            <td><span class="check">&#x2713;</span></td>
+            <td><span class="check">&#x2713;</span></td>
+          </tr>
+          <tr>
+            <td>Chart Screenshots</td>
+            <td><span class="cross">&#x2717;</span></td>
+            <td><span class="check">&#x2713;</span> Embedded per trade</td>
+          </tr>
+          <tr>
+            <td>Trade Replay</td>
+            <td><span class="cross">&#x2717;</span></td>
+            <td><span class="check">&#x2713;</span> Rewatch price action</td>
+          </tr>
+          <tr>
+            <td>Backtesting</td>
+            <td><span class="cross">&#x2717;</span></td>
+            <td><span class="check">&#x2713;</span> 11+ years of data</td>
+          </tr>
+          <tr>
+            <td>AI Analytics</td>
+            <td><span class="cross">&#x2717;</span></td>
+            <td><span class="check">&#x2713;</span> Pattern detection</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 
   <!-- SOFT CTA -->
   <div class="soft-cta">
-    <h3>Ready to Go Beyond Spreadsheets?</h3>
-    <p>After testing every major platform, we found one that auto-imports trades, generates 50+ reports, and includes backtesting with 11+ years of data.</p>
-    <a href="https://www.tradezella.com/?utm_source=tradingjournal&utm_medium=referral&utm_campaign=always-on&utm_content=homepage-cta" target="_blank" rel="noopener noreferrer" class="soft-cta-btn">Try TradeZella &rarr;</a>
+    <div class="soft-cta-content">
+      <h3>Ready to Go Beyond Spreadsheets?</h3>
+      <p>After testing every major platform, we found one that auto-imports trades, generates 50+ reports, and includes backtesting with 11+ years of data.</p>
+      <a href="https://www.tradezella.com/?utm_source=tradingjournal&utm_medium=referral&utm_campaign=always-on&utm_content=homepage-cta" target="_blank" rel="noopener noreferrer" class="soft-cta-btn">Try TradeZella &rarr;</a>
+    </div>
   </div>
 </div>
 
@@ -704,8 +911,8 @@ function showTemplateLink() {
   if (form) form.style.display = 'none';
   var fine = document.querySelector('.email-gate-fine');
   if (fine) fine.style.display = 'none';
-  var desc = document.querySelector('.email-gate-desc');
-  if (desc) desc.style.display = 'none';
+  var headerDesc = document.querySelector('.email-gate-header p');
+  if (headerDesc) headerDesc.style.display = 'none';
   var success = document.getElementById('template-success');
   if (success) success.style.display = 'block';
 }

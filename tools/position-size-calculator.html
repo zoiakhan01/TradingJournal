@@ -57,38 +57,64 @@
   .nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 4px; flex-direction: column; gap: 5px; }
   .nav-toggle span { display: block; width: 22px; height: 2px; background: var(--ink); border-radius: 2px; transition: 0.2s; }
 
-  /* ===== BREADCRUMB ===== */
-  .breadcrumb {
+  /* ===== HERO ===== */
+  .hero {
+    background: var(--ink);
+    padding: 56px 0 64px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(rgba(255,255,255,0.04) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  .hero-inner {
     max-width: 760px;
     margin: 0 auto;
-    padding: 24px clamp(24px, 4vw, 64px) 0;
-    font-size: 13px;
-    color: var(--ink-faint);
+    padding: 0 clamp(24px, 4vw, 64px);
+    position: relative;
   }
-  .breadcrumb a { color: var(--ink-faint); text-decoration: none; }
-  .breadcrumb a:hover { color: var(--ink); }
+
+  .hero-breadcrumb {
+    font-size: 13px;
+    color: rgba(255,255,255,0.3);
+    margin-bottom: 24px;
+  }
+
+  .hero-breadcrumb a {
+    color: rgba(255,255,255,0.3);
+    text-decoration: none;
+    transition: color 0.15s;
+  }
+
+  .hero-breadcrumb a:hover { color: rgba(255,255,255,0.6); }
+
+  .hero h1 {
+    font-family: var(--serif);
+    font-size: clamp(28px, 4.5vw, 42px);
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.15;
+    letter-spacing: -1px;
+    margin-bottom: 14px;
+  }
+
+  .hero-desc {
+    font-size: 17px;
+    line-height: 1.65;
+    color: rgba(255,255,255,0.45);
+  }
 
   /* ===== TOOL LAYOUT ===== */
   .tool-wrapper {
     max-width: 760px;
     margin: 0 auto;
-    padding: 32px clamp(24px, 4vw, 64px) 0;
-  }
-
-  .tool-wrapper h1 {
-    font-family: var(--serif);
-    font-size: clamp(28px, 4vw, 40px);
-    font-weight: 700;
-    line-height: 1.15;
-    letter-spacing: -0.8px;
-    margin-bottom: 12px;
-  }
-
-  .tool-intro {
-    font-size: 16px;
-    line-height: 1.7;
-    color: var(--ink-muted);
-    margin-bottom: 36px;
+    padding: 48px clamp(24px, 4vw, 64px) 0;
   }
 
   /* ===== CALCULATOR ===== */
@@ -412,6 +438,7 @@
     .nav-menu.open { display: flex; }
     .nav-menu li { padding: 12px 0; border-bottom: 1px solid var(--line-light); }
     .nav-menu li:last-child { border-bottom: none; }
+    .hero { padding: 40px 0 48px; }
     .calc-grid { grid-template-columns: 1fr; }
     .result-grid { grid-template-columns: 1fr; }
     .other-tools-grid { grid-template-columns: 1fr; }
@@ -493,18 +520,21 @@
 </nav>
 <main>
 
-<!-- BREADCRUMB -->
-<div class="breadcrumb">
-  <a href="/">Home</a> <span>/</span> <a href="/tools/">Free Tools</a> <span>/</span> <span>Position Size Calculator</span>
-</div>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-breadcrumb">
+      <a href="/">Home</a> <span>/</span> <a href="/tools/">Free Tools</a> <span>/</span> <span>Position Size Calculator</span>
+    </div>
+    <h1>Position Size Calculator</h1>
+    <p class="hero-desc">Calculate exactly how many shares or contracts to buy. Enter your account size, how much you are willing to risk, and your stop loss level.</p>
+  </div>
+</section>
 
-<!-- CALCULATOR -->
 <div class="tool-wrapper">
-  <h1>Position Size Calculator</h1>
-  <p class="tool-intro">Calculate exactly how many shares or contracts to buy. Enter your account size, how much you are willing to risk, and your stop loss level.</p>
 
   <div class="calc-card">
-    <div class="calc-header">&#x1F4CA; Calculate Your Position Size</div>
+    <div class="calc-header">Calculate Your Position Size</div>
     <div class="calc-body">
       <div class="calc-grid">
         <div class="calc-field">
