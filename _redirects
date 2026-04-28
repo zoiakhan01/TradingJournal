@@ -37,8 +37,9 @@
 /review-trademetria      /review/trademetria      301
 /review-trademetria.html /review/trademetria      301
 /reviews/*               /review/:splat           301
-/blog.html               /blog                    301
-/compare.html            /compare                 301
+/review                  /blog/best-trading-journals  301
+/blog.html               /blog/                   301
+/compare.html            /compare/                301
 
 # Strip .html from current folder-structured URLs
 /blog/best-trading-journals.html        /blog/best-trading-journals        301
