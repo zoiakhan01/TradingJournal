@@ -3,20 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Free position size calculator for stocks, forex, and futures. Enter your account size, risk %, entry price, and stop loss to get your exact position size.">
+<meta name="description" content="Free lot size calculator for forex traders. Enter your account size, risk percentage, and stop loss to get the exact lot size for any trade. No signup required.">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<link rel="canonical" href="https://tradingjournal.com/tools/position-size-calculator">
-<meta property="og:title" content="Position Size Calculator (Free) — TradingJournal.com">
-<meta property="og:description" content="Free position size calculator for stocks, forex, and futures. Enter your account size, risk %, entry price, and stop loss to get your exact position size.">
-<meta property="og:url" content="https://tradingjournal.com/tools/position-size-calculator">
+<link rel="canonical" href="https://tradingjournal.com/tools/lot-size-calculator">
+<meta property="og:title" content="Free Lot Size Calculator (Forex) — TradingJournal.com">
+<meta property="og:description" content="Free lot size calculator for forex traders. Enter your account size, risk percentage, and stop loss to get the exact lot size for any trade. No signup required.">
+<meta property="og:url" content="https://tradingjournal.com/tools/lot-size-calculator">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="TradingJournal.com">
-<meta property="og:image" content="https://tradingjournal.com/og/position-size-calculator.png">
+<meta property="og:image" content="https://tradingjournal.com/og/lot-size-calculator.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Position Size Calculator (Free) — TradingJournal.com">
-<meta name="twitter:description" content="Free position size calculator for stocks, forex, and futures. Enter your account size, risk %, entry price, and stop loss to get your exact position size.">
-<meta name="twitter:image" content="https://tradingjournal.com/og/position-size-calculator.png">
-<title>Position Size Calculator (Free) — TradingJournal.com</title>
+<meta name="twitter:title" content="Free Lot Size Calculator (Forex) — TradingJournal.com">
+<meta name="twitter:description" content="Free lot size calculator for forex traders. Enter your account size, risk percentage, and stop loss to get the exact lot size for any trade. No signup required.">
+<meta name="twitter:image" content="https://tradingjournal.com/og/lot-size-calculator.png">
+<title>Free Lot Size Calculator (Forex) — TradingJournal.com</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400&family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
@@ -97,6 +97,32 @@
     font-size: 17px;
     line-height: 1.65;
     color: var(--ink-muted);
+    margin-bottom: 20px;
+  }
+
+  .hero-pills {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .hero-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    font-weight: 500;
+    padding: 7px 16px;
+    border-radius: 100px;
+    background: var(--paper-white);
+    color: var(--ink-muted);
+    border: 1px solid var(--line);
+  }
+
+  .pill-check {
+    color: var(--teal);
+    font-weight: 700;
+    font-size: 13px;
   }
 
   /* ===== TOOL LAYOUT ===== */
@@ -147,7 +173,8 @@
     letter-spacing: 0.5px;
   }
 
-  .calc-field input {
+  .calc-field input,
+  .calc-field select {
     width: 100%;
     padding: 12px 14px;
     border: 1px solid var(--line);
@@ -158,9 +185,20 @@
     background: var(--paper);
     outline: none;
     transition: border-color 0.15s;
+    -webkit-appearance: none;
+    appearance: none;
   }
 
-  .calc-field input:focus {
+  .calc-field select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23767676' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    padding-right: 38px;
+    cursor: pointer;
+  }
+
+  .calc-field input:focus,
+  .calc-field select:focus {
     border-color: var(--accent);
   }
 
@@ -242,6 +280,43 @@
     border-radius: 8px;
     padding: 16px 20px;
     margin-bottom: 20px;
+  }
+
+  /* Lot conversion table */
+  .lot-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+
+  .lot-table thead th {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    color: var(--ink-faint);
+    padding: 10px 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--line);
+    background: var(--paper);
+  }
+
+  .lot-table tbody td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--line-light);
+    color: var(--ink-muted);
+  }
+
+  .lot-table tbody td:first-child {
+    font-weight: 600;
+    color: var(--ink);
+  }
+
+  .lot-table tbody tr.active-row td {
+    background: var(--accent-bg);
+    color: var(--ink);
+    font-weight: 600;
   }
 
   .result-cta {
@@ -332,6 +407,81 @@
   .example-box p { margin-bottom: 8px; }
   .example-box p:last-child { margin-bottom: 0; }
 
+  .lot-info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 15px;
+  }
+
+  .lot-info-table thead th {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: var(--ink-faint);
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 2px solid var(--line);
+    background: var(--paper-warm);
+  }
+
+  .lot-info-table tbody td {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--line-light);
+    color: var(--ink-muted);
+  }
+
+  .lot-info-table tbody td:first-child {
+    font-weight: 600;
+    color: var(--ink);
+  }
+
+  /* ===== SOFT CTA ===== */
+  .soft-cta {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 clamp(24px, 4vw, 64px) 48px;
+  }
+
+  .soft-cta-box {
+    background: var(--paper-warm);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    padding: 40px 36px;
+    text-align: center;
+  }
+
+  .soft-cta-box h2 {
+    font-family: var(--serif);
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: -0.3px;
+  }
+
+  .soft-cta-box p {
+    font-size: 15px;
+    line-height: 1.65;
+    color: var(--ink-muted);
+    max-width: 500px;
+    margin: 0 auto 20px;
+  }
+
+  .soft-cta-btn {
+    display: inline-block;
+    padding: 13px 28px;
+    background: var(--ink);
+    color: var(--paper-white);
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.15s;
+  }
+
+  .soft-cta-btn:hover { background: var(--ink-light); }
+
   /* ===== OTHER TOOLS ===== */
   .other-tools {
     max-width: 760px;
@@ -349,7 +499,7 @@
 
   .other-tools-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 16px;
   }
 
@@ -435,6 +585,9 @@
     .calc-body { padding: 20px; }
     .nl-inner { padding: 32px 24px; }
     .nl-inner form { flex-direction: column; align-items: center; }
+    .soft-cta-box { padding: 32px 24px; }
+    .lot-table { font-size: 13px; }
+    .lot-table thead th, .lot-table tbody td { padding: 8px 10px; }
   }
 </style>
 <script type="application/ld+json">
@@ -443,9 +596,9 @@
   "@graph": [
     {
       "@type": "WebApplication",
-      "name": "Position Size Calculator",
-      "description": "Free position size calculator for stocks, forex, and futures. Enter your account size, risk %, entry price, and stop loss to get your exact position size.",
-      "url": "https://tradingjournal.com/tools/position-size-calculator",
+      "name": "Free Lot Size Calculator",
+      "description": "Free lot size calculator for forex traders. Enter your account size, risk percentage, and stop loss to get the exact lot size for any trade.",
+      "url": "https://tradingjournal.com/tools/lot-size-calculator",
       "applicationCategory": "FinanceApplication",
       "operatingSystem": "Web",
       "offers": { "@type": "Offer", "price": 0, "priceCurrency": "USD" },
@@ -460,7 +613,7 @@
       "itemListElement": [
         { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tradingjournal.com/" },
         { "@type": "ListItem", "position": 2, "name": "Free Tools", "item": "https://tradingjournal.com/tools/" },
-        { "@type": "ListItem", "position": 3, "name": "Position Size Calculator", "item": "https://tradingjournal.com/tools/position-size-calculator" }
+        { "@type": "ListItem", "position": 3, "name": "Lot Size Calculator", "item": "https://tradingjournal.com/tools/lot-size-calculator" }
       ]
     },
     {
@@ -468,23 +621,28 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What is position sizing in trading?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Position sizing is the process of determining how many shares or contracts to buy or sell on a trade. It ensures you never risk more than a set percentage of your account on any single trade, which is essential for long-term survival in the markets." }
+          "name": "What is a lot in forex?",
+          "acceptedAnswer": { "@type": "Answer", "text": "A lot is the standard unit of trade size in forex. A standard lot is 100,000 units of the base currency. A mini lot is 10,000 units, and a micro lot is 1,000 units." }
         },
         {
           "@type": "Question",
-          "name": "How much should I risk per trade?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Most professional traders risk between 0.5% and 2% of their account per trade. Beginners are often advised to start at 0.5% to 1%. The exact amount depends on your strategy, win rate, and risk tolerance." }
+          "name": "How do I calculate my lot size?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Divide your dollar risk (account balance times risk percentage) by the pip risk (stop loss in pips times pip value per standard lot). This gives you the lot size that keeps your risk within your target percentage." }
         },
         {
           "@type": "Question",
-          "name": "Does this calculator work for options and forex?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes. The formula works for any market. For options, use the option premium as your entry price. For forex, enter the pip value and lot size equivalent. The underlying math (dollar risk divided by per-unit risk) applies universally." }
+          "name": "What lot size should a beginner use?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Start with micro lots (0.01). This limits your risk to roughly $0.10 per pip, making losses manageable while you learn. Move to mini lots (0.10) once you are consistently profitable." }
         },
         {
           "@type": "Question",
-          "name": "What is the 1% rule in trading?",
-          "acceptedAnswer": { "@type": "Answer", "text": "The 1% rule means you never risk more than 1% of your total account balance on a single trade. On a $50,000 account, that means your maximum loss per trade would be $500. This rule helps protect your capital during losing streaks." }
+          "name": "Does lot size affect pip value?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. One pip on a standard lot (1.00) is worth $10. On a mini lot (0.10), one pip is worth $1. On a micro lot (0.01), one pip is worth $0.10. The lot size directly scales your profit and loss per pip." }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the maximum lot size I should trade?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Never risk more than 1-2% of your account on a single trade. Use this calculator to find the lot size that keeps your dollar risk within that range for any given stop loss distance." }
         }
       ]
     }
@@ -513,60 +671,108 @@
 <section class="hero">
   <div class="hero-inner">
     <div class="hero-breadcrumb">
-      <a href="/">Home</a> <span>/</span> <a href="/tools/">Free Tools</a> <span>/</span> <span>Position Size Calculator</span>
+      <a href="/">Home</a> <span>/</span> <a href="/tools/">Free Tools</a> <span>/</span> <span>Lot Size Calculator</span>
     </div>
-    <h1>Position Size Calculator</h1>
-    <p class="hero-desc">Calculate exactly how many shares or contracts to buy. Enter your account size, how much you are willing to risk, and your stop loss level.</p>
+    <h1>Free Lot Size Calculator</h1>
+    <p class="hero-desc">Calculate the exact lot size for any forex trade. Enter your account balance, risk percentage, and stop loss distance to size your position correctly.</p>
+    <div class="hero-pills">
+      <span class="hero-pill"><span class="pill-check">&#x2713;</span> 100% Free</span>
+      <span class="hero-pill"><span class="pill-check">&#x2713;</span> No Signup</span>
+      <span class="hero-pill"><span class="pill-check">&#x2713;</span> Instant Results</span>
+    </div>
   </div>
 </section>
 
 <div class="tool-wrapper">
 
   <div class="calc-card">
-    <div class="calc-header">Calculate Your Position Size</div>
+    <div class="calc-header">Calculate Your Lot Size</div>
     <div class="calc-body">
       <div class="calc-grid">
         <div class="calc-field">
-          <label for="account">Account Size</label>
-          <input type="number" id="account" placeholder="50000" min="0" step="any">
+          <label for="account">Account Balance</label>
+          <input type="number" id="account" value="10000" min="0" step="any">
           <div class="input-hint">Total account balance in $</div>
         </div>
         <div class="calc-field">
           <label for="risk">Risk Per Trade</label>
-          <input type="number" id="risk" placeholder="1" min="0" max="100" step="any">
+          <input type="number" id="risk" value="1" min="0" max="100" step="0.1">
           <div class="input-hint">Percentage of account to risk (%)</div>
         </div>
         <div class="calc-field">
-          <label for="entry">Entry Price</label>
-          <input type="number" id="entry" placeholder="150.00" min="0" step="any">
-          <div class="input-hint">Price you plan to buy at ($)</div>
+          <label for="stoploss">Stop Loss</label>
+          <input type="number" id="stoploss" value="50" min="0" step="any">
+          <div class="input-hint">Distance in pips</div>
         </div>
         <div class="calc-field">
-          <label for="stoploss">Stop Loss Price</label>
-          <input type="number" id="stoploss" placeholder="147.00" min="0" step="any">
-          <div class="input-hint">Price where you will exit ($)</div>
+          <label for="pair">Currency Pair</label>
+          <select id="pair">
+            <option value="EUR/USD">EUR/USD</option>
+            <option value="GBP/USD">GBP/USD</option>
+            <option value="USD/JPY">USD/JPY</option>
+            <option value="USD/CHF">USD/CHF</option>
+            <option value="AUD/USD">AUD/USD</option>
+            <option value="USD/CAD">USD/CAD</option>
+            <option value="EUR/GBP">EUR/GBP</option>
+            <option value="EUR/JPY">EUR/JPY</option>
+            <option value="GBP/JPY">GBP/JPY</option>
+            <option value="NZD/USD">NZD/USD</option>
+          </select>
+          <div class="input-hint">Select the pair you are trading</div>
+        </div>
+        <div class="calc-field">
+          <label for="acctCurrency">Account Currency</label>
+          <select id="acctCurrency">
+            <option value="USD" selected>USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="JPY">JPY</option>
+            <option value="AUD">AUD</option>
+            <option value="CAD">CAD</option>
+            <option value="CHF">CHF</option>
+          </select>
+          <div class="input-hint">Your account denomination</div>
+        </div>
+        <div class="calc-field">
+          <label for="pipValue">Pip Value (per Standard Lot)</label>
+          <input type="number" id="pipValue" value="10" min="0" step="0.01">
+          <div class="input-hint">Auto-filled; override if needed</div>
         </div>
       </div>
-      <button class="calc-btn" onclick="calculatePosition()">Calculate Position Size</button>
+      <button class="calc-btn" onclick="calculateLotSize()">Calculate Lot Size</button>
 
       <div class="calc-results" id="results">
         <div class="result-grid">
           <div class="result-card primary">
-            <div class="result-value" id="res-shares">—</div>
-            <div class="result-label">Shares</div>
+            <div class="result-value" id="res-lots">0.20</div>
+            <div class="result-label">Lot Size</div>
           </div>
           <div class="result-card">
-            <div class="result-value" id="res-risk">—</div>
+            <div class="result-value" id="res-risk">$100</div>
             <div class="result-label">Dollar Risk</div>
           </div>
           <div class="result-card">
-            <div class="result-value" id="res-value">—</div>
-            <div class="result-label">Position Value</div>
+            <div class="result-value" id="res-units">20,000</div>
+            <div class="result-label">Units</div>
           </div>
         </div>
         <div class="result-summary" id="res-summary"></div>
+
+        <table class="lot-table" id="lot-conversion">
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Lot Size</th>
+              <th>Units</th>
+              <th>Pip Value</th>
+            </tr>
+          </thead>
+          <tbody id="lot-table-body">
+          </tbody>
+        </table>
+
         <div class="result-cta">
-          <p>Want to calculate position sizes and track every trade automatically?</p>
+          <p>Want to track every forex trade and see your risk stats automatically?</p>
           <a href="https://www.tradezella.com/?utm_source=tradingjournal&utm_medium=referral&utm_campaign=always-on&utm_content=homepage-cta" target="_blank" rel="noopener noreferrer">Try TradeZella &rarr;</a>
         </div>
       </div>
@@ -576,55 +782,89 @@
 
 <!-- CONTENT -->
 <section class="content-section">
-  <h2>How Position Sizing Works</h2>
-  <p>Position sizing determines how many shares or contracts you should trade based on a fixed risk amount. Instead of guessing, you use a simple formula to ensure every trade follows the same risk rules.</p>
+  <h2>How Lot Size Is Calculated</h2>
+  <p>Lot size tells you how large your forex position should be based on how much you are willing to lose. The formula takes three inputs: your dollar risk, your stop loss distance, and the pip value for the pair you are trading.</p>
 
   <div class="formula-box">
-    <code>Position Size = Dollar Risk / (Entry Price &minus; Stop Loss)</code>
+    <code>Lot Size = (Account Balance &times; Risk %) / (Stop Loss in Pips &times; Pip Value per Standard Lot)</code>
   </div>
 
-  <p>Where <strong>Dollar Risk</strong> equals your account size multiplied by your risk percentage. If you have a $50,000 account and risk 1% per trade, your dollar risk is $500.</p>
+  <p>The result is expressed in standard lots. One standard lot equals 100,000 units of the base currency. If the formula returns 0.20, you would trade 20,000 units (2 mini lots or 20 micro lots).</p>
 
+  <h3>Example</h3>
   <div class="example-box">
-    <p><strong>Example:</strong></p>
-    <p>Account: $50,000 | Risk: 1% ($500) | Entry: $150.00 | Stop Loss: $147.00</p>
-    <p>Risk per share: $150.00 &minus; $147.00 = $3.00</p>
-    <p>Position size: $500 / $3.00 = <strong>166 shares</strong> ($24,900 position)</p>
+    <p><strong>Setup:</strong> $10,000 account, 1% risk, 50 pip stop loss, EUR/USD</p>
+    <p>Dollar risk = $10,000 &times; 0.01 = <strong>$100</strong></p>
+    <p>Pip value per standard lot = <strong>$10</strong></p>
+    <p>Lot size = $100 / (50 &times; $10) = <strong>0.20 lots</strong> (20,000 units, 2 mini lots)</p>
   </div>
 
-  <h3>Why Position Sizing Matters</h3>
-  <p>Without consistent position sizing, a single bad trade can wipe out weeks of gains. The math is straightforward: if you risk 10% of your account and lose three trades in a row, you have lost 27% of your capital. At 1% risk, that same streak costs you just 2.97%.</p>
+  <h3>Standard vs Mini vs Micro Lots</h3>
+  <p>Forex trades are measured in lots. Each lot type represents a different number of currency units and produces a different pip value. Here is how they compare:</p>
 
-  <ul>
-    <li><strong>Protects against ruin:</strong> Fixed-percentage risk keeps you in the game during drawdowns.</li>
-    <li><strong>Removes emotion:</strong> Your position size is calculated, not guessed. No oversizing on "high conviction" trades.</li>
-    <li><strong>Scales with your account:</strong> As your account grows, your position sizes grow proportionally. As it shrinks, they shrink.</li>
-  </ul>
+  <table class="lot-info-table">
+    <thead>
+      <tr>
+        <th scope="col">Lot Type</th>
+        <th scope="col">Lot Value</th>
+        <th scope="col">Units</th>
+        <th scope="col">Pip Value (USD pairs)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Standard</td>
+        <td>1.00</td>
+        <td>100,000</td>
+        <td>$10.00</td>
+      </tr>
+      <tr>
+        <td>Mini</td>
+        <td>0.10</td>
+        <td>10,000</td>
+        <td>$1.00</td>
+      </tr>
+      <tr>
+        <td>Micro</td>
+        <td>0.01</td>
+        <td>1,000</td>
+        <td>$0.10</td>
+      </tr>
+    </tbody>
+  </table>
 
-  <h3>Common Risk Percentages</h3>
-  <p>Most traders use between 0.5% and 2% of their account per trade. Here is a general guideline:</p>
-  <ul>
-    <li><strong>0.5%:</strong> Conservative. Suitable for beginners or high-frequency strategies with many trades per day.</li>
-    <li><strong>1%:</strong> The most common choice among experienced traders. Balances growth with capital protection.</li>
-    <li><strong>2%:</strong> Aggressive. Used by traders with a proven edge and high win rate. Not recommended for beginners.</li>
-  </ul>
+  <p>Most retail brokers allow you to trade in increments of 0.01 lots (micro lots). This gives you precise control over your risk, especially on smaller accounts.</p>
+
+  <h3>Why Lot Size Matters</h3>
+  <p>Trading the wrong lot size is one of the fastest ways to blow an account. If your lot size is too large, a normal losing streak can cut your balance in half before you have time to adjust. If it is too small, your winners will barely move the needle.</p>
+  <p>Proper lot sizing keeps your risk consistent from trade to trade. When you risk the same percentage on every position, no single loss can do serious damage. Over time, this consistency compounds: your account grows steadily during winning streaks and declines slowly during drawdowns.</p>
+  <p>The key principle is simple. Decide how much you are willing to lose before you enter the trade, then let the calculator work backwards to find the right lot size.</p>
+</section>
+
+<!-- SOFT CTA -->
+<section class="soft-cta">
+  <div class="soft-cta-box">
+    <h2>Want to Automate Your Risk Management?</h2>
+    <p>Trading journal software tracks every trade, calculates your risk per position, and shows you exactly where your sizing breaks down. In our testing, one platform stood out for doing all three.</p>
+    <a href="https://www.tradezella.com/?utm_source=tradingjournal&utm_medium=referral&utm_campaign=always-on&utm_content=homepage-cta" target="_blank" rel="noopener noreferrer" class="soft-cta-btn">Try TradeZella &rarr;</a>
+  </div>
 </section>
 
 <!-- OTHER TOOLS -->
 <section class="other-tools">
   <h2 class="other-tools-heading">More Free Tools</h2>
   <div class="other-tools-grid">
+    <a href="/tools/position-size-calculator" class="other-tool-card">
+      <h3>Position Size Calculator</h3>
+      <p>Calculate how many shares or contracts to trade based on your account size and stop loss.</p>
+    </a>
     <a href="/tools/risk-reward-calculator" class="other-tool-card">
       <h3>Risk/Reward Calculator</h3>
       <p>Check your R:R ratio and breakeven win rate before entering any trade.</p>
     </a>
     <a href="/tools/profit-loss-calculator" class="other-tool-card">
       <h3>Profit/Loss Calculator</h3>
-      <p>Calculate your trade P&L in dollars and percentage for long or short positions.</p>
-    </a>
-    <a href="/tools/pip-value-calculator" class="other-tool-card">
-      <h3>Pip Value Calculator</h3>
-      <p>Calculate the value of one pip for any forex currency pair and lot size.</p>
+      <p>Calculate your trade P&amp;L in dollars and percentage for long or short positions.</p>
     </a>
   </div>
 </section>
@@ -633,20 +873,24 @@
 <section class="faq-section">
   <h2 class="faq-heading">Frequently Asked Questions</h2>
   <details>
-    <summary>What is position sizing in trading?</summary>
-    <p>Position sizing is the process of determining how many shares or contracts to buy or sell on a trade. It ensures you never risk more than a set percentage of your account on any single trade, which is essential for long-term survival in the markets.</p>
+    <summary>What is a lot in forex?</summary>
+    <p>A lot is the standard unit of trade size in forex. A standard lot is 100,000 units of the base currency. A mini lot is 10,000 units, and a micro lot is 1,000 units.</p>
   </details>
   <details>
-    <summary>How much should I risk per trade?</summary>
-    <p>Most professional traders risk between 0.5% and 2% of their account per trade. Beginners are often advised to start at 0.5% to 1%. The exact amount depends on your strategy, win rate, and risk tolerance.</p>
+    <summary>How do I calculate my lot size?</summary>
+    <p>Divide your dollar risk (account balance times risk percentage) by the pip risk (stop loss in pips times pip value per standard lot). This gives you the lot size that keeps your risk within your target percentage.</p>
   </details>
   <details>
-    <summary>Does this calculator work for options and forex?</summary>
-    <p>Yes. The formula works for any market. For options, use the option premium as your entry price. For forex, enter the pip value and lot size equivalent. The underlying math (dollar risk divided by per-unit risk) applies universally.</p>
+    <summary>What lot size should a beginner use?</summary>
+    <p>Start with micro lots (0.01). This limits your risk to roughly $0.10 per pip, making losses manageable while you learn. Move to mini lots (0.10) once you are consistently profitable.</p>
   </details>
   <details>
-    <summary>What is the 1% rule in trading?</summary>
-    <p>The 1% rule means you never risk more than 1% of your total account balance on a single trade. On a $50,000 account, that means your maximum loss per trade would be $500. This rule helps protect your capital during losing streaks.</p>
+    <summary>Does lot size affect pip value?</summary>
+    <p>Yes. One pip on a standard lot (1.00) is worth $10. On a mini lot (0.10), one pip is worth $1. On a micro lot (0.01), one pip is worth $0.10. The lot size directly scales your profit and loss per pip.</p>
+  </details>
+  <details>
+    <summary>What is the maximum lot size I should trade?</summary>
+    <p>Never risk more than 1 to 2% of your account on a single trade. Use this calculator to find the lot size that keeps your dollar risk within that range for any given stop loss distance.</p>
   </details>
 </section>
 
@@ -709,42 +953,99 @@
 </footer>
 
 <script>
+// Nav toggle
 document.querySelector('.nav-toggle').addEventListener('click', function() {
   document.querySelector('.nav-menu').classList.toggle('open');
 });
 
-function calculatePosition() {
+// Pip value lookup table (per standard lot, for USD account)
+// For XXX/USD pairs: pip value = $10
+// For USD/XXX pairs: pip value = $10 / exchange rate (approximate)
+// For cross pairs: depends on quote currency
+var pipValues = {
+  'EUR/USD': 10.00,
+  'GBP/USD': 10.00,
+  'AUD/USD': 10.00,
+  'NZD/USD': 10.00,
+  'USD/JPY': 6.67,
+  'USD/CHF': 11.24,
+  'USD/CAD': 7.25,
+  'EUR/GBP': 12.66,
+  'EUR/JPY': 6.67,
+  'GBP/JPY': 6.67
+};
+
+// Update pip value when pair changes
+document.getElementById('pair').addEventListener('change', function() {
+  var pair = this.value;
+  var pv = pipValues[pair] || 10;
+  document.getElementById('pipValue').value = pv;
+});
+
+function calculateLotSize() {
   var account = parseFloat(document.getElementById('account').value);
   var risk = parseFloat(document.getElementById('risk').value);
-  var entry = parseFloat(document.getElementById('entry').value);
-  var stop = parseFloat(document.getElementById('stoploss').value);
+  var stopLoss = parseFloat(document.getElementById('stoploss').value);
+  var pipValue = parseFloat(document.getElementById('pipValue').value);
+  var pair = document.getElementById('pair').value;
 
-  if (!account || !risk || !entry || !stop) { alert('Please fill in all fields.'); return; }
-  if (entry === stop) { alert('Entry price and stop loss cannot be the same.'); return; }
+  if (!account || account <= 0) { alert('Please enter a valid account balance.'); return; }
+  if (!risk || risk <= 0) { alert('Please enter a valid risk percentage.'); return; }
+  if (!stopLoss || stopLoss <= 0) { alert('Please enter a valid stop loss in pips.'); return; }
+  if (!pipValue || pipValue <= 0) { alert('Please enter a valid pip value.'); return; }
 
   var dollarRisk = account * (risk / 100);
-  var riskPerShare = Math.abs(entry - stop);
-  var shares = Math.floor(dollarRisk / riskPerShare);
-  var positionValue = shares * entry;
+  var lotSize = dollarRisk / (stopLoss * pipValue);
+  var units = Math.round(lotSize * 100000);
 
-  document.getElementById('res-shares').textContent = shares.toLocaleString();
+  // Round lot size to 2 decimal places
+  var lotSizeRounded = Math.round(lotSize * 100) / 100;
+
+  // Display results
+  document.getElementById('res-lots').textContent = lotSizeRounded.toFixed(2);
   document.getElementById('res-risk').textContent = '$' + dollarRisk.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
-  document.getElementById('res-value').textContent = '$' + positionValue.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  document.getElementById('res-units').textContent = units.toLocaleString();
 
-  var direction = entry > stop ? 'long' : 'short';
-  var pctOfAccount = ((positionValue / account) * 100).toFixed(1);
+  // Summary
   document.getElementById('res-summary').innerHTML =
-    'With a <strong>$' + account.toLocaleString() + '</strong> account risking <strong>' + risk + '%</strong>, you can ' + direction + ' <strong>' + shares.toLocaleString() + ' shares</strong> at <strong>$' + entry.toFixed(2) + '</strong> with a stop at <strong>$' + stop.toFixed(2) + '</strong>. ' +
-    'This position uses <strong>' + pctOfAccount + '%</strong> of your account.';
+    'Risk <strong>$' + dollarRisk.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',') + '</strong> (' + risk + '% of account) with a <strong>' + stopLoss + ' pip</strong> stop loss on <strong>' + pair + '</strong>. Trade <strong>' + lotSizeRounded.toFixed(2) + ' standard lots</strong> (' + units.toLocaleString() + ' units).';
+
+  // Lot conversion table
+  var stdLots = lotSize;
+  var miniLots = lotSize * 10;
+  var microLots = lotSize * 100;
+
+  var stdUnits = Math.round(stdLots * 100000);
+  var miniUnits = stdUnits;
+  var microUnits = stdUnits;
+
+  var stdPipVal = stdLots * pipValue;
+  var miniPipVal = stdPipVal;
+  var microPipVal = stdPipVal;
+
+  var tbody = document.getElementById('lot-table-body');
+  tbody.innerHTML = '';
+
+  var rows = [
+    { type: 'Standard', lots: stdLots.toFixed(2), units: stdUnits.toLocaleString(), pv: '$' + stdPipVal.toFixed(2) },
+    { type: 'Mini', lots: miniLots.toFixed(1), units: stdUnits.toLocaleString(), pv: '$' + stdPipVal.toFixed(2) },
+    { type: 'Micro', lots: microLots.toFixed(0), units: stdUnits.toLocaleString(), pv: '$' + stdPipVal.toFixed(2) }
+  ];
+
+  rows.forEach(function(row) {
+    var tr = document.createElement('tr');
+    tr.innerHTML = '<td>' + row.type + '</td><td>' + row.lots + '</td><td>' + row.units + '</td><td>' + row.pv + '</td>';
+    tbody.appendChild(tr);
+  });
 
   document.getElementById('results').classList.add('show');
   document.getElementById('results').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
 }
 
 // Allow Enter key to calculate
-document.querySelectorAll('.calc-field input').forEach(function(input) {
+document.querySelectorAll('.calc-field input, .calc-field select').forEach(function(input) {
   input.addEventListener('keydown', function(e) {
-    if (e.key === 'Enter') calculatePosition();
+    if (e.key === 'Enter') calculateLotSize();
   });
 });
 </script>

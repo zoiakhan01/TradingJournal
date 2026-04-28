@@ -3,20 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Free trading calculators: position size, risk/reward ratio, and profit/loss. No signup required. Built for stocks, options, forex, and futures traders.">
+<meta name="description" content="9 free trading calculators and tools for stocks, forex, futures, and options. Position sizing, pip value, lot size, margin, stop loss, and more. No signup required.">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <link rel="canonical" href="https://tradingjournal.com/tools/">
-<meta property="og:title" content="Free Trading Tools & Calculators — TradingJournal.com">
-<meta property="og:description" content="Free trading calculators: position size, risk/reward ratio, and profit/loss. No signup required. Built for stocks, options, forex, and futures traders.">
+<meta property="og:title" content="Free Trading Tools & Calculators (2026) — TradingJournal.com">
+<meta property="og:description" content="9 free trading calculators and tools for stocks, forex, futures, and options. Position sizing, pip value, lot size, margin, stop loss, and more. No signup required.">
 <meta property="og:url" content="https://tradingjournal.com/tools/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="TradingJournal.com">
 <meta property="og:image" content="https://tradingjournal.com/og/tools-hub.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Free Trading Tools & Calculators — TradingJournal.com">
-<meta name="twitter:description" content="Free trading calculators: position size, risk/reward ratio, and profit/loss. No signup required. Built for stocks, options, forex, and futures traders.">
+<meta name="twitter:title" content="Free Trading Tools & Calculators (2026) — TradingJournal.com">
+<meta name="twitter:description" content="9 free trading calculators and tools for stocks, forex, futures, and options. Position sizing, pip value, lot size, margin, stop loss, and more. No signup required.">
 <meta name="twitter:image" content="https://tradingjournal.com/og/tools-hub.png">
-<title>Free Trading Tools & Calculators — TradingJournal.com</title>
+<title>Free Trading Tools &amp; Calculators (2026) — TradingJournal.com</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,400&family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
@@ -65,7 +65,7 @@
 
   /* ===== HERO ===== */
   .hero {
-    padding: 72px 0 56px;
+    padding: 72px 0 48px;
     text-align: center;
   }
 
@@ -127,16 +127,106 @@
     font-size: 13px;
   }
 
+  /* ===== FILTERS + SEARCH ===== */
+  .filter-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 clamp(24px, 4vw, 64px) 16px;
+  }
+
+  .filter-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .filter-pills {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .filter-pill {
+    font-size: 13px;
+    font-weight: 500;
+    padding: 8px 18px;
+    border-radius: 100px;
+    border: 1px solid var(--line);
+    background: var(--paper-white);
+    color: var(--ink-muted);
+    cursor: pointer;
+    transition: all 0.15s;
+    font-family: var(--sans);
+  }
+
+  .filter-pill:hover {
+    border-color: var(--ink-muted);
+    color: var(--ink);
+  }
+
+  .filter-pill.active {
+    background: var(--ink);
+    color: var(--paper-white);
+    border-color: var(--ink);
+  }
+
+  .search-box {
+    position: relative;
+    min-width: 220px;
+  }
+
+  .search-input {
+    width: 100%;
+    padding: 9px 16px 9px 36px;
+    border: 1px solid var(--line);
+    border-radius: 100px;
+    font-size: 14px;
+    font-family: var(--sans);
+    background: var(--paper-white);
+    color: var(--ink);
+    outline: none;
+    transition: border-color 0.15s;
+  }
+
+  .search-input:focus {
+    border-color: var(--accent);
+  }
+
+  .search-input::placeholder {
+    color: var(--ink-faint);
+  }
+
+  .search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--ink-faint);
+    font-size: 14px;
+    pointer-events: none;
+  }
+
   /* ===== TOOLS GRID ===== */
   .tools-section {
-    max-width: 1080px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 clamp(24px, 4vw, 64px) 80px;
   }
 
+  .tools-label {
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--ink-faint);
+    margin-bottom: 20px;
+  }
+
   .tools-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
 
@@ -157,6 +247,8 @@
     transform: translateY(-2px);
   }
 
+  .tool-card.hidden { display: none; }
+
   .tool-tags {
     display: flex;
     align-items: center;
@@ -175,6 +267,7 @@
 
   .tag-risk { background: #e8f5f1; color: #1a6b5a; }
   .tag-analysis { background: #eef1fe; color: #3d5bd9; }
+  .tag-forex { background: #f3eefb; color: #6b4fc4; }
   .tag-resource { background: #fdf5e9; color: #9a7420; }
 
   .tool-badge {
@@ -215,9 +308,20 @@
 
   .tool-card:hover .tool-cta { gap: 8px; }
 
+  .no-results {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--ink-muted);
+    font-size: 16px;
+    display: none;
+  }
+
+  .no-results.show { display: block; }
+
   /* ===== CTA ===== */
   .cta-section {
-    max-width: 1080px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 clamp(24px, 4vw, 64px) 80px;
   }
@@ -297,6 +401,7 @@
 
   /* ===== RESPONSIVE ===== */
   @media (max-width: 1024px) {
+    .tools-grid { grid-template-columns: repeat(2, 1fr); }
     .footer-cols { grid-template-columns: repeat(2, 1fr); }
   }
 
@@ -310,6 +415,10 @@
     .tools-grid { grid-template-columns: 1fr; }
     .footer-cols { grid-template-columns: 1fr; }
     .cta-box { padding: 36px 24px; }
+    .filter-bar { flex-direction: column; align-items: stretch; }
+    .search-box { min-width: unset; }
+    .filter-pills { overflow-x: auto; flex-wrap: nowrap; padding-bottom: 4px; }
+    .filter-pill { white-space: nowrap; flex-shrink: 0; }
   }
 </style>
 <script type="application/ld+json">
@@ -319,7 +428,7 @@
     {
       "@type": "WebPage",
       "name": "Free Trading Tools & Calculators",
-      "description": "Free trading calculators: position size, risk/reward ratio, and profit/loss. No signup required.",
+      "description": "9 free trading calculators and tools for stocks, forex, futures, and options. No signup required.",
       "url": "https://tradingjournal.com/tools/",
       "publisher": {
         "@type": "Organization",
@@ -337,9 +446,9 @@
     {
       "@type": "ItemList",
       "name": "Free Trading Tools",
-      "description": "Free browser-based trading calculators and templates for position sizing, risk/reward analysis, profit/loss tracking, and trade journaling.",
+      "description": "Free browser-based trading calculators and templates for position sizing, risk management, forex, futures, and trade journaling.",
       "itemListOrder": "https://schema.org/ItemListUnordered",
-      "numberOfItems": 6,
+      "numberOfItems": 9,
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -382,6 +491,30 @@
           "position": 4,
           "item": {
             "@type": "WebApplication",
+            "name": "Stop Loss Calculator",
+            "url": "https://tradingjournal.com/tools/stop-loss-calculator",
+            "applicationCategory": "FinanceApplication",
+            "operatingSystem": "Web",
+            "offers": { "@type": "Offer", "price": 0, "priceCurrency": "USD" }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "WebApplication",
+            "name": "Margin Calculator",
+            "url": "https://tradingjournal.com/tools/margin-calculator",
+            "applicationCategory": "FinanceApplication",
+            "operatingSystem": "Web",
+            "offers": { "@type": "Offer", "price": 0, "priceCurrency": "USD" }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "WebApplication",
             "name": "Pip Value Calculator",
             "url": "https://tradingjournal.com/tools/pip-value-calculator",
             "applicationCategory": "FinanceApplication",
@@ -391,7 +524,19 @@
         },
         {
           "@type": "ListItem",
-          "position": 5,
+          "position": 7,
+          "item": {
+            "@type": "WebApplication",
+            "name": "Lot Size Calculator",
+            "url": "https://tradingjournal.com/tools/lot-size-calculator",
+            "applicationCategory": "FinanceApplication",
+            "operatingSystem": "Web",
+            "offers": { "@type": "Offer", "price": 0, "priceCurrency": "USD" }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
           "item": {
             "@type": "WebApplication",
             "name": "Futures Profit Calculator",
@@ -403,7 +548,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 6,
+          "position": 9,
           "item": {
             "@type": "WebApplication",
             "name": "Trading Journal Template",
@@ -426,7 +571,7 @@
         {
           "@type": "Question",
           "name": "Do these calculators work for forex and futures?",
-          "acceptedAnswer": { "@type": "Answer", "text": "Yes. The position size calculator works for stocks, options, forex, and futures. Enter your account size, risk percentage, entry price, and stop loss to get the correct position size for any market." }
+          "acceptedAnswer": { "@type": "Answer", "text": "Yes. We have dedicated forex tools (pip value calculator, lot size calculator) and a futures profit calculator with preset contract specs for ES, NQ, CL, GC, and more. The position size and P&L calculators also work across all markets." }
         },
         {
           "@type": "Question",
@@ -437,6 +582,11 @@
           "@type": "Question",
           "name": "What risk/reward ratio should I aim for?",
           "acceptedAnswer": { "@type": "Answer", "text": "Most professional traders aim for at least a 2:1 risk/reward ratio, meaning the potential profit is at least twice the potential loss. A 3:1 ratio is considered strong. Use our risk/reward calculator to check your ratio before entering any trade." }
+        },
+        {
+          "@type": "Question",
+          "name": "How many free tools do you offer?",
+          "acceptedAnswer": { "@type": "Answer", "text": "We currently offer 9 free tools: Position Size Calculator, Risk/Reward Calculator, Profit/Loss Calculator, Stop Loss Calculator, Margin Calculator, Pip Value Calculator, Lot Size Calculator, Futures Profit Calculator, and a Trading Journal Template. We add new tools regularly." }
         }
       ]
     }
@@ -465,7 +615,7 @@
   <div class="hero-inner">
     <div class="hero-eyebrow">Free Trading Tools</div>
     <h1>Free Trading Calculators</h1>
-    <p class="hero-desc">A growing library of free trading tools for every type of trader. No signup, no fees, instant results.</p>
+    <p class="hero-desc">9 free calculators to help you make smarter trading decisions. No signup, no fees, instant results.</p>
     <div class="hero-pills">
       <span class="hero-pill"><span class="pill-check">&#x2713;</span> 100% Free</span>
       <span class="hero-pill"><span class="pill-check">&#x2713;</span> No Signup</span>
@@ -474,19 +624,37 @@
   </div>
 </section>
 
+<!-- FILTERS + SEARCH -->
+<section class="filter-section">
+  <div class="filter-bar">
+    <div class="filter-pills">
+      <button class="filter-pill active" data-filter="all">All</button>
+      <button class="filter-pill" data-filter="risk">Risk Management</button>
+      <button class="filter-pill" data-filter="analysis">Trade Analysis</button>
+      <button class="filter-pill" data-filter="forex">Forex</button>
+      <button class="filter-pill" data-filter="resource">Resources</button>
+    </div>
+    <div class="search-box">
+      <span class="search-icon">&#x1F50D;</span>
+      <input type="text" class="search-input" placeholder="Search tools..." id="tool-search">
+    </div>
+  </div>
+</section>
+
 <!-- TOOLS -->
 <section class="tools-section">
-  <div class="tools-grid">
-    <a href="/tools/position-size-calculator" class="tool-card">
+  <div class="tools-label">Choose a Tool</div>
+  <div class="tools-grid" id="tools-grid">
+    <a href="/tools/position-size-calculator" class="tool-card" data-category="risk" data-name="position size calculator">
       <div class="tool-tags">
         <span class="tool-tag tag-risk">Risk Management</span>
         <span class="tool-badge">Popular</span>
       </div>
       <h2>Position Size Calculator</h2>
-      <p class="tool-desc">Enter your account size, risk %, and stop loss to get exact position size, risk/reward ratio, and expected value per trade.</p>
+      <p class="tool-desc">Enter your account size, risk %, and stop loss to get exact position size, dollar risk, and expected value per trade. Works for stocks, forex, and futures.</p>
       <span class="tool-cta">Open Calculator &rarr;</span>
     </a>
-    <a href="/tools/risk-reward-calculator" class="tool-card">
+    <a href="/tools/risk-reward-calculator" class="tool-card" data-category="risk" data-name="risk reward calculator ratio">
       <div class="tool-tags">
         <span class="tool-tag tag-risk">Risk Management</span>
       </div>
@@ -494,7 +662,23 @@
       <p class="tool-desc">Check your risk/reward ratio before entering any trade. See the breakeven win rate needed to stay profitable at your R:R level.</p>
       <span class="tool-cta">Open Calculator &rarr;</span>
     </a>
-    <a href="/tools/profit-loss-calculator" class="tool-card">
+    <a href="/tools/stop-loss-calculator" class="tool-card" data-category="risk" data-name="stop loss calculator price level">
+      <div class="tool-tags">
+        <span class="tool-tag tag-risk">Risk Management</span>
+      </div>
+      <h2>Stop Loss Calculator</h2>
+      <p class="tool-desc">Enter your account size, risk %, entry price, and position size to find the exact stop loss price level. Includes take profit targets at 2:1 and 3:1 R/R.</p>
+      <span class="tool-cta">Open Calculator &rarr;</span>
+    </a>
+    <a href="/tools/margin-calculator" class="tool-card" data-category="risk" data-name="margin calculator leverage buying power">
+      <div class="tool-tags">
+        <span class="tool-tag tag-risk">Risk Management</span>
+      </div>
+      <h2>Margin Calculator</h2>
+      <p class="tool-desc">Calculate required margin, position value, and free margin for any trade. Supports forex, stocks, futures, and crypto with adjustable leverage ratios.</p>
+      <span class="tool-cta">Open Calculator &rarr;</span>
+    </a>
+    <a href="/tools/profit-loss-calculator" class="tool-card" data-category="analysis" data-name="profit loss calculator pnl pl">
       <div class="tool-tags">
         <span class="tool-tag tag-analysis">Trade Analysis</span>
       </div>
@@ -502,23 +686,31 @@
       <p class="tool-desc">Calculate your trade P&L in dollars and percentage. Works for long and short positions across stocks, forex, futures, and crypto.</p>
       <span class="tool-cta">Open Calculator &rarr;</span>
     </a>
-    <a href="/tools/pip-value-calculator" class="tool-card">
-      <div class="tool-tags">
-        <span class="tool-tag tag-risk">Risk Management</span>
-      </div>
-      <h2>Pip Value Calculator</h2>
-      <p class="tool-desc">Calculate the value of one pip for any forex currency pair, lot size, and account currency. Essential for sizing forex positions correctly.</p>
-      <span class="tool-cta">Open Calculator &rarr;</span>
-    </a>
-    <a href="/tools/futures-profit-calculator" class="tool-card">
+    <a href="/tools/futures-profit-calculator" class="tool-card" data-category="analysis" data-name="futures profit calculator es nq cl gc contract">
       <div class="tool-tags">
         <span class="tool-tag tag-analysis">Trade Analysis</span>
       </div>
       <h2>Futures Profit Calculator</h2>
-      <p class="tool-desc">Select your futures contract (ES, NQ, CL, GC, and more), enter entry and exit prices, and calculate your P&L in ticks and dollars.</p>
+      <p class="tool-desc">Select your futures contract (ES, NQ, CL, GC, and more), enter entry and exit prices, and calculate your P&L in ticks and dollars instantly.</p>
       <span class="tool-cta">Open Calculator &rarr;</span>
     </a>
-    <a href="/tools/trading-journal-template" class="tool-card">
+    <a href="/tools/pip-value-calculator" class="tool-card" data-category="forex" data-name="pip value calculator forex currency pair">
+      <div class="tool-tags">
+        <span class="tool-tag tag-forex">Forex</span>
+      </div>
+      <h2>Pip Value Calculator</h2>
+      <p class="tool-desc">Calculate the value of one pip for any currency pair, lot size, and account currency. Essential for sizing forex positions correctly.</p>
+      <span class="tool-cta">Open Calculator &rarr;</span>
+    </a>
+    <a href="/tools/lot-size-calculator" class="tool-card" data-category="forex" data-name="lot size calculator forex position units">
+      <div class="tool-tags">
+        <span class="tool-tag tag-forex">Forex</span>
+      </div>
+      <h2>Lot Size Calculator</h2>
+      <p class="tool-desc">Enter your account balance, risk percentage, and stop loss in pips to get the exact lot size for any forex trade. Shows standard, mini, and micro lots.</p>
+      <span class="tool-cta">Open Calculator &rarr;</span>
+    </a>
+    <a href="/tools/trading-journal-template" class="tool-card" data-category="resource" data-name="trading journal template spreadsheet google sheets excel">
       <div class="tool-tags">
         <span class="tool-tag tag-resource">Resources</span>
       </div>
@@ -526,6 +718,7 @@
       <p class="tool-desc">Free Google Sheets and Excel template. Tracks 15 fields per trade with auto-calculated P&L, R multiples, win rate, and profit factor.</p>
       <span class="tool-cta">Get Template &rarr;</span>
     </a>
+    <div class="no-results" id="no-results">No tools match your search. Try a different keyword or clear the filter.</div>
   </div>
 </section>
 
@@ -547,7 +740,7 @@
   </details>
   <details>
     <summary>Do these calculators work for forex and futures?</summary>
-    <p>Yes. The position size calculator works for stocks, options, forex, and futures. Enter your account size, risk percentage, entry price, and stop loss to get the correct position size for any market.</p>
+    <p>Yes. We have dedicated forex tools (pip value calculator, lot size calculator) and a futures profit calculator with preset contract specs for ES, NQ, CL, GC, and more. The position size and P&L calculators also work across all markets.</p>
   </details>
   <details>
     <summary>How do I calculate my position size?</summary>
@@ -556,6 +749,10 @@
   <details>
     <summary>What risk/reward ratio should I aim for?</summary>
     <p>Most professional traders aim for at least a 2:1 risk/reward ratio, meaning the potential profit is at least twice the potential loss. A 3:1 ratio is considered strong. Use our risk/reward calculator to check your ratio before entering any trade.</p>
+  </details>
+  <details>
+    <summary>How many free tools do you offer?</summary>
+    <p>We currently offer 9 free tools: Position Size Calculator, Risk/Reward Calculator, Profit/Loss Calculator, Stop Loss Calculator, Margin Calculator, Pip Value Calculator, Lot Size Calculator, Futures Profit Calculator, and a Trading Journal Template. We add new tools regularly.</p>
   </details>
 </section>
 
@@ -599,9 +796,52 @@
 </footer>
 
 <script>
+// Nav toggle
 document.querySelector('.nav-toggle').addEventListener('click', function() {
   document.querySelector('.nav-menu').classList.toggle('open');
 });
+
+// Category filter
+var filterPills = document.querySelectorAll('.filter-pill');
+var toolCards = document.querySelectorAll('.tool-card');
+var noResults = document.getElementById('no-results');
+var searchInput = document.getElementById('tool-search');
+
+function filterTools() {
+  var activeFilter = document.querySelector('.filter-pill.active').getAttribute('data-filter');
+  var searchTerm = searchInput.value.toLowerCase().trim();
+  var visibleCount = 0;
+
+  toolCards.forEach(function(card) {
+    var category = card.getAttribute('data-category');
+    var name = card.getAttribute('data-name');
+    var matchesFilter = activeFilter === 'all' || category === activeFilter;
+    var matchesSearch = !searchTerm || name.indexOf(searchTerm) !== -1;
+
+    if (matchesFilter && matchesSearch) {
+      card.classList.remove('hidden');
+      visibleCount++;
+    } else {
+      card.classList.add('hidden');
+    }
+  });
+
+  if (visibleCount === 0) {
+    noResults.classList.add('show');
+  } else {
+    noResults.classList.remove('show');
+  }
+}
+
+filterPills.forEach(function(pill) {
+  pill.addEventListener('click', function() {
+    filterPills.forEach(function(p) { p.classList.remove('active'); });
+    pill.classList.add('active');
+    filterTools();
+  });
+});
+
+searchInput.addEventListener('input', filterTools);
 </script>
 
 </body>
