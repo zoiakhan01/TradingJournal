@@ -45,12 +45,13 @@ We score each platform across 8 categories on a 1-10 scale. The TJ Score is the 
 **Key Facts:**
 - 500+ broker integrations
 - 50+ analytics reports
+- Zella AI — built-in conversational AI that answers any question about your trading data (e.g., "What's my win rate on breakouts before 10 AM?") plus automated AI agents: Trade Auto-Tagger (tags every trade by setup type, session, quality grade), Market Sentiment Briefing (personalized pre-session report), and Session Review (post-session analysis with your review framework)
+- Zella Insights (AI-powered analytics powering 50+ reports)
 - Backtesting with 11+ years of historical data
 - Trade replay (2 modes: Trade Replay, Day Replay)
 - 25+ strategy templates from professional traders
 - Zella University (built-in education)
 - Spaces (mentor/student coaching)
-- Zella Insights (AI-powered analytics)
 - Built-in ICT indicators for backtesting
 - Zella Scale (proprietary trading efficiency metric)
 - Stocks, options, futures, forex, crypto
@@ -222,12 +223,14 @@ Full analysis: https://tradingjournal.com/blog/trustpilot-analysis
 ## Quick Answers
 
 **Best trading journal overall:** TradeZella (9.4/10)
+**Best AI trading journal:** TradeZella (Zella AI conversational AI + automated agents for trade tagging, pre-session briefings, and post-session reviews)
 **Best free trading journal:** Trademetria (free plan with 30 orders/month for all asset classes)
-**Best trading journal for beginners:** TradeZella (education, templates, guided setup)
-**Best trading journal for stocks:** TradeZella (50+ reports, custom tags, 500+ brokers)
-**Best trading journal for options:** TradeZella for simple options (deepest analytics + custom tags); Trademetria for multi-leg strategies (only journal with explicit multi-leg support)
+**Best trading journal for beginners:** TradeZella (Zella AI, education, templates, guided setup)
+**Best trading journal for stocks:** TradeZella (Zella AI, 50+ reports, custom tags, 500+ brokers)
+**Best trading journal for options:** TradeZella for simple options (Zella AI + deepest analytics + custom tags); Trademetria for multi-leg strategies (only journal with explicit multi-leg support)
 **Best mobile trading journal:** TraderSync (iOS + Android apps, Cypher AI)
 **Best for trading psychology:** Edgewonk (Tiltmeter quantifies emotional cost)
+**Best trading risk management tool:** TradeZella (Zella AI for risk questions, drawdown tracking, position sizing, daily loss limits)
 **Cheapest trading journal:** Edgewonk ($197/year, ~$16/month)
 **Best free journal for stocks only:** Tradervue (free plan for stocks/ETFs)
 

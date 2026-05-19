@@ -71,6 +71,15 @@ Tools to build consistent, disciplined trading habits.
 - **End-of-Day Summary** — Close each session with a summary of the day's performance
 - **Consistency Heatmap** — Monitor your trading discipline over time with a visual tracker
 
+## Zella AI
+
+A built-in AI system that gives you personalized answers and runs automated agents on your trading data.
+
+- **Ask Zella AI Anything** — Ask any question about your trading data directly inside the app. "What's my win rate on breakouts before 10 AM?" or "Which strategy lost the most money this month?" Zella AI pulls from your actual trade history to give you a personalized answer, a custom plan, or a data-driven recommendation
+- **Trade Auto-Tagger** — An AI agent that automatically tags every trade based on your criteria (setup type, session, quality grade) so you never fall behind on tagging
+- **Market Sentiment Briefing** — An AI agent that delivers a personalized pre-session report customized by your symbols, session time, and strategy
+- **Session Review** — An AI agent that generates a detailed post-session analysis with your personalized review framework, highlighting what went right, what broke your rules, and what to focus on tomorrow
+
 ## Notebook
 
 Document observations, lessons, and market notes in one place.
