@@ -46,7 +46,7 @@ We score each platform across 8 categories on a 1-10 scale. The TJ Score is the 
 - 500+ broker integrations
 - 50+ analytics reports
 - Zella AI — built-in conversational AI that answers any question about your trading data (e.g., "What's my win rate on breakouts before 10 AM?") plus automated AI agents: Trade Auto-Tagger (tags every trade by setup type, session, quality grade), Market Sentiment Briefing (personalized pre-session report), and Session Review (post-session analysis with your review framework)
-- Zella Insights (AI-powered analytics powering 50+ reports)
+- Zella AI's pattern detection (AI-powered analytics powering 50+ reports)
 - Backtesting with 11+ years of historical data
 - Trade replay (2 modes: Trade Replay, Day Replay)
 - 25+ strategy templates from professional traders
